@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sequence.js - The responsive CSS animation framework</title>
+  <meta name="description" content="Sequence.js - The responsive CSS animation framework. For creating sliders, presentations, banners, and other step-based applications"/>
+  <link rel="canonical" href="http://www.sequencejs.com/" />
+  <link rel="publisher" href="https://plus.google.com/+IanLunn/"/>
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sequence.js - The responsive CSS animation framework" />
+  <meta property="og:description" content="Sequence.js - The responsive CSS animation framework. For creating sliders, presentations, banners, and other step-based applications" />
+  <meta property="og:url" content="http://ianlunn.github.io/Sequence/" />
+  <meta property="og:site_name" content="Sequence.js - The responsive CSS animation framework" />
+  <meta property="og:image" content="http://www.sequencejs.com/images/sequence-logo.png" />
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:description" content="Sequence.js - The responsive CSS animation framework. For creating sliders, presentations, banners, and other step-based applications"/>
+  <meta name="twitter:title" content="Sequence.js - The responsive CSS animation framework"/>
+  <meta name="twitter:site" content="@IanLunn"/>
+  <meta name="twitter:domain" content="http://www.sequencejs.com/"/>
+  <meta name="twitter:image:src" content="http://www.sequencejs.com/images/sequence-logo.png"/>
+  <meta name="twitter:creator" content="@IanLunn"/>
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <link href='//fonts.googleapis.com/css?family=Ubuntu:500,400,300,700|Montserrat:400,700|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  <link href="css/demo-page.css" rel="stylesheet" media="all">
+  <link href="css/sequence-theme.intro.css" rel="stylesheet" media="all">
+
+  <link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/touch-icon.png" />
+
+  <!--[if lt IE 9]>
+    <script src="scripts/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <!--[if lt IE 10]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Sequence.js Themes will use the <a href="http://www.sequencejs.com/documentation/#browser-support-and-fallback-mode" title="Browser Support and Fallback Mode">Fallback Theme</a>. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+
+    <div id="sequence" class="seq">
+
+      <div class="seq-screen">
+        <ul class="seq-canvas">
+
+          <li class="seq-step1 seq-in" id="step1">
+          sdgfsd
+            <div class="seq-content seq-valign" data-seq>
+              <div class="seq-instructions">
+                <h3>Easily add CSS transitions to step-based applications using "in" and "out" CSS classes</h3>
+              </div> 
+            </div>
+          </li>
+
+          <li class="seq-step2" id="step2">
+            <div class="seq-code-pane seq-valign">
+
+              <button type="button" class="seq-view-code">
+                <i class="fa fa-angle-double-up"></i> Show Code
+              </button>
+
+              <div class="seq-code">
+
+                <div class="seq-code-block" data-seq>
+                  <i class="seq-step-icon">2</i>
+                  <code>
+                    <span>.seq-out .content {</span>
+                    <span class="seq-code-1">transform: translateY(-100%);</span>
+                    <span class="seq-code-1">transition: .2s;</span>
+                    <span>}</span>
+                  </code>
+                </div>
+
+                <div class="seq-code-block" data-seq>
+                  <i class="seq-step-icon">3</i>
+                  <code>
+                    <span>.content {</span>
+                    <span class="seq-code-1">transform: translateY(100%);</span>
+                    <span>}</span>
+                  </code>
+                </div>
+
+                <div class="seq-code-block" data-seq>
+                  <i class="seq-step-icon">4</i>
+                  <code>
+                    <span>.seq-in .content {</span>
+                    <span class="seq-code-1">transform: translateY(0);</span>
+                    <span class="seq-code-1">transition: .25s;</span>
+                    <span>}</span>
+                  </code>
+                </div>
+              </div>
+
+            </div>
+            <div class="seq-content seq-valign" data-seq>
+
+              <div class="seq-instruction">
+
+                <div class="seq-title">
+                  <object class="seq-instruction-icon" data="images/bracket-open.svg" type="image/svg+xml">
+                    <img src="images/bracket-open.png" alt="An opening code bracket" />
+                  </object>
+
+                  <h2>Step 2</h2>
+
+                  <object class="seq-instruction-icon" data="images/bracket-close.svg" type="image/svg+xml">
+                    <img src="images/bracket-close.png" alt="A closing code bracket" />
+                  </object>
+                </div>
+
+                <h3>Sequence.js takes care of the functionality so you can concentrate on presenting your content in style</h3>
+
+                <div class="seq-step">
+                  <p>By going to the next step, you caused step 1 to transition from <code>in<sup class="seq-step-icon">1</sup></code> to <code>out<sup class="seq-step-icon">2</sup></code> and step 2 to transition from <code>start<sup class="seq-step-icon">3</sup></code> to <code>in<sup class="seq-step-icon">4</sup></code>. All with just several of lines of CSS.</p>
+                  <p class="seq-tip seq-bulb">When navigating backwards Sequence.js can automatically reverse these transitions.</p>
+                </div>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="seq-step3" id="step3">
+            <div class="seq-code-pane seq-valign">
+
+              <button type="button" class="seq-view-code">
+                <i class="fa fa-angle-double-up"></i> Show Code
+              </button>
+
+              <div class="seq-code">
+
+                <div class="seq-code-block" data-seq>
+                  <code>
+                    <span>.seq-in .rotate {</span>
+                    <span class="seq-code-1">animation-name: rotate;</span>
+                    <span class="seq-code-1">animation-duration: 1s;</span>
+                    <span>}</span>
+                  </code>
+                </div>
+
+                <div class="seq-code-block" data-seq>
+                  <code>
+                    <span>.seq-in .fade {</span>
+                    <span class="seq-code-1">animation-name: fade;</span>
+                    <span class="seq-code-1">animation-duration: 1s;</span>
+                    <span>}</span>
+                  </code>
+                </div>
+
+                <div class="seq-code-block" data-seq>
+                  <code>
+                    <span>.seq-in .threed {</span>
+                    <span class="seq-code-1">animation-name: threed;</span>
+                    <span class="seq-code-1">animation-duration: 1s;</span>
+                    <span>}</span>
+                  </code>
+                </div>
+              </div>
+
+            </div>
+            <div class="seq-content seq-valign" data-seq>
+
+              <div class="seq-instruction">
+                <div class="seq-title">
+                  <object class="seq-instruction-icon" data="images/bracket-open.svg" type="image/svg+xml">
+                    <img src="images/bracket-open.png" alt="An opening code bracket" />
+                  </object>
+
+                  <h2>Step 3</h2>
+
+                  <object class="seq-instruction-icon" data="images/bracket-close.svg" type="image/svg+xml">
+                    <img src="images/bracket-close.png" alt="A closing code bracket" />
+                  </object>
+                </div>
+
+                <h3>Create unique animated applications using any CSS properties you wish</h3>
+                <div class="seq-step">
+                  <p class="seq-tip seq-bulb">Sequence.js doesn't limit you to specific HTML/CSS. Use the properties, attributes, workflow, conventions, and libraries you're familiar with.</p>
+                </div>
+
+                <ul class="seq-examples">
+                  <li>
+                    <object class="seq-transform seq-example" data="images/square.svg" type="image/svg+xml">
+                      <img src="images/square.png" alt="A blue square" width="42" height="42" />
+                    </object>
+                    <p>Transform</p>
+                  </li>
+                  <li>
+                    <object class="seq-scale seq-example" data="images/square.svg" type="image/svg+xml">
+                      <img src="images/square.png" alt="A blue square" width="42" height="42" />
+                    </object>
+                    <p>Scale</p>
+                  </li>
+                  <li>
+                    <object class="seq-rotate seq-example" data="images/square.svg" type="image/svg+xml">
+                      <img src="images/square.png" alt="A blue square" width="42" height="42" />
+                    </object>
+                    <p>Rotate</p>
+                  </li>
+                  <li>
+                    <object class="seq-fade seq-example" data="images/square.svg" type="image/svg+xml">
+                      <img src="images/square.png" alt="A blue square" width="42" height="42" />
+                    </object>
+                    <p>Fade</p>
+                  </li>
+                  <li>
+                    <object class="seq-threed seq-example" data="images/square.svg" type="image/svg+xml">
+                      <img src="images/square.png" alt="A blue square" width="42" height="42" />
+                    </object>
+                    <p>3D</p>
+                  </li>
+                  <li>
+                    <div class="seq-doors seq-example" role="img" aria-label="Two small blue rectangles vertically split, moving toward and away from each other like sliding doors"></div>
+                    <p>&amp; more</p>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+        <button type="button" class="seq-prev" aria-label="Previous"><i class="fa fa-chevron-circle-left"></i> Previous</button>
+        <button type="button" class="seq-next" aria-label="Next">Next <i class="fa fa-chevron-circle-right"></i></button>
+      </fieldset>
+    </div>
+
+    <ul role="navigation" aria-label="Pagination" aria-controls="sequence" class="seq-pagination">
+      <li class="seq-current"><a href="#step1" rel="step1" title="Go to slide 1: Intro"><i class="fa fa-bookmark"></i> <span>Intro</span></a></li>
+      <li><a href="#step2" rel="step2" title="Go to slide 2: How It Works"><i class="fa fa-info-circle"></i> <span>How It Works</span></a></li>
+      <li><a href="#step3" rel="step3" title="Go to slide 3: Animation"><i class="fa fa-bolt"></i> <span>Animation</span></a></li>
+    </ul>
+
+
+
+  <script type="text/javascript">
+/* <![CDATA[ */
+  (function() {
+      var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+      t.parentNode.insertBefore(s, t);
+  })();
+/* ]]> */</script>
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-11991680-7', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script src="scripts/imagesloaded.pkgd.min.js"></script>
+  <script src="scripts/hammer.min.js"></script>
+  <script src="scripts/sequence.min.js"></script>
+  <script src="scripts/sequence-theme.intro.js"></script>
+</body>
+</html>
