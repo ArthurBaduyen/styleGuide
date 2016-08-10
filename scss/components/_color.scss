@@ -35,6 +35,40 @@
 .bg-secondary-dark40 { background-color: darken(map-get($foundation-palette, secondary), 40%) }
 .bg-secondary-dark50 { background-color: darken(map-get($foundation-palette, secondary), 50%) }
 
-.bg-white {
-	background-color: #fff;
-}
+.bg-white 
+	{
+		background-color: #fff;
+	}
+
+.columns 
+	{
+		padding: 0px;
+	}
+
+.custom-side-nav 
+	{
+		background-color: #222;
+	}
+
+.custom-side-nav ul li
+	{
+		border-bottom: solid 1px #1f1f1f;
+		-webkit-transition: background-color .2s, color .2s; /* Safari */ 
+		transition: background-color .2s color .2s;
+	}
+
+.custom-side-nav ul li:hover
+	{
+		background-color:#1f1f1f;
+	}
+
+.custom-side-nav ul li a
+	{
+		color: #ccc;
+	}
+
+.custom-side-nav ul li a:hover
+	{
+		color: #fff;
+	}
+
