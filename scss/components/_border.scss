@@ -41,6 +41,12 @@
 .bl { border-left: solid 1px #E9E9E9; }
 .br { border-right: solid 1px #E9E9E9; }
 
+.border {
+	@extend .bt;
+	@extend .bb;
+	@extend .bl;
+	@extend .br;
+}
 
 .shadow {
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;

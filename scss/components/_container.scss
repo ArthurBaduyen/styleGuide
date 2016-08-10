@@ -16,7 +16,13 @@
 	}
 
 	.component-code {
-		@extend .padding-1;
+		// @extend .padding-1;
+		@extend .pt-1;
+		@extend .pb-1;
 		@extend .bt;
+		div {
+			// @extend .pr-half;
+			@extend .br;
+		}
 	}
 }
