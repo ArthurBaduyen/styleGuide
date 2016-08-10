@@ -10,7 +10,6 @@
 .bg-warning { background-color: map-get($foundation-palette, warning); }
 .bg-alert { background-color: map-get($foundation-palette, alert); }
 
-
 .bg-primary-light10 { background-color: lighten(map-get($foundation-palette, primary), 10%) }
 .bg-primary-light20 { background-color: lighten(map-get($foundation-palette, primary), 20%) }
 .bg-primary-light30 { background-color: lighten(map-get($foundation-palette, primary), 30%) }
@@ -21,7 +20,6 @@
 .bg-primary-dark30 { background-color: darken(map-get($foundation-palette, primary), 30%) }
 .bg-primary-dark40 { background-color: darken(map-get($foundation-palette, primary), 40%) }
 .bg-primary-dark50 { background-color: darken(map-get($foundation-palette, primary), 50%) }
-
 
 
 .bg-secondary-light10 { background-color: lighten(map-get($foundation-palette, secondary), 10%) }
@@ -35,6 +33,7 @@
 .bg-secondary-dark40 { background-color: darken(map-get($foundation-palette, secondary), 40%) }
 .bg-secondary-dark50 { background-color: darken(map-get($foundation-palette, secondary), 50%) }
 
-.bg-white {
-	background-color: #fff;
-}
+.bg-white { background-color: #fff; }
+.bg-black { background-color: #000; }
+.bg-grey { background-color: #323232; }
+.bg-grey-light { background-color: #E9E9E9; }
