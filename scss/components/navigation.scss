@@ -1,0 +1,61 @@
+.custom-side-nav
+	{
+		background-color: #222;
+		position: fixed;
+		height: 100%;
+	}
+
+.custom-side-nav ul li
+	{
+		border-bottom: solid 1px #1f1f1f;
+		-webkit-transition: background-color .2s, color .2s; /* Safari */ 
+		transition: background-color .2s color .2s;
+	}
+
+.custom-side-nav ul li:hover
+	{
+		background-color:#1f1f1f;
+	}
+
+.custom-side-nav ul li a
+	{
+		color: #ccc;
+	}
+
+.custom-side-nav ul li a:hover
+	{
+		color: #fff;
+	}
+
+.custom-side-subnav ul
+	{
+		background-color: #1f1f1f !important;
+	}
+
+.custom-side-subnav li
+	{
+		background-color: #1f1f1f !important;
+	}
+
+.custom-side-subnav li:hover
+	{
+		background-color: #181818 !important;
+	}
+
+.custom
+	{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0auto;
+		text-align: center;
+	}
+
+.custom img
+	{
+		width: 30%;
+	}
+
+#styleguide-navigation.columns 
+	{
+		padding: 0;
+	}
