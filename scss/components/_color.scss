@@ -1,0 +1,40 @@
+.txt-primary { color: map-get($foundation-palette, primary); }
+.txt-secondary { color: map-get($foundation-palette, secondary); }
+.txt-success { color: map-get($foundation-palette, success); }
+.txt-warning { color: map-get($foundation-palette, warning); }
+.txt-alert { color: map-get($foundation-palette, alert); }
+
+.bg-primary { background-color: map-get($foundation-palette, primary); }
+.bg-secondary { background-color: map-get($foundation-palette, secondary); }
+.bg-success { background-color: map-get($foundation-palette, success); }
+.bg-warning { background-color: map-get($foundation-palette, warning); }
+.bg-alert { background-color: map-get($foundation-palette, alert); }
+
+
+.bg-primary-light10 { background-color: lighten(map-get($foundation-palette, primary), 10%) }
+.bg-primary-light20 { background-color: lighten(map-get($foundation-palette, primary), 20%) }
+.bg-primary-light30 { background-color: lighten(map-get($foundation-palette, primary), 30%) }
+.bg-primary-light40 { background-color: lighten(map-get($foundation-palette, primary), 40%) }
+.bg-primary-light50 { background-color: lighten(map-get($foundation-palette, primary), 50%) }
+.bg-primary-dark10 { background-color: darken(map-get($foundation-palette, primary), 10%) }
+.bg-primary-dark20 { background-color: darken(map-get($foundation-palette, primary), 20%) }
+.bg-primary-dark30 { background-color: darken(map-get($foundation-palette, primary), 30%) }
+.bg-primary-dark40 { background-color: darken(map-get($foundation-palette, primary), 40%) }
+.bg-primary-dark50 { background-color: darken(map-get($foundation-palette, primary), 50%) }
+
+
+
+.bg-secondary-light10 { background-color: lighten(map-get($foundation-palette, secondary), 10%) }
+.bg-secondary-light20 { background-color: lighten(map-get($foundation-palette, secondary), 20%) }
+.bg-secondary-light30 { background-color: lighten(map-get($foundation-palette, secondary), 30%) }
+.bg-secondary-light40 { background-color: lighten(map-get($foundation-palette, secondary), 40%) }
+.bg-secondary-light50 { background-color: lighten(map-get($foundation-palette, secondary), 50%) }
+.bg-secondary-dark10 { background-color: darken(map-get($foundation-palette, secondary), 10%) }
+.bg-secondary-dark20 { background-color: darken(map-get($foundation-palette, secondary), 20%) }
+.bg-secondary-dark30 { background-color: darken(map-get($foundation-palette, secondary), 30%) }
+.bg-secondary-dark40 { background-color: darken(map-get($foundation-palette, secondary), 40%) }
+.bg-secondary-dark50 { background-color: darken(map-get($foundation-palette, secondary), 50%) }
+
+.bg-white {
+	background-color: #fff;
+}
