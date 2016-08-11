@@ -25,7 +25,7 @@
 		@extend .bt;
 		div {
 			// @extend .pr-half;
-			@extend .br;
+			// @extend .br;
 
 			h6 {
 				// background-color: #f5f5f5;
@@ -41,6 +41,7 @@
 			.component-code-container {
 				background-color: #f1f1f1;
 				@extend .padding-1;
+				font-size: .9rem;
 			}
 		}
 	}
