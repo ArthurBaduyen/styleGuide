@@ -21,7 +21,7 @@
             <ul class="vertical menu" data-dropdown-menu>
               <hr class="margin-0 padding-0"/>
               <li class="padding-half pl-1"><a href="#">Color Pallete</a></li>
-              <li class="padding-half pl-1"><a href="#">Typography</a></li>
+              <li class="padding-half pl-1"><a href="#anchor-typography">Typography</a></li>
               <li class="padding-half pl-1"><a href="#">Navigation Bar</a></li>
               <li class="padding-half pl-1"><a href="#">Menu Bar</a>
                 
@@ -162,7 +162,7 @@
             <div class="medium-12">
               <div class="component-container">
                 <div class="component-title">
-                  Typography
+                  <a name="anchor-typography"></a>Typography
                 </div>
 
                 <div class="component-main mt-2 mb-2">
@@ -233,29 +233,29 @@
                         <h6 class="margin-0"> Header Six</h6>
                       </div>                   
                     </div>
-                
                   </div>
                   <!-- END -->
                 </div>
-
+                
                 <div class="row component-code">
+                  <!-- HTML CODES START HERE-->
                   <div class="medium-6 columns">
                     <h6>HTML</h6>
                     <div class="component-code-container id="myHtml"">
                       <p class="margin-1">
                           &lt;div class="typo-section" id="typo-primary"&gt; <br />
 
-                          <span class="ml-2"></span>&lt;p class="regular"&gt; <span>This is a Regular text</span> &lt;/p&gt;<br />
+                          <span class="ml-2"></span>&lt;p class="regular"&gt; <span>Regular</span> &lt;/p&gt;<br />
 
-                          <span class="ml-2"></span>&lt;p class="light"&gt; <span>This is a Light text</span> &lt;/p&gt;<br />
+                          <span class="ml-2"></span>&lt;p class="light"&gt; <span>Light</span> &lt;/p&gt;<br />
 
-                          <span class="ml-2"></span>&lt;p class="italic"&gt; <span>This is a Italic text</span> &lt;/p&gt;<br />
+                          <span class="ml-2"></span>&lt;p class="italic"&gt; <span>Italic</span> &lt;/p&gt;<br />
 
-                          <span class="ml-2"></span>&lt;p class="semibold"&gt; <span>This is a Semi Bold text</span> &lt;/p&gt;<br />
+                          <span class="ml-2"></span>&lt;p class="semibold"&gt; <span>Semi Bold</span> &lt;/p&gt;<br />
 
-                          <span class="ml-2"></span>&lt;p class="bold"&gt; <span>This is a Bold text</span> &lt;/p&gt;<br />
+                          <span class="ml-2"></span>&lt;p class="bold"&gt; <span>Bold</span> &lt;/p&gt;<br />
 
-                          <span class="ml-2"></span>&lt;p class="extrabold"&gt; <span>This is a Extra Bold text</span> &lt;/p&gt;<br />
+                          <span class="ml-2"></span>&lt;p class="extrabold"&gt; <span>Extra Bold</span> &lt;/p&gt;<br />
 
                           &lt;/div&gt;
                       </p>
@@ -278,54 +278,107 @@
                           &lt;/div&gt;
                       </p>
                     </div>
-                      
                   </div>
+
+                  <!-- CSS CODES START HERE-->
                   <div class="medium-6 columns">
                     <h6>CSS</h6>
                     <div class="component-code-container id="myCss"">
+                      <p class="margin-1">
+                          .#typo-primary h1, h2, h3, h4, h5, h6
+                            { <br />
+                              <span class="ml-2"></span>
+                                {
+                                  font-family: "Open Sans", sans-serif !important;
+                                }<br />
+                            }
+                      </p>
+
+                      <p class="margin-1">
+                          .#typo-secondary h1, h2, h3, h4, h5, h6
+                            { <br />
+                              <span class="ml-2"></span>
+                                {
+                                  font-family: "Roboto", sans-serif !important;
+                                }<br />
+                            }
+                      </p>
+
+
                       <p class="margin-1">
                           .typo-section
                             { <br />
                               <span class="ml-2"></span>.regular
                                 {
-                                  font-size: 17px;
                                   font-weight: regular;
                                 }<br />
 
                               <span class="ml-2"></span>.light
                                 {
-                                  font-size: 17px;
                                   font-weight: 300;
                                 }<br />
 
                               <span class="ml-2"></span>.italic
                                 {
-                                  font-size: 17px;
                                   font-weight: regular;
                                   font-style: italic;
                                 }<br />
 
                               <span class="ml-2"></span>.semibold
                                 {
-                                  font-size: 17px;
                                   font-weight: 600;
                                 }<br />
 
                               <span class="ml-2"></span>.bold
                                 {
-                                  font-size: 17px;
                                   font-weight: bold;
                                 }<br />
 
                               <span class="ml-2"></span>.extrabold
                                 {
-                                  font-size: 17px;
                                   font-weight: 800;
+                                }<br />
+                            }
+                      </p>
+
+                      <p class="margin-1">
+                          #typo-secondary, #typo-primary
+                            { <br />
+                              <span class="ml-2"></span>font-weight: 600; <br />
+                              <span class="ml-2"></span>h1 
+                                {
+                                  font-size: 36px;
+                                }<br />
+
+                              <span class="ml-2"></span>h2 
+                                {
+                                  font-size: 30px;
+                                }<br />
+
+                              <span class="ml-2"></span>h3
+                                {
+                                  font-size: 24px;
+                                }<br />
+
+                              <span class="ml-2"></span>h4
+                                {
+                                  font-size: 18px;
+                                }<br />
+
+                              <span class="ml-2"></span>h5
+                                {
+                                  font-size: 14px;
+                                }<br />
+
+                              <span class="ml-2"></span>h6
+                                {
+                                  font-size: 12px;
                                 }<br />
                             }
                       </p>
                     </div>
                   </div>
+
                 </div> 
               </div>
             </div>
@@ -348,21 +401,21 @@
                 <button type="button" class="success button">Button</button>
                 <button type="button" class="alert button">Button</button>
 
-                <a class="tiny button" href="#">So Tiny</a>
-                <a class="small button" href="#">So Small</a>
-                <a class="large button" href="#">So Large</a>
+                <a class="tiny button" href="#">Button</a>
+                <a class="small button" href="#">Button</a>
+                <a class="large button" href="#">Button</a>
 
                 
 
                 <h5>Button group</h5>
                 <div class="button-group">
-                  <a class="button">One</a>
-                  <a class="button">Two</a>
-                  <a class="button">Three</a>
+                  <a class="button">Button</a>
+                  <a class="button">Button</a>
+                  <a class="button">Button</a>
                 </div>
 
                 <h6>Expanded</h6>
-                <a class="expanded button" href="#">Such Expand</a>
+                <a class="expanded button" href="#">Button</a>
               </div>
 
               <div class="row component-code">
