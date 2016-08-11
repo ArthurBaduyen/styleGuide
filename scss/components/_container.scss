@@ -2,12 +2,15 @@
 .component-container {
 	@extend .shadow; 
 	@extend .bg-white;
-	@extend .mb-1;
+	@extend .mb-2;
 
 	.component-title {
 		@extend .bb;
 		@extend .padding-1;
 		@extend .mb-1;
+		font-weight: bold;
+		font-family: robotto;
+		font-size: 1.6rem;
 	}
 
 	.component-main {
