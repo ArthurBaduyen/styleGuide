@@ -1,12 +1,12 @@
-#typo-opensans
+#typo-primary
 	{
-		font-family: Open Sans;
+		font-family: Open Sans !important;
 	}
 
-
-#typo-roboto
+#typo-secondary
 	{
-		font-family: Roboto;
+		font-family: Roboto !important;
+		line-height: auto;
 	}
 
 .typo-title span.font-style1
@@ -64,37 +64,37 @@
 		font-weight: 800;
 	}
 
-.typo-headers span.h1
+#typo-secondary h1, #typo-primary h1
 	{
 		font-size: 36px;
 		font-weight: 600;
 	}
 
-.typo-headers span.h2
+#typo-secondary h2, #typo-primary h2
 	{
 		font-size: 30px;
 		font-weight: 600;
 	}
 
-.typo-headers span.h3
+#typo-secondary h3, #typo-primary h3
 	{
 		font-size: 24px;
 		font-weight: 600;
 	}
 
-.typo-headers span.h4
+#typo-secondary h4, #typo-primary h4
 	{
 		font-size: 18px;
 		font-weight: 600;
 	}
 
-.typo-headers span.h5
+#typo-secondary h5, #typo-primary h5
 	{
 		font-size: 14px;
 		font-weight: 600;
 	}
 
-.typo-headers span.h6
+#typo-secondary h6, #typo-primary h6
 	{
 		font-size: 12px;
 		font-weight: 600;
