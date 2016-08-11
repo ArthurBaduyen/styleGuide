@@ -22,7 +22,7 @@
 		// @extend .padding-1;
 		@extend .pt-1;
 		@extend .pb-1;
-		@extend .bt;
+		// @extend .bt;
 		div {
 			// @extend .pr-half;
 			// @extend .br;
@@ -42,6 +42,10 @@
 				background-color: #f1f1f1;
 				@extend .padding-1;
 				font-size: .9rem;
+				
+				// ----- to active scroll
+				// max-height: 20rem;
+				// overflow: auto;
 			}
 		}
 	}

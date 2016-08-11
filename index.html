@@ -142,13 +142,13 @@
               <div class="row component-code">
                 <div class="medium-6 column">
                   <h6>HTML</h6>
-                  <div class="component-code-container">
+                  <div class="component-code-container" id="myHtml">
                     &lt;html tags&gt;
                   </div>
                 </div>
                 <div class="medium-6 column">
                   <h6>CSS</h6>
-                  <div class="component-code-container">
+                  <div class="component-code-container " id="myCss">
                     .class
                   </div>
                 </div>
@@ -241,7 +241,7 @@
                   <!-- HTML CODES START HERE-->
                   <div class="medium-6 columns">
                     <h6>HTML</h6>
-                    <div class="component-code-container">
+                    <div class="component-code-container id="myHtml"">
                       <p class="margin-1">
                           &lt;div class="typo-section" id="typo-primary"&gt; <br />
 
@@ -283,7 +283,7 @@
                   <!-- CSS CODES START HERE-->
                   <div class="medium-6 columns">
                     <h6>CSS</h6>
-                    <div class="component-code-container">
+                    <div class="component-code-container id="myCss"">
                       <p class="margin-1">
                           .#typo-primary h1, h2, h3, h4, h5, h6
                             { <br />
@@ -392,7 +392,30 @@
                 Buttons
               </div>
               <div class="component-main">
-                <h6>COMPONENT GOES HERE</h6>
+                
+                <h5>Basic Button</h5>
+                <a href="#" class="button">Button</a>
+                <a href="#features" class="button">Button</a>
+
+                <!-- Buttons (actions) -->
+                <button type="button" class="success button">Button</button>
+                <button type="button" class="alert button">Button</button>
+
+                <a class="tiny button" href="#">Button</a>
+                <a class="small button" href="#">Button</a>
+                <a class="large button" href="#">Button</a>
+
+                
+
+                <h5>Button group</h5>
+                <div class="button-group">
+                  <a class="button">Button</a>
+                  <a class="button">Button</a>
+                  <a class="button">Button</a>
+                </div>
+
+                <h6>Expanded</h6>
+                <a class="expanded button" href="#">Button</a>
               </div>
 
               <div class="row component-code">
@@ -533,6 +556,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <script src="js/app.js"></script>
   </body>
 </html>
