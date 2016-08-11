@@ -1,3 +1,35 @@
+#typo-secondary, #typo-primary{
+	h1 {
+		font-size: 36px;
+		font-weight: 600;
+	}
+
+	h2 {
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	h3 {
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	h4 {
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	h5 {
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	h6 {
+		font-size: 12px;
+		font-weight: 600;
+	}
+}
+
 #typo-primary
 	{
 		font-family: Open Sans !important;
@@ -9,93 +41,68 @@
 		line-height: auto;
 	}
 
-.typo-title span.font-style1
+.typo-title {
+
+	span
 	{
+		&.font-style1 {
 		font-size: 25px;
 		font-weight: bolder;
+		}
+		&.font-style2
+		{
+			font-size: 120px;
+			font-weight: bolder;
+		}
 	}
+} 
 
-.typo-title span.font-style2
-	{
-		font-size: 120px;
-		font-weight: bolder;
-	}
+.typo-section 
+{
+	span {
+		&.regular1
+		{
+			font-size: 25px;
+			font-weight: regular;
+		}
+		&.regular
+		{
+			font-size: 17px;
+			font-weight: regular;
+		}
 
-.typo-section span.regular1
-	{
-		font-size: 25px;
-		font-weight: regular;
-	}
+		&.light
+		{
+			font-size: 17px;
+			font-weight: 300;
+		}
 
-.typo-section span.regular
-	{
-		font-size: 17px;
-		font-weight: regular;
-	}
+		&.italic
+		{
+			font-size: 17px;
+			font-weight: regular;
+			font-style: italic;
+		}
 
-.typo-section span.light
-	{
-		font-size: 17px;
-		font-weight: 300;
-	}
+		&.semibold
+		{
+			font-size: 17px;
+			font-weight: 600;
+		}
 
-.typo-section span.italic
-	{
-		font-size: 17px;
-		font-weight: regular;
-		font-style: italic;
-	}
+		&.bold
+		{
+			font-size: 17px;
+			font-weight: bold;
+		}
 
-.typo-section span.semibold
-	{
-		font-size: 17px;
-		font-weight: 600;
+		&.extrabold
+		{
+			font-size: 17px;
+			font-weight: 800;
+		}
 	}
+} 
 
-.typo-section span.bold
-	{
-		font-size: 17px;
-		font-weight: bold;
-	}
 
-.typo-section span.extrabold
-	{
-		font-size: 17px;
-		font-weight: 800;
-	}
 
-#typo-secondary h1, #typo-primary h1
-	{
-		font-size: 36px;
-		font-weight: 600;
-	}
-
-#typo-secondary h2, #typo-primary h2
-	{
-		font-size: 30px;
-		font-weight: 600;
-	}
-
-#typo-secondary h3, #typo-primary h3
-	{
-		font-size: 24px;
-		font-weight: 600;
-	}
-
-#typo-secondary h4, #typo-primary h4
-	{
-		font-size: 18px;
-		font-weight: 600;
-	}
-
-#typo-secondary h5, #typo-primary h5
-	{
-		font-size: 14px;
-		font-weight: 600;
-	}
-
-#typo-secondary h6, #typo-primary h6
-	{
-		font-size: 12px;
-		font-weight: 600;
-	}
