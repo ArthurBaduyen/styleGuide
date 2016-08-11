@@ -26,6 +26,22 @@
 		div {
 			// @extend .pr-half;
 			@extend .br;
+
+			h6 {
+				// background-color: #f5f5f5;
+				@extend .bg-primary;
+				@extend .mb-0;
+				@extend .txt-white;
+				@extend .pl-half;
+				@extend .pr-half;
+				font-weight: bold;
+				display: inline-block;
+			}
+
+			.component-code-container {
+				background-color: #f1f1f1;
+				@extend .padding-1;
+			}
 		}
 	}
 }
