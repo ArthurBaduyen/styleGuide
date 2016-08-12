@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 var text = document.getElementById("myHtml1");
 var str = text.innerHTML,
-    reg = /regular|light|italic|&lt;|&gt;|bold|class/ig; //g is to replace all occurances
+    reg = /&lt;|&gt;|p |div|bold|class/ig; //g is to replace all occurances
 
 //fixing a bit
 var toStr = String(reg);
@@ -37,12 +37,24 @@ var color = (toStr.replace('\/g', '|')).substring(1);
 var colors = color.split("|");
 
 if (colors.indexOf("&lt;") > -1) {
-    str = str.replace(/&lt;/g, '<span style="color:red;">&lt;</span>');
+    str = str.replace(/&lt;/g, '<span style="color:#47da7d;">&lt;</span>');
 }
 
 if (colors.indexOf("&gt;") > -1) {
-    str = str.replace(/&gt;/g, '<span style="color:red;">&gt;</span>');
+    str = str.replace(/&gt;/g, '<span style="color:#47da7d;">&gt;</span>');
 }
+
+// if (colors.indexOf("p ") > -1) {
+    // str = str.replace(/p /g, '<span style="color:green;">p </span>');
+// }
+
+if (colors.indexOf("div") > -1) {
+    str = str.replace(/div/g, '<span style="color:#f35393;">div</span>');
+}
+
+// if (colors.indexOf("class") > -1) {
+//     str = str.replace(/class/g, '<span style="color:orange;">class</span>');
+// }
 
 // if (colors.indexOf("class") > -1) {
 //     str = str.replace(/class/g, '<span class="txt-primary">class</span>');
