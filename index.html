@@ -167,16 +167,16 @@
 
                 <div class="component-main mt-2 mb-2">
                   <!-- START OPEN SANS STYLES -->
-                  <div class="row" id="typo-primary">
-                    <div class="medium-3 small-12 columns">
+                  <div class="row">
+                    <div class="medium-2 small-12 columns" id="typo-primary">
                       <div class="typo-title">
                         <span class="font-style1">FONT FAMILY :</span><br />
-                        <span class="label [round radius]">PRIMARY</span><br />
+                        <span class="custom-label b-solid b-8 bt-1 bb-1 b-radmax">PRIMARY</span><br />
                         <span class="font-style2">Aa</span>
                       </div>
                     </div>
                     
-                    <div class="medium-2 small-12 columns">
+                    <div class="medium-4 small-12 columns" id="typo-primary">
                       <div class="typo-section">
                         <span class="regular1">"OPEN SANS"</span><br />
                         <span class="regular">Regular</span><br />
@@ -187,31 +187,18 @@
                         <span class="extrabold">Extra Bold</span><br />
                       </div>                    
                     </div>
-
-                    <div class="medium-5 small-12 columns">
-                       <div id="typo-primary">
-                        <h1 class="margin-0"> Header One</h1>
-                        <h2 class="margin-0"> Header Two</h2>
-                        <h3 class="margin-0"> Header Three</h3>
-                        <h4 class="margin-0"> Header Four</h4>
-                        <h5 class="margin-0"> Header Five</h5>
-                        <h6 class="margin-0"> Header Six</h6>
-                      </div>                   
-                    </div>               
-                  </div>
                   <!-- END -->
 
                   <!-- START ROBOTO STYLES -->
-                  <div class="row mt-3" id="typo-secondary">
-                    <div class="medium-3 small-12 columns">
+                    <div class="medium-2 small-12 columns" id="typo-secondary">
                       <div class="typo-title">
                         <span class="font-style1">FONT FAMILY :</span><br />
-                        <span class="label">SECONDARY</span><br />
+                        <span class="custom-label b-solid b-8 bt-1 bb-1 b-radmax">SECONDARY</span><br />
                         <span class="font-style2">Aa</span>
                       </div>
                     </div>
                     
-                    <div class="medium-2 small-12 columns">
+                    <div class="medium-4 small-12 columns" id="typo-secondary">
                       <div class="typo-section">
                         <span class="regular1">"ROBOTO"</span><br />
                         <span class="regular">Regular</span><br />
@@ -222,20 +209,10 @@
                         <span class="extrabold">Extra Bold</span><br />
                       </div>                    
                     </div>
-
-                    <div class="medium-5 small-12 columns">
-                       <div id="typo-secondary">
-                        <h1 class="margin-0"> Header One</h1>
-                        <h2 class="margin-0"> Header Two</h2>
-                        <h3 class="margin-0"> Header Three</h3>
-                        <h4 class="margin-0"> Header Four</h4>
-                        <h5 class="margin-0"> Header Five</h5>
-                        <h6 class="margin-0"> Header Six</h6>
-                      </div>                   
-                    </div>
                   </div>
-                  <!-- END -->
                 </div>
+                <!-- END -->
+
                 <div class="row component-code">
                   <!-- HTML CODES START HERE-->
                   <div class="medium-6 columns">
@@ -258,24 +235,6 @@
 
                           &lt;/div&gt;
                       </p>
-
-                      <p class="margin-1">
-                          &lt;div id="typo-primary"&gt; <br />
-
-                          <span class="ml-2"></span>&lt;h1&gt; <span>This is Header 1</span> &lt;/h1&gt;<br />
-
-                          <span class="ml-2"></span>&lt;h2&gt; <span>This is Header 2</span> &lt;/h2&gt;<br />
-
-                          <span class="ml-2"></span>&lt;h3&gt; <span>This is Header 3</span> &lt;/h3&gt;<br />
-
-                          <span class="ml-2"></span>&lt;h4&gt; <span>This is Header 4</span> &lt;/h4&gt;<br />
-
-                          <span class="ml-2"></span>&lt;h5&gt; <span>This is Header 5</span> &lt;/h5&gt;<br />
-
-                          <span class="ml-2"></span>&lt;h6&gt; <span>This is Header 6</span> &lt;/h6&gt;<br />
-
-                          &lt;/div&gt;
-                      </p>
                     </div>
                   </div>
 
@@ -284,23 +243,17 @@
                     <h6>CSS</h6>
                     <div class="component-code-container" id="myCss">
                       <p class="margin-1">
-                          .#typo-primary h1, h2, h3, h4, h5, h6
-                            { <br />
-                              <span class="ml-2"></span>
-                                {
-                                  font-family: "Open Sans", sans-serif !important;
-                                }<br />
-                            }
+                        .#typo-primary
+                          { <br />
+                            <span class="ml-2"></span>font-family: "Open Sans" !important;<br />
+                          }
                       </p>
 
                       <p class="margin-1">
-                          .#typo-secondary h1, h2, h3, h4, h5, h6
-                            { <br />
-                              <span class="ml-2"></span>
-                                {
-                                  font-family: "Roboto", sans-serif !important;
-                                }<br />
-                            }
+                        .#typo-secondary
+                          { <br />
+                            <span class="ml-2"></span>font-family: "Roboto" !important;<br />
+                          }
                       </p>
 
 
@@ -339,47 +292,107 @@
                                 }<br />
                             }
                       </p>
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="component-main mt-2 mb-2">
+                  <div class="row">
+                    <div class="medium-2 small-12 columns" id="typo-primary">
+                      <div class="typo-title">
+                        <span class="font-style1">FONT FAMILY :</span><br />
+                        <span class="custom-label b-solid b-8 bt-1 bb-1 b-radmax">PRIMARY</span><br />
+                        <span class="font-style2">Aa</span>
+                      </div>
+                    </div>
+
+                    <div class="medium-4 small-12 columns" id="typo-primary">
+                       <div id="typo-primary">
+                        <h1 class="margin-0"> Header One</h1>
+                        <h2 class="margin-0"> Header Two</h2>
+                        <h3 class="margin-0"> Header Three</h3>
+                        <h4 class="margin-0"> Header Four</h4>
+                        <h5 class="margin-0"> Header Five</h5>
+                        <h6 class="margin-0"> Header Six</h6>
+                      </div>                   
+                    </div> 
+
+                    <div class="medium-2 small-12 columns" id="typo-secondary">
+                      <div class="typo-title">
+                        <span class="font-style1">FONT FAMILY :</span><br />
+                        <span class="custom-label b-solid b-8 bt-1 bb-1 b-radmax">SECONDARY</span><br />
+                        <span class="font-style2">Aa</span>
+                      </div>
+                    </div>
+
+                    <div class="medium-4 small-12 columns" id="typo-secondary">
+                       <div id="typo-secondary">
+                        <h1 class="margin-0"> Header One</h1>
+                        <h2 class="margin-0"> Header Two</h2>
+                        <h3 class="margin-0"> Header Three</h3>
+                        <h4 class="margin-0"> Header Four</h4>
+                        <h5 class="margin-0"> Header Five</h5>
+                        <h6 class="margin-0"> Header Six</h6>
+                      </div>                   
+                    </div>
+                </div>
+              </div>
+
+
+                <div class="row component-code">
+                  <!-- HTML CODES START HERE-->
+                  <div class="medium-6 columns">
+                    <h6>HTML</h6>
+                    <div class="component-code-container" id="myHtml1">
+                      <p class="margin-1">
+                          &lt;div id="typo-primary"&gt; <br />
+
+                          <span class="ml-2"></span>&lt;h1&gt; <span>This is Header 1</span> &lt;/h1&gt;<br />
+
+                          <span class="ml-2"></span>&lt;h2&gt; <span>This is Header 2</span> &lt;/h2&gt;<br />
+
+                          <span class="ml-2"></span>&lt;h3&gt; <span>This is Header 3</span> &lt;/h3&gt;<br />
+
+                          <span class="ml-2"></span>&lt;h4&gt; <span>This is Header 4</span> &lt;/h4&gt;<br />
+
+                          <span class="ml-2"></span>&lt;h5&gt; <span>This is Header 5</span> &lt;/h5&gt;<br />
+
+                          <span class="ml-2"></span>&lt;h6&gt; <span>This is Header 6</span> &lt;/h6&gt;<br />
+
+                          &lt;/div&gt;
+                      </p>
+
+                      <p class="margin-1" >&lt;div id="typo-secondary"&gt;&lt;/div&gt;</p>
+                    </div>
+                  </div>
+
+                  <!-- CSS CODES START HERE-->
+                  <div class="medium-6 columns">
+                    <h6>CSS</h6>
+                    <div class="component-code-container" id="myCss">
+                      <p class="margin-1">
+                          .#typo-primary
+                            { <br />                    
+                                <span class="ml-2"></span>font-family: "Open Sans" !important; h1, h2, h3 ,h4 ,h5 ,h6 { <br />
+                                  <span class="ml-4"></span>font-family: "Open Sans" !important;<br />
+                                <span class="ml-2">}<br />
+                            }
+                      </p>
 
                       <p class="margin-1">
-                          #typo-secondary, #typo-primary
-                            { <br />
-                              <span class="ml-2"></span>font-weight: 600; <br />
-                              <span class="ml-2"></span>h1 
-                                {
-                                  font-size: 36px;
-                                }<br />
-
-                              <span class="ml-2"></span>h2 
-                                {
-                                  font-size: 30px;
-                                }<br />
-
-                              <span class="ml-2"></span>h3
-                                {
-                                  font-size: 24px;
-                                }<br />
-
-                              <span class="ml-2"></span>h4
-                                {
-                                  font-size: 18px;
-                                }<br />
-
-                              <span class="ml-2"></span>h5
-                                {
-                                  font-size: 14px;
-                                }<br />
-
-                              <span class="ml-2"></span>h6
-                                {
-                                  font-size: 12px;
-                                }<br />
+                          .#typo-secondary
+                            { <br />                    
+                                <span class="ml-2"></span>font-family: "Roboto" !important; h1, h2, h3 ,h4 ,h5 ,h6 { <br />
+                                  <span class="ml-4"></span>font-family: "Roboto" !important;<br />
+                                <span class="ml-2">}<br />
                             }
                       </p>
                     </div>
                   </div>
                 </div> 
 
-              </div>
+
+              </div>              
             </div>
         </div>
 
@@ -630,6 +643,7 @@
               <div class="component-title">
                 COMPONENT NAME
               </div>
+
               <div class="component-main">
                 <h6>COMPONENT GOES HERE</h6>
               </div>
