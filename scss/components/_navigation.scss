@@ -27,8 +27,7 @@
 		
 }
 
-.custom-side-subnav {
-	ul {
+ul.custom-side-subnav {
 		background-color: #1f1f1f !important;
 
 		li {
@@ -38,20 +37,19 @@
 				background-color: #181818 !important;
 			}
 		}
-	}
 }
 
 .custom {
-		width: 100%;
-		margin: 0 auto;
-		padding: 0 auto;
-		text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
+	text-align: center;
 
-		img {
-				width: 30%;
-			}
-	}
+	img {
+			width: 30%;
+		}
+}
 
 #styleguide-navigation.columns  {
 		padding: 0px;
-	}
+}
