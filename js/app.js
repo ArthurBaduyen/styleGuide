@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 var text = document.getElementById("myHtml1");
 var str = text.innerHTML,
-    reg = /regular|light|italic|bold|class/ig; //g is to replace all occurances
+    reg = /regular|light|italic|&lt;|&gt;|bold|class/ig; //g is to replace all occurances
 
 //fixing a bit
 var toStr = String(reg);
@@ -36,20 +36,12 @@ var color = (toStr.replace('\/g', '|')).substring(1);
 //split it baby
 var colors = color.split("|");
 
-if (colors.indexOf("regular") > -1) {
-    str = str.replace(/regular/g, '<span style="color:red;">regular</span>');
+if (colors.indexOf("&lt;") > -1) {
+    str = str.replace(/&lt;/g, '<span style="color:red;">&lt;</span>');
 }
 
-if (colors.indexOf("light") > -1) {
-    str = str.replace(/light/g, '<span style="color:blue;">light</span>');
-}
-
-if (colors.indexOf("italic") > -1) {
-    str = str.replace(/italic/g, '<span style="color:green;">italic</span>');
-}
-
-if (colors.indexOf("bold") > -1) {
-    str = str.replace(/bold/g, '<span style="color:orange;">bold</span>');
+if (colors.indexOf("&gt;") > -1) {
+    str = str.replace(/&gt;/g, '<span style="color:red;">&gt;</span>');
 }
 
 // if (colors.indexOf("class") > -1) {
