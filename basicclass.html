@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body class="txt-secondary">
+
+    <div class="row expanded">
+
+      <!-- START OF SIDE NAVIGATION -->
+      <div class="medium-2 columns custom-side-nav top-bar-left" id="styleguide-navigation">
+        <div class="pt-3">
+          <div class="custom pb-3">
+            <h5 class="mb-3">GUI Style Guide</h5>
+            <img src="./etc/Logo1.png" alt="GUI Styleguide"/>
+          </div>
+            <ul class="ml-0 vertical menu nested is-active" data-accordion-menu>
+              <hr class="margin-0 padding-0"/>
+              <li class="padding-half pl-1"><a href="#anchor-color-palette">Color Pallete</a></li>
+              <li class="padding-half pl-1"><a href="#anchor-typography">Typography</a></li>
+              <li class="padding-half pl-1"><a href="#">Navigation Bar</a></li>
+              <li class="padding-half pl-1"><a href="#">Menu Bar</a>
+                
+                <ul class="custom-side-subnav menu vertical nested">
+                  <li><a href="#">Dropdown</a></li>
+                  <li><a href="#">Toogle</a></li>
+                  <li><a href="#">Sticky</a></li>
+                  <li><a href="#">Regular</a></li>
+                  <li><a href="#">Special</a></li>
+                  <li><a href="#">Supreme</a></li>
+                </ul>
+                
+              </li>
+              <li class="padding-half pl-1"><a href="#">Buttons</a></li>
+              <li class="padding-half pl-1"><a href="#">Progress Bar</a></li>
+              <li class="padding-half pl-1"><a href="#">Tickets</a></li>
+              <li class="padding-half pl-1"><a href="#">Testimonials</a></li>
+              <li class="padding-half pl-1"><a href="#">Sub Footers</a></li>
+              <li class="padding-half pl-1"><a href="#">Footers</a></li>
+            </ul>
+          </div>
+      </div>
+      <!-- END OF SIDE NAVIGATION -->
+      
+
+      <!-- START OF STYLE GUIDE COMPONENTS -->
+      <div class="medium-10 columns">
+        <div class="mt-1">
+          <h1>Basic Classess</h1>
+        </div>
+
+        <!-- COLOR PALETTE -->
+        <div class="row">
+          <div class="medium-12">
+
+            <div class="component-container">
+              <div class="component-title">
+                <a name="anchor-color-palette"></a>Margin
+              </div>
+              <div class="component-main">
+                <div class="row">
+                  <div class="medium-2">
+                    <div class="bg-secondary padding-1"><div class="padding-1 bg-primary txt-white pl-1"></div></div>
+                    <br/>
+                    <div class="bg-secondary padding-2"><div class="padding-2 bg-primary txt-white pl-1"></div></div>
+                    <br/>
+                    <div class="bg-secondary padding-3"><div class="padding-3 bg-primary txt-white pl-1"></div></div> 
+                  </div>
+                </div>
+                  
+
+
+              </div>
+              <div class="row component-code">
+                <div class="medium-6 column">
+                  <h6>HTML</h6>
+                  <div class="component-code-container" id="myHtml">
+                    <p>&lt;div class="padding-1"&gt; padding 1 &lt;/div&gt;</p>
+                    <p>&lt;div class="padding-2"&gt; padding 2 &lt;/div&gt;</p>
+                    <p>&lt;div class="padding-3"&gt; padding 3 &lt;/div&gt;</p>
+                    <p>&lt;div class="padding-4"&gt; padding 4 &lt;/div&gt;</p>
+                    <p>&lt;div class="padding-5"&gt; padding 5 &lt;/div&gt;</p>
+
+                  </div>
+                </div>
+                <div class="medium-6 column">
+                  <h6>CSS</h6>
+                  <div class="component-code-container " id="myCss">
+                    <div class="row">
+                      <div class="medium-3 columns">
+                        <p><b>Top padding</b></p>
+                        <p class="bg-grey">.pt-1</p>
+                        <p>.pt-2</p>
+                        <p>.pt-..</p>
+                        <p>.pt-5</p>
+                      </div>
+                      <div class="medium-3 columns">
+                        <p><b>Right padding</b></p>
+                        <p>.pr-1</p>
+                        <p>.pr-2</p>
+                        <p>.pr-..</p>
+                        <p>.pr-5</p>
+                      </div>
+                      <div class="medium-3 columns">
+                        <p><b>Bottom padding</b></p>
+                        <p>.pb-1</p>
+                        <p>.pb-2</p>
+                        <p>.pb-..</p>
+                        <p>.pb-5</p>
+                      </div>
+                      <div class="medium-3 columns">
+                        <p><b>Left padding</b></p>
+                        <p>.pl-1</p>
+                        <p>.pl-2</p>
+                        <p>.pl-..</p>
+                        <p>.pl-5</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>   
+        </div>
+
+        <!-- COMPONENT DESCRIPTION -->
+        <div class="row">
+          <div class="medium-12">
+            <div class="component-container">
+              <div class="component-title">
+                COMPONENT NAME
+              </div>
+
+              <div class="component-main">
+                <h6>COMPONENT GOES HERE</h6>
+              </div>
+
+              <div class="row component-code">
+                <div class="medium-6 column">
+                  <h6>HTML</h6>
+                  <div class="component-code-container">
+                    &lt;html tags&gt;
+                  </div>
+                </div>
+                <div class="medium-6 column">
+                  <h6>CSS</h6>
+                  <div class="component-code-container">
+                    .class
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>   
+        </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
