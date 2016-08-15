@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>GUI Style Guide</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./etc/logo2.png" />
   </head>
   <body class="txt-secondary">
 
@@ -23,25 +24,29 @@
               <li class="padding-half pl-1"><a href="basicclass.html">Classes</a></li>
               <li class="padding-half pl-1"><a href="#anchor-color-palette">Color Pallete</a></li>
               <li class="padding-half pl-1"><a href="#anchor-typography">Typography</a></li>
-              <li class="padding-half pl-1"><a href="#">Navigation Bar</a></li>
+              <li class="padding-half pl-1"><a href="#anchor-buttons">Buttons</a></li>
               <li class="padding-half pl-1"><a href="#">Menu Bar</a>
                 
                 <ul class="custom-side-subnav menu vertical nested">
-                  <li><a href="#">Dropdown</a></li>
-                  <li><a href="#">Toogle</a></li>
-                  <li><a href="#">Sticky</a></li>
-                  <li><a href="#">Regular</a></li>
-                  <li><a href="#">Special</a></li>
-                  <li><a href="#">Supreme</a></li>
+                  <li><a href="#anchor-dropdown">Dropdown</a></li>
+                  <li><a href="#anchor-dropdownpane">Dropdown Toogle</a></li>
                 </ul>
                 
               </li>
-              <li class="padding-half pl-1"><a href="#">Buttons</a></li>
-              <li class="padding-half pl-1"><a href="#">Progress Bar</a></li>
-              <li class="padding-half pl-1"><a href="#">Tickets</a></li>
-              <li class="padding-half pl-1"><a href="#">Testimonials</a></li>
-              <li class="padding-half pl-1"><a href="#">Sub Footers</a></li>
-              <li class="padding-half pl-1"><a href="#">Footers</a></li>
+              <li class="padding-half pl-1"><a href="#anchor-forms">Forms</a></li>
+              <li class="padding-half pl-1"><a href="#anchor-progressbar">Progress Bar</a></li>
+              <li class="padding-half pl-1"><a href="#anchor-rangesliders">Range Sliders</a></li>
+              <li class="padding-half pl-1"><a href="#anchor-breadcrumbs">Breadcrumbs</a></li>
+              <li class="padding-half pl-1"><a href="#anchor-table">Table</a></li>
+              <li class="padding-half pl-1"><a href="#anchor-tabs">Tabs</a></li>
+              <li class="padding-half pl-1"><a href="#">Panels</a>
+                
+                <ul class="custom-side-subnav menu vertical nested">
+                  <li><a href="#anchor-panelticket">Ticket</a></li>
+                  <li><a href="#anchor-panelboxticket">Box Ticket</a></li>
+                </ul>
+                
+              </li>
             </ul>
           </div>
       </div>
@@ -402,7 +407,7 @@
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                Buttons
+                <a name="anchor-buttons"></a>Buttons
               </div>
 
               <div class="component-main">
@@ -524,7 +529,7 @@
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                Forms
+                <a name="anchor-forms"></a>Forms
               </div>
 
               <!-- Text Box -->
@@ -711,7 +716,7 @@
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                Progress Bar
+                <a name="anchor-progressbar"></a>Progress Bar
               </div>
 
               <div class="component-main">
@@ -769,16 +774,27 @@
           </div>   
         </div>
 
-        <!-- Radio Button -->
+        <!-- Range Sliders -->
         <div class="row">
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                Radio Button
+                <a name="anchor-rangesliders"></a>Sliders
               </div>
+
               <div class="component-main">
-                <h6>COMPONENT GOES HERE</h6>
-              </div>
+                <h6>Basic Slider</h6>
+                <div class="row">
+                  <div class="medium-4">
+                    <div>
+                      <input type="range" id="rangevalue" min="1" max="100" step="1" onchange="sliderresult.value = rangevalue.value">
+                      <input type="text" id="sliderresult" value="50" />
+                    </div>
+                  </div>
+                  
+                   <div class="medium-8">
+                  </div>                 
+                </div>
 
               <div class="row component-code">
                 <div class="medium-6 column">
@@ -794,6 +810,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>   
         </div>
@@ -803,7 +820,7 @@
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                Breadcrumbs
+                <a name="anchor-breadcrumbs"></a>Breadcrumbs
               </div>
               <div class="component-main">
                 <nav aria-label="You are here:" role="navigation">
@@ -841,7 +858,7 @@
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                Dropdown Menu
+                <a name="anchor-dropdown"></a>Dropdown Menu
               </div>
               <div class="component-main">
                 <ul class="dropdown menu" data-dropdown-menu>
@@ -907,7 +924,7 @@
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                Dropdown Pane
+                <a name="anchor-dropdownpane"></a>Dropdown Pane
               </div>
               <div class="component-main">
                 <button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
@@ -939,7 +956,7 @@
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                Table
+                <a name="anchor-table"></a>Table</a>Table
               </div>
               <div class="component-main">
                 <table>
@@ -997,7 +1014,7 @@
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                Tabs
+                <a name="anchor-tabs"></a>Tabs
               </div>
               <div class="component-main">
 
@@ -1056,15 +1073,78 @@
           </div>   
         </div>
 
-        <!-- COMPONENT DESCRIPTION -->
+        <!-- Panels -->
         <div class="row">
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                COMPONENT NAME
+                Panels
               </div>
+  
+              <!-- Ticket -->
               <div class="component-main">
-                <h6>COMPONENT GOES HERE</h6>
+                <a name="anchor-panelticket"></a><h6>Ticket</h6>
+                <div class="row">
+                  <div class="medium-4">
+                    <div class="panel callout radius">
+                      <h5>This is a Ticket panel.</h5>
+                      <p>It's a little ostentatious, but useful for important content.</p></p><br /><br /><br />
+                      <p>Replacement Content here.</p>
+                    </div>
+                  </div>
+                  
+                   <div class="medium-8">
+                  </div>                 
+                </div>
+              </div>
+
+              <div class="row component-code">
+                <div class="medium-6 column">
+                  <h6>HTML</h6>
+                  <div class="component-code-container">
+                    &lt;html tags&gt;
+                  </div>
+                </div>
+                <div class="medium-6 column">
+                  <h6>CSS</h6>
+                  <div class="component-code-container">
+                    .class
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Box Ticket -->
+              <div class="component-main">
+                <a name="anchor-panelboxticket"></a><h6>Box Ticket</h6>
+                <div class="row">
+                  <div class="medium-3 columns">
+                    <div class="panel callout radius">
+                      <h5>This is a Box Ticket panel.</h5>
+                      <p>It's a little ostentatious, but useful for important content.</p><br /><br /><br />
+                      <p>Replacement Content here.</p>
+                    </div>
+                  </div>
+                  
+                   <div class="medium-3 columns">
+                    <div class="panel callout radius">
+                      <h5>This is a Box Ticket panel.</h5>
+                      <p>It's a little ostentatious, but useful for important content.</p><br /><br /><br />
+                      <p>Replacement Content here.</p>
+                    </div>
+                  </div> 
+                  
+                   <div class="medium-3 columns">
+                    <div class="panel callout radius">
+                      <h5>This is a Box Ticket panel.</h5>
+                      <p>It's a little ostentatious, but useful for important content.</p><br /><br /><br />
+                      <p>Replacement Content here.</p>
+                    </div>
+                  </div>
+                  
+                   <div class="medium-3 columns">
+                  </div>
+
+                </div>
               </div>
 
               <div class="row component-code">
