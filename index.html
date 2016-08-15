@@ -534,6 +534,11 @@
                     <label>Sample Text Box here
                       <input type="text" placeholder="Enter Text" />
                     </label>
+
+                    <label class="error">Error
+                      <input type="text" class="error" />
+                    </label>
+                      <small class="error">Invalid entry</small>
                   </div>
                   
                    <div class="medium-8">
@@ -700,15 +705,38 @@
           </div>   
         </div>
 
-        <!-- Checkbox -->
+        <!-- Progress Bar -->
         <div class="row">
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                Checkbox
+                Progress Bar
               </div>
+
               <div class="component-main">
-                <h6>COMPONENT GOES HERE</h6>
+                <h6>Basic Meter</h6>
+                <div class="row">
+                  <div class="medium-4">
+                    <div class="progress">
+                      <span class="meter"></span>
+                    </div>
+                  </div>
+                  
+                   <div class="medium-8">
+                  </div>                 
+                </div>
+
+                <h6>Advanced Meter</h6>
+                <div class="row">
+                  <div class="medium-4">
+                    <div class="progress [radius round]">
+                      <span class="meter" style="width: [1 - 100]%"></span>
+                    </div>
+                  </div>
+                  
+                   <div class="medium-8">
+                  </div>                 
+                </div>                                         
               </div>
 
               <div class="row component-code">
@@ -725,6 +753,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>   
         </div>
