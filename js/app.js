@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 var text = document.getElementById("myHtml1");
 var str = text.innerHTML,
-    reg = /&lt;|&gt;|p |div|bold|class/ig; //g is to replace all occurances
+    reg = /&lt;|&gt;|p |divv|bold|class/ig; //g is to replace all occurances
 
 //fixing a bit
 var toStr = String(reg);
@@ -51,6 +51,12 @@ if (colors.indexOf("&gt;") > -1) {
 if (colors.indexOf("div") > -1) {
     str = str.replace(/div/g, '<span style="color:#f35393;">div</span>');
 }
+
+if (colors.indexOf("span") > -1) {
+    str = str.replace(/span/g, '<span style="color:#f35393;">span</span>');
+}
+
+
 
 // if (colors.indexOf("class") > -1) {
 //     str = str.replace(/class/g, '<span style="color:orange;">class</span>');

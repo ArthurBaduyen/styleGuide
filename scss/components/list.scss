@@ -1,0 +1,34 @@
+.list-type-disc { list-style-type: disc; }
+.list-type-circle { list-style-type: circle; }
+.list-type-square { list-style-square: none; }
+.list-type-none { list-style-type: none; }
+
+.list-color-alternate {
+	li { 
+		// @extend .bg-grey; 
+		@extend .bg-secondary-light30;
+		// @extend .txt-white;
+	}
+
+	li:nth-child(odd) {  
+		// @extend .bg-grey-light; 
+		@extend .bg-secondary-light40;
+		@extend .txt-grey;
+	}
+}
+
+ul.no-indent {
+	margin-left: 0px ;
+
+	li {
+		padding-left: 1rem;
+	}
+}
+
+
+// Style Guide
+.styleguide-css-list {
+	@extend .list-type-none; 
+	@extend .list-color-alternate; 
+	@extend .no-indent;
+}
