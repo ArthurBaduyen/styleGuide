@@ -22,16 +22,6 @@
   }
 }
 
-.card-panel {
-  transition: box-shadow .25s;
-  // padding: $card-padding;
-  // margin: $element-top-margin 0 $element-bottom-margin 0;
-  border-radius: 2px;
-  @extend .ds-1;
-  // background-color: $card-bg-color;
-  @extend .bg-primary;
-}
-
 .shadow {
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
 }

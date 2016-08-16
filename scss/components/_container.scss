@@ -2,10 +2,10 @@ $code-container-bc: #cacaca;
 
 // Styleguide template
 .component-container {
-	@extend .ds-1; 
+	@extend .ds-1;
 	@extend .bg-white;
 	@extend .mb-2;
-	// @extend .hoverable;
+	@extend .hoverable;
 
 	.component-title {
 		@extend .bb;
