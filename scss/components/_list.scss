@@ -18,11 +18,8 @@
 }
 
 ul.no-indent {
-	margin-left: 0px ;
-
-	li {
-		padding-left: 1rem;
-	}
+	@extend .ml-0;
+	li { padding-left: 1rem; }
 }
 
 
