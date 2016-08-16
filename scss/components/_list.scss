@@ -20,6 +20,8 @@
 }
 
 ul.no-indent {
+	@extend .ml-0;
+	li { padding-left: 1rem; }
 	margin-left: 0px ;
 
 	li {

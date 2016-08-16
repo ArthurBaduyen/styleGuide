@@ -15,9 +15,9 @@
 			&:hover {
 				background-color:#1f1f1f;
 			}
+			
 			a {
 				color: #ccc;
-
 				&:hover {
 					color: #fff;
 				}
@@ -28,12 +28,22 @@
 
 ul.custom-side-subnav {
 	background-color: #1f1f1f !important;
-
 	li {
 		background-color: #1f1f1f !important;
 		
 		&:hover {
 			background-color: #181818 !important;
+		}
+	}
+}
+
+ul.custom-side-subnav {
+	background-color: #181818 !important;
+	li.custom-side-3rdnav {
+		background-color: #181818 !important;
+		
+		&:hover {
+			background-color: #151515 !important;
 		}
 	}
 }

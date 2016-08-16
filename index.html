@@ -19,35 +19,47 @@
             <h5 class="mb-3">GUI Style Guide</h5>
             <img src="./etc/Logo1.png" alt="GUI Styleguide"/>
           </div>
-            <ul class="ml-0 vertical menu nested is-active" data-accordion-menu>
+            <ul class="ml-0 vertical menu nested is-active" data-accordion-menu data-multi-open="false">
               <hr class="margin-0 padding-0"/>
-              <li class="padding-half pl-1"><a href="basicclass.html">Classes</a></li>
+
+              <li class="padding-half pl-1"><a href="#">classess</a></li>
+
+              <li class="padding-half pl-1"><a href="#">Basic Elements</a>
+                <ul class="custom-side-subnav menu vertical nested">
+                  <li><a href="#anchor-typography">Typography</a></li>
+                  <li><a href="#anchor-buttons">Buttons</a></li>
+                  <li><a href="#anchor-forms">Forms</a></li>
+                  <li><a href="#anchor-table">Table</a></li>
+                  <li><a href="#anchor-dropdown">Dropdown Menu</a></li>
+                  <li><a href="#anchor-dropdownpane">Dropdown Pane</a></li>
+                  <li><a href="#anchor-tooltips">Tooltips</a>
+                  <li><a href="#anchor-progressbar">Progress Bar</a></li>
+                  <li><a href="#anchor-rangesliders">Range Sliders</a></li>
+                  <li><a href="#anchor-breadcrumbs">Breadcrumbs</a></li>
+                  <li><a href="#anchor-tabs">Tabs</a></li>
+                  <li><a href="#anchor-tabs">Accordion</a></li>
+                  <li><a href="#anchor-tabs">Modal</a></li>
+
+                </ul>
+              </li>
+
+              <li class="padding-half pl-1"><a href="#">Components</a>
+                <ul class="custom-side-subnav menu vertical nested">
+                  
+                  <li><a href="#anchor-tabs">Testimonial</a></li>
+                  <li><a href="#">Panels</a>
+                    <ul class="custom-side-subnav menu vertical nested">
+                      <li class="custom-side-3rdnav"><a href="#anchor-panelticket">Ticket</a></li>
+                      <li class="custom-side-3rdnav"><a href="#anchor-panelboxticket">Box Ticket</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
               <li class="padding-half pl-1"><a href="#anchor-color-palette">Color Pallete</a></li>
-              <li class="padding-half pl-1"><a href="#anchor-typography">Typography</a></li>
-              <li class="padding-half pl-1"><a href="#anchor-buttons">Buttons</a></li>
-              <li class="padding-half pl-1"><a href="#">Menu Bar</a>
-                
-                <ul class="custom-side-subnav menu vertical nested">
-                  <li><a href="#anchor-dropdown">Dropdown</a></li>
-                  <li><a href="#anchor-dropdownpane">Dropdown Toogle</a></li>
-                </ul>
-                
-              </li>
-              <li class="padding-half pl-1"><a href="#anchor-forms">Forms</a></li>
-              <li class="padding-half pl-1"><a href="#anchor-progressbar">Progress Bar</a></li>
-              <li class="padding-half pl-1"><a href="#anchor-rangesliders">Range Sliders</a></li>
-              <li class="padding-half pl-1"><a href="#anchor-breadcrumbs">Breadcrumbs</a></li>
-              <li class="padding-half pl-1"><a href="#anchor-table">Table</a></li>
-              <li class="padding-half pl-1"><a href="#anchor-tabs">Tabs</a></li>
-              <li class="padding-half pl-1"><a href="#">Panels</a>
-                
-                <ul class="custom-side-subnav menu vertical nested">
-                  <li><a href="#anchor-panelticket">Ticket</a></li>
-                  <li><a href="#anchor-panelboxticket">Box Ticket</a></li>
-                </ul>
-                
-              </li>
-              <li class="padding-half pl-1"><a href="#anchor-tooltips">Tooltips</a>
+              
+              
+              
             </ul>
           </div>
       </div>
@@ -225,20 +237,14 @@
                   <div class="medium-6 columns">
                     <h6>HTML</h6>
                     <div class="component-code-container">
-                      
-                        <p>&lt;div id="typo-primary"&gt;</p>
-                        <p>&lt;/div&gt;</p>
-                      
-                      <p class="margin-1">                       
-                        <xmp class="xmp"><div class="typo-section" id="typo-primary"></xmp>                  
-                        <xmp class="ml-1 xmp"><p class="regular"> Regular </p></xmp>
-                        <xmp class="ml-1 xmp"><p class="light"> Light </p></xmp>
-                        <xmp class="ml-1 xmp"><p class="italic"> Italic </p></xmp>
-                        <xmp class="ml-1 xmp"><p class="semibold"> Semi Bold </p></xmp>
-                        <xmp class="ml-1 xmp"><p class="bold"> Bold </p></xmp>
-                        <xmp class="ml-1 xmp"><p class="extrabold"> Extra Bold </p></xmp>
-                        
-                      </p>
+                      <p>&lt;div id="typo-primary"&gt;</p>
+                      <p class="ml-1">&lt;p class="regular"&gt;This paragraph is Regular&lt;/p&gt;</p>
+                      <p class="ml-1">&lt;p class="light"&gt;This paragraph is Light&lt;/p&gt;</p>
+                      <p class="ml-1">&lt;p class="italic"&gt;This paragraph is Italic&lt;/p&gt;</p>
+                      <p class="ml-1">&lt;p class="semibold"&gt;This paragraph is Semi Bold&lt;/p&gt;</p>
+                      <p class="ml-1">&lt;p class="bold"&gt;This paragraph is Bold&lt;/p&gt;</p>
+                      <p class="ml-1">&lt;p class="extrabold"&gt;This paragraph is Extra Bold&lt;/p&gt;</p>
+                      <p>&lt;/div&gt;</p>
                     </div>
                   </div>
 
@@ -350,17 +356,14 @@
                   <div class="medium-6 columns">
                     <h6>HTML</h6>
                     <div class="component-code-container">
-                      <p class="margin-1">
-                        <xmp class="xmp"><div id="typo-primary"></xmp>
-                        <xmp class="xmp ml-1"><h1> This is Header 1</h1></xmp>
-                        <xmp class="xmp ml-1"><h2> This is Header 2</h2></xmp>
-                        <xmp class="xmp ml-1"><h3> This is Header 3</h3></xmp>
-                        <xmp class="xmp ml-1"><h4> This is Header 4</h4></xmp>
-                        <xmp class="xmp ml-1"><h5> This is Header 5</h5></xmp>
-                        <xmp class="xmp ml-1"><h6> This is Header 6</h6></xmp>
-                        <xmp class="xmp"></div></xmp>
-                        <xmp class="xmp"><div id="typo-secondary"></div></xmp>
-                      </p>
+                      <p>&lt;div id="typo-primary"&gt;</p>
+                      <p class="ml-1">&lt;h1&gt;This is Header 1&lt;/h1&gt;</p>
+                      <p class="ml-1">&lt;h2&gt;This is Header 2&lt;/h2&gt;</p>
+                      <p class="ml-1">&lt;h3&gt;This is Header 3&lt;/h3&gt;</p>
+                      <p class="ml-1">&lt;h4&gt;This is Header 4&lt;/h4&gt;</p>
+                      <p class="ml-1">&lt;h5&gt;This is Header 5&lt;/h5&gt;</p>
+                      <p class="ml-1">&lt;h6&gt;This is Header 6&lt;/h6&gt;</p>
+                      <p>&lt;/div&gt;</p>
 
                     </div>
                   </div>
@@ -375,12 +378,12 @@
                           <ul class="styleguide-css-list">
                             <li>
                               <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="Under the corresponding Element ID you can use the pre-defined structure of H1-H6.">
-                                #typo-primary, h1 ,h2 ,h3 .. h5
+                                #typo-primary { h1 ,h2 ,h3 .. h5 }
                               </span>
                             </li>
                             <li>
                               <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="Under the corresponding Element ID you can use the pre-defined structure of H1-H6.">
-                                #typo-secondary, h1 ,h2 ,h3 .. h5
+                                #typo-secondary { h1 ,h2 ,h3 .. h5 }
                               </span>
                             </li>
                           </ul>
