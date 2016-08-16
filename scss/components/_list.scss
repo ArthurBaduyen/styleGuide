@@ -6,14 +6,16 @@
 .list-color-alternate {
 	li { 
 		// @extend .bg-grey; 
-		@extend .bg-secondary-light30;
+		//@extend .bg-secondary-light30;
 		// @extend .txt-white;
+		background-color: #fff;
 	}
 
 	li:nth-child(odd) {  
 		// @extend .bg-grey-light; 
-		@extend .bg-secondary-light40;
-		@extend .txt-grey;
+		//@extend .bg-secondary-light40;
+		//@extend .txt-grey;
+		background-color: #f2f2f2;
 	}
 }
 
@@ -21,7 +23,8 @@ ul.no-indent {
 	margin-left: 0px ;
 
 	li {
-		padding-left: 1rem;
+		padding: 10px;
+		padding-left: 20px;
 	}
 }
 
