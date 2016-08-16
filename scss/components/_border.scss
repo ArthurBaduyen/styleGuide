@@ -47,10 +47,10 @@
 .br-4 { border-right: 4px; }
 .br-5 { border-right: 5px; }
 
-.bt { border-top: solid 1px #E9E9E9; }
-.bb { border-bottom: solid 1px #E9E9E9; }
-.bl { border-left: solid 1px #E9E9E9; }
-.br { border-right: solid 1px #E9E9E9; }
+.bt { border-top: solid 1px #cacaca; }
+.bb { border-bottom: solid 1px #cacaca; }
+.bl { border-left: solid 1px #cacaca; }
+.br { border-right: solid 1px #cacaca; }
 
 .border {
 	@extend .bt;

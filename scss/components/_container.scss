@@ -1,3 +1,5 @@
+$code-container-bc: #cacaca;
+
 // Styleguide template
 .component-container {
 	@extend .shadow; 
@@ -15,20 +17,13 @@
 
 	.component-main {
 		@extend .padding-1;
-		// @extend .mb-1;
 	}
 
 	.component-code {
-		// @extend .padding-1;
-		// @extend .pt-1;
 		@extend .pb-3;
-		// @extend .bt;
 		@extend .bb;
 		div {
-			// @extend .pr-half;
-			// @extend .br;
 			h6 {
-				// background-color: #f5f5f5;
 				@extend .bg-primary;
 				@extend .mb-0;
 				@extend .txt-white;
@@ -39,10 +34,28 @@
 			}
 
 			.component-code-container {
-				background-color: #f9f9f9;
+				border: 1px solid $code-container-bc;
 				@extend .padding-1;
+				background-color: #f9f9f9;
 				font-size: .9rem;
-				
+				// @extend .pt-0;
+				// @extend .pb-1;
+				// @extend .pl-1;
+				// @extend .r-1;
+
+				h6 {
+					@extend .margin-0;
+					@extend .bg-primary;
+					@extend .mb-1;
+					@extend .txt-white;
+					@extend .pl-half;
+					@extend .pr-half;
+					font-weight: bold;
+					display: inline-block;
+				}
+				&:last-child{
+					@extend .padding-1;
+				}
 				// ----- to active scroll
 				// max-height: 20rem;
 				// overflow: auto;

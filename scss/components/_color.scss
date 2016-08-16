@@ -35,13 +35,19 @@
 
 .bg-white { background-color: #fff; }
 .bg-black { background-color: #000; }
-.bg-grey { background-color: #323232; }
-.bg-grey-light { background-color: #E9E9E9; }
+// .bg-grey-light { background-color: #E9E9E9; }
 .custom-label{background-color: #777; color: #fff; font-size: .7rem; border-color: #777;}
 
 .bg-white { background-color: #fff; }
 
 .txt-white{ color: #fff; }
+.txt-grey { color: #808080; }
+
+.bg-grey { background-color: #808080; }
+.bg-secondary-light10 { background-color: lighten(map-get($foundation-palette, secondary), 10%) }
+.bg-secondary-light20 { background-color: lighten(map-get($foundation-palette, secondary), 20%) }
+.bg-secondary-light30 { background-color: lighten(map-get($foundation-palette, secondary), 30%) }
+.bg-secondary-light40 { background-color: lighten(map-get($foundation-palette, secondary), 40%) }
 
 
 
