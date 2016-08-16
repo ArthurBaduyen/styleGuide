@@ -47,6 +47,7 @@
                 </ul>
                 
               </li>
+              <li class="padding-half pl-1"><a href="#anchor-tooltips">Tooltips</a>
             </ul>
           </div>
       </div>
@@ -163,7 +164,7 @@
           </div>   
         </div>
 
-        <!-- START OF TYPOGRAPHY COMPONENT -->
+        <!-- TYPOGRAPHY -->
         <div class="row">
             <div class="medium-12">
               <div class="component-container">
@@ -223,23 +224,16 @@
                   <!-- HTML CODES START HERE-->
                   <div class="medium-6 columns">
                     <h6>HTML</h6>
-                    <div class="component-code-container" id="myHtml1">
-                      <p class="margin-1">
-                          &lt;div class="typo-section" id="typo-primary"&gt; <br />
-
-                          <span class="ml-2"></span>&lt;p class="regular"&gt; <span>Regular</span> &lt;/p&gt;<br />
-
-                          <span class="ml-2"></span>&lt;p class="light"&gt; <span>Light</span> &lt;/p&gt;<br />
-
-                          <span class="ml-2"></span>&lt;p class="italic"&gt; <span>Italic</span> &lt;/p&gt;<br />
-
-                          <span class="ml-2"></span>&lt;p class="semibold"&gt; <span>Semi Bold</span> &lt;/p&gt;<br />
-
-                          <span class="ml-2"></span>&lt;p class="bold"&gt; <span>Bold</span> &lt;/p&gt;<br />
-
-                          <span class="ml-2"></span>&lt;p class="extrabold"&gt; <span>Extra Bold</span> &lt;/p&gt;<br />
-
-                          &lt;/div&gt;
+                    <div class="component-code-container">
+                      <p class="margin-1">                       
+                        <xmp class="xmp"><div class="typo-section" id="typo-primary"></xmp>                  
+                        <xmp class="ml-1 xmp"><p class="regular"> Regular </p></xmp>
+                        <xmp class="ml-1 xmp"><p class="light"> Light </p></xmp>
+                        <xmp class="ml-1 xmp"><p class="italic"> Italic </p></xmp>
+                        <xmp class="ml-1 xmp"><p class="semibold"> Semi Bold </p></xmp>
+                        <xmp class="ml-1 xmp"><p class="bold"> Bold </p></xmp>
+                        <xmp class="ml-1 xmp"><p class="extrabold"> Extra Bold </p></xmp>
+                        <xmp class="xmp"></div></xmp>
                       </p>
                     </div>
                   </div>
@@ -248,56 +242,26 @@
                   <div class="medium-6 columns">
                     <h6>CSS</h6>
                     <div class="component-code-container" id="myCss">
-                      <p class="margin-1">
-                        .#typo-primary
-                          { <br />
-                            <span class="ml-2"></span>font-family: "Open Sans" !important;<br />
-                          }
-                      </p>
 
                       <p class="margin-1">
-                        .#typo-secondary
-                          { <br />
-                            <span class="ml-2"></span>font-family: "Roboto" !important;<br />
-                          }
+                        <xmp class="xmp">#typo-primary {</xmp>
+                        <xmp class="ml-2 xmp">font-family: "Open Sans" !important;</xmp>
+                        <xmp class="ml-1 xmp">}</xmp>
+
+                        <xmp class="xmp">#typo-secondary {</xmp>
+                        <xmp class="ml-2 xmp">font-family: "Roboto" !important;</xmp>
+                        <xmp class="ml-1 xmp">}</xmp>
+
+                        <xmp class="xmp">.typo-section {</xmp>
+                        <xmp class="ml-1 xmp">.regular { font-weight: regular; }</xmp>
+                        <xmp class="ml-1 xmp">.light { font-weight: 300; }</xmp>
+                        <xmp class="ml-1 xmp">.italic { font-weight: regular; font-style: italic; }</xmp>
+                        <xmp class="ml-1 xmp">.semibold { font-weight: 600; }</xmp>
+                        <xmp class="ml-1 xmp">.bold { font-weight: bold; }</xmp>
+                        <xmp class="ml-1 xmp">.extrabold { font-weight: 800; }</xmp>
+                        <xmp class="xmp">}</xmp>
                       </p>
 
-
-                      <p class="margin-1">
-                          .typo-section
-                            { <br />
-                              <span class="ml-2"></span>.regular
-                                {
-                                  font-weight: regular;
-                                }<br />
-
-                              <span class="ml-2"></span>.light
-                                {
-                                  font-weight: 300;
-                                }<br />
-
-                              <span class="ml-2"></span>.italic
-                                {
-                                  font-weight: regular;
-                                  font-style: italic;
-                                }<br />
-
-                              <span class="ml-2"></span>.semibold
-                                {
-                                  font-weight: 600;
-                                }<br />
-
-                              <span class="ml-2"></span>.bold
-                                {
-                                  font-weight: bold;
-                                }<br />
-
-                              <span class="ml-2"></span>.extrabold
-                                {
-                                  font-weight: 800;
-                                }<br />
-                            }
-                      </p>
                     </div>
                   </div>
                 </div> 
@@ -377,7 +341,7 @@
                     <h6>CSS</h6>
                     <div class="component-code-container" id="myCss">
                       <p class="margin-1">
-                          .#typo-primary
+                          #typo-primary
                             { <br />                    
                                 <span class="ml-2"></span>font-family: "Open Sans" !important; h1, h2, h3 ,h4 ,h5 ,h6 { <br />
                                   <span class="ml-4"></span>font-family: "Open Sans" !important;<br />
@@ -386,7 +350,7 @@
                       </p>
 
                       <p class="margin-1">
-                          .#typo-secondary
+                          #typo-secondary
                             { <br />                    
                                 <span class="ml-2"></span>font-family: "Roboto" !important; h1, h2, h3 ,h4 ,h5 ,h6 { <br />
                                   <span class="ml-4"></span>font-family: "Roboto" !important;<br />
@@ -1125,7 +1089,7 @@
                     </div>
                   </div>
                   
-                   <div class="medium-3 columns">
+                  <div class="medium-3 columns">
                     <div class="panel callout radius">
                       <h5>This is a Box Ticket panel.</h5>
                       <p>It's a little ostentatious, but useful for important content.</p><br /><br /><br />
@@ -1133,7 +1097,7 @@
                     </div>
                   </div> 
                   
-                   <div class="medium-3 columns">
+                  <div class="medium-3 columns">
                     <div class="panel callout radius">
                       <h5>This is a Box Ticket panel.</h5>
                       <p>It's a little ostentatious, but useful for important content.</p><br /><br /><br />
@@ -1165,15 +1129,27 @@
           </div>   
         </div>
 
-        <!-- COMPONENT DESCRIPTION -->
+        <!-- Tooltip -->
         <div class="row">
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                COMPONENT NAME
+                <a name="anchor-tooltips"></a>Tooltip
               </div>
               <div class="component-main">
-                <h6>COMPONENT GOES HERE</h6>
+                <h6>Basic Tooltips</h6>
+                <div class="row">
+
+                  <div class="medium-4 columns">
+                    <div>
+                      <span data-tooltip aria-haspopup="true" class="has-tip [tip-top tip-bottom tip-left tip-right] [radius round]" title="Tooltips are awesome, you should totally use them!">Mouseover to see tooltip</span>
+                    </div>
+                  </div>
+
+                  <div class="medium-8 columns">
+                  </div>
+
+                </div>
               </div>
 
               <div class="row component-code">
