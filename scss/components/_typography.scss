@@ -70,52 +70,48 @@
 	}
 } 
 
-.typo-section 
-{
-	span {
-		&.regular1
-		{
-			font-size: 25px;
-			font-weight: regular;
-		}
-		&.regular
-		{
-			font-size: 17px;
-			font-weight: regular;
-		}
-
-		&.light
-		{
-			font-size: 17px;
-			font-weight: 300;
-		}
-
-		&.italic
-		{
-			font-size: 17px;
-			font-weight: regular;
-			font-style: italic;
-		}
-
-		&.semibold
-		{
-			font-size: 17px;
-			font-weight: 600;
-		}
-
-		&.bold
-		{
-			font-size: 17px;
-			font-weight: bold;
-		}
-
-		&.extrabold
-		{
-			font-size: 17px;
-			font-weight: 800;
-		}
+.regular1
+	{
+		font-size: 25px;
+		font-weight: regular;
 	}
-} 
 
+.regular
+	{
+		font-size: 17px;
+		font-weight: regular;
+	}
+
+.light
+	{
+		font-size: 17px;
+		font-weight: 300;
+	}
+
+.italic
+	{
+		font-size: 17px;
+		font-weight: regular;
+		font-style: italic;
+	}
+
+.semibold
+	{
+		font-size: 17px;
+		font-weight: 600;
+	}
+
+.bold
+	{
+		font-size: 17px;
+		font-weight: bold;
+	}
+
+.extrabold
+	{
+		font-size: 17px;
+		font-weight: 800;
+	}
+	
 
 

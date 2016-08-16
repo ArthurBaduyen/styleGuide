@@ -243,7 +243,10 @@
                     <div class="component-code-container" id="myCss">
 
                       <p class="margin-1">
-                        <xmp class="xmp">#typo-primary {</xmp>
+
+                        <span data-tooltip aria-haspopup="true" class="has-tip [tip-top tip-bottom tip-left tip-right] [radius round]" title="Tooltips are awesome, you should totally use them!">
+                          <xmp class="xmp">#typo-primary {</xmp>
+                        </span>
                         <xmp class="ml-2 xmp">font-family: "Open Sans" !important;</xmp>
                         <xmp class="ml-1 xmp">}</xmp>
 
@@ -251,14 +254,12 @@
                         <xmp class="ml-2 xmp">font-family: "Roboto" !important;</xmp>
                         <xmp class="ml-1 xmp">}</xmp>
 
-                        <xmp class="xmp">.typo-section {</xmp>
-                        <xmp class="ml-1 xmp">.regular { font-weight: regular; }</xmp>
-                        <xmp class="ml-1 xmp">.light { font-weight: 300; }</xmp>
-                        <xmp class="ml-1 xmp">.italic { font-weight: regular; font-style: italic; }</xmp>
-                        <xmp class="ml-1 xmp">.semibold { font-weight: 600; }</xmp>
-                        <xmp class="ml-1 xmp">.bold { font-weight: bold; }</xmp>
-                        <xmp class="ml-1 xmp">.extrabold { font-weight: 800; }</xmp>
-                        <xmp class="xmp">}</xmp>
+                        <xmp class="xmp">.regular { font-weight: regular; }</xmp>
+                        <xmp class="xmp">.light { font-weight: 300; }</xmp>
+                        <xmp class="xmp">.italic { font-weight: regular; font-style: italic; }</xmp>
+                        <xmp class="xmp">.semibold { font-weight: 600; }</xmp>
+                        <xmp class="xmp">.bold { font-weight: bold; }</xmp>
+                        <xmp class="xmp">.extrabold { font-weight: 800; }</xmp>
                       </p>
 
                     </div>
@@ -312,26 +313,19 @@
                   <!-- HTML CODES START HERE-->
                   <div class="medium-6 columns">
                     <h6>HTML</h6>
-                    <div class="component-code-container" id="myHtml1">
+                    <div class="component-code-container">
                       <p class="margin-1">
-                          &lt;div id="typo-primary"&gt; <br />
-
-                          <span class="ml-2"></span>&lt;h1&gt; <span>This is Header 1</span> &lt;/h1&gt;<br />
-
-                          <span class="ml-2"></span>&lt;h2&gt; <span>This is Header 2</span> &lt;/h2&gt;<br />
-
-                          <span class="ml-2"></span>&lt;h3&gt; <span>This is Header 3</span> &lt;/h3&gt;<br />
-
-                          <span class="ml-2"></span>&lt;h4&gt; <span>This is Header 4</span> &lt;/h4&gt;<br />
-
-                          <span class="ml-2"></span>&lt;h5&gt; <span>This is Header 5</span> &lt;/h5&gt;<br />
-
-                          <span class="ml-2"></span>&lt;h6&gt; <span>This is Header 6</span> &lt;/h6&gt;<br />
-
-                          &lt;/div&gt;
+                        <xmp class="xmp"><div id="typo-primary"></xmp>
+                        <xmp class="xmp ml-1"><h1> This is Header 1</h1></xmp>
+                        <xmp class="xmp ml-1"><h2> This is Header 2</h2></xmp>
+                        <xmp class="xmp ml-1"><h3> This is Header 3</h3></xmp>
+                        <xmp class="xmp ml-1"><h4> This is Header 4</h4></xmp>
+                        <xmp class="xmp ml-1"><h5> This is Header 5</h5></xmp>
+                        <xmp class="xmp ml-1"><h6> This is Header 6</h6></xmp>
+                        <xmp class="xmp"></div></xmp>
+                        <xmp class="xmp"><div id="typo-secondary"></div></xmp>
                       </p>
 
-                      <p class="margin-1" >&lt;div id="typo-secondary"&gt;&lt;/div&gt;</p>
                     </div>
                   </div>
 
@@ -340,21 +334,17 @@
                     <h6>CSS</h6>
                     <div class="component-code-container" id="myCss">
                       <p class="margin-1">
-                          #typo-primary
-                            { <br />                    
-                                <span class="ml-2"></span>font-family: "Open Sans" !important; h1, h2, h3 ,h4 ,h5 ,h6 { <br />
-                                  <span class="ml-4"></span>font-family: "Open Sans" !important;<br />
-                                <span class="ml-2">}<br />
-                            }
-                      </p>
-
-                      <p class="margin-1">
-                          #typo-secondary
-                            { <br />                    
-                                <span class="ml-2"></span>font-family: "Roboto" !important; h1, h2, h3 ,h4 ,h5 ,h6 { <br />
-                                  <span class="ml-4"></span>font-family: "Roboto" !important;<br />
-                                <span class="ml-2">}<br />
-                            }
+                        <xmp class="xmp">#typo-primary {</xmp>               
+                        <xmp class="xmp ml-1">font-family: "Open Sans" !important; h1, h2, h3 ,h4 ,h5 ,h6 { </xmp>
+                        <xmp class="xmp ml-2">font-family: "Open Sans" !important;</xmp>
+                        <xmp class="xmp ml-1">}</xmp>
+                        <xmp class="xmp">}</xmp>
+                      
+                        <xmp class="xmp">#typo-secondary {</xmp>               
+                        <xmp class="xmp ml-1">font-family: "Roboto" !important; h1, h2, h3 ,h4 ,h5 ,h6 { </xmp>
+                        <xmp class="xmp ml-2">font-family: "Roboto" !important;</xmp>
+                        <xmp class="xmp ml-1">}</xmp>
+                        <xmp class="xmp">}</xmp>
                       </p>
                     </div>
                   </div>
