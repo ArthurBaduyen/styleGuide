@@ -254,27 +254,58 @@
                   <div class="medium-6 columns">
                     <h6>CSS</h6>
                     <div class="component-code-container" id="myCss">
-
-                      <p class="margin-1">
-
-                        <span data-tooltip aria-haspopup="true" class="has-tip [tip-top tip-bottom tip-left tip-right] [radius round]" title="Tooltips are awesome, you should totally use them!">
-                          <xmp class="xmp">#typo-primary {</xmp>
-                        </span>
-                        <xmp class="ml-2 xmp">font-family: "Open Sans" !important;</xmp>
-                        <xmp class="ml-1 xmp">}</xmp>
-
-                        <xmp class="xmp">#typo-secondary {</xmp>
-                        <xmp class="ml-2 xmp">font-family: "Roboto" !important;</xmp>
-                        <xmp class="ml-1 xmp">}</xmp>
-
-                        <xmp class="xmp">.regular { font-weight: regular; }</xmp>
-                        <xmp class="xmp">.light { font-weight: 300; }</xmp>
-                        <xmp class="xmp">.italic { font-weight: regular; font-style: italic; }</xmp>
-                        <xmp class="xmp">.semibold { font-weight: 600; }</xmp>
-                        <xmp class="xmp">.bold { font-weight: bold; }</xmp>
-                        <xmp class="xmp">.extrabold { font-weight: 800; }</xmp>
-                      </p>
-
+                      <div class="row">
+                        <div class="medium-6 columns">
+                          <p><strong>Font Class Style</strong></p>
+                          <ul class="styleguide-css-list">
+                            <li>
+                              <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="This class will set your font styling as regular">
+                                .regular
+                              </span>
+                            </li>
+                            <li>
+                              <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="This class will set your font styling as light/thin">
+                                .light
+                              </span>
+                            </li>
+                            <li>
+                              <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="This class will set your font styling as italic">
+                                .italic
+                              </span>
+                            </li>
+                            <li>
+                              <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="This class will set your font styling as semibold/medium">
+                                .semibold
+                              </span>
+                            </li>
+                            <li>
+                              <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="This class will set your font styling as bold/strong">
+                                .bold
+                              </span>
+                            </li>
+                            <li>
+                              <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="This class will set your font styling as bolder/extrabold">
+                                .extrabold
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="medium-6 columns">
+                          <p><strong>Font Family ID</strong></p>
+                          <ul class="styleguide-css-list">
+                            <li>
+                              <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="This ID element represents your primary font in whole website - Open Sans as default. You can edit your Primary font family here _typography.scss">
+                                #typo-primary
+                              </span>
+                            </li>
+                            <li>
+                              <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="This ID element represents your secondary font in whole website - Roboto as default. You can edit your Primary font family here _typography.scss">
+                                #typo-secondary
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div> 
@@ -346,19 +377,23 @@
                   <div class="medium-6 columns">
                     <h6>CSS</h6>
                     <div class="component-code-container" id="myCss">
-                      <p class="margin-1">
-                        <xmp class="xmp">#typo-primary {</xmp>               
-                        <xmp class="xmp ml-1">font-family: "Open Sans" !important; h1, h2, h3 ,h4 ,h5 ,h6 { </xmp>
-                        <xmp class="xmp ml-2">font-family: "Open Sans" !important;</xmp>
-                        <xmp class="xmp ml-1">}</xmp>
-                        <xmp class="xmp">}</xmp>
-                      
-                        <xmp class="xmp">#typo-secondary {</xmp>               
-                        <xmp class="xmp ml-1">font-family: "Roboto" !important; h1, h2, h3 ,h4 ,h5 ,h6 { </xmp>
-                        <xmp class="xmp ml-2">font-family: "Roboto" !important;</xmp>
-                        <xmp class="xmp ml-1">}</xmp>
-                        <xmp class="xmp">}</xmp>
-                      </p>
+                      <div class="row">
+                        <div class="medium-12 columns">
+                          <p><strong>Font Family ID</strong></p>
+                          <ul class="styleguide-css-list">
+                            <li>
+                              <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="Under the corresponding Element ID you can use the pre-defined structure of H1-H6.">
+                                #typo-primary, h1 ,h2 ,h3 .. h5
+                              </span>
+                            </li>
+                            <li>
+                              <span data-tooltip aria-haspopup="true" class="typo-tooltip has-tip tip-right" title="Under the corresponding Element ID you can use the pre-defined structure of H1-H6.">
+                                #typo-secondary, h1 ,h2 ,h3 .. h5
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div> 
@@ -1144,7 +1179,7 @@
 
                   <div class="medium-4 columns">
                     <div>
-                      <span data-tooltip aria-haspopup="true" class="has-tip [tip-top tip-bottom tip-left tip-right] [radius round]" title="Tooltips are awesome, you should totally use them!">Mouseover to see tooltip</span>
+                      <span data-tooltip aria-haspopup="true" class="tip-right [radius round]" title="Tooltips are awesome, you should totally use them!">Mouseover to see tooltip</span>
                     </div>
                   </div>
 

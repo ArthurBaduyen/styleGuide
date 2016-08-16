@@ -6,20 +6,31 @@
 .list-color-alternate {
 	li { 
 		// @extend .bg-grey; 
-		@extend .bg-secondary-light30;
+		//@extend .bg-secondary-light30;
 		// @extend .txt-white;
+		background-color: #fff;
 	}
 
 	li:nth-child(odd) {  
 		// @extend .bg-grey-light; 
-		@extend .bg-secondary-light40;
-		@extend .txt-grey;
+		//@extend .bg-secondary-light40;
+		//@extend .txt-grey;
+		background-color: #f2f2f2;
 	}
 }
 
 ul.no-indent {
+<<<<<<< HEAD
 	@extend .ml-0;
 	li { padding-left: 1rem; }
+=======
+	margin-left: 0px ;
+
+	li {
+		padding: 10px;
+		padding-left: 20px;
+	}
+>>>>>>> a3cbfcc0c728f52351be7bd05204e856b6c5a69d
 }
 
 
