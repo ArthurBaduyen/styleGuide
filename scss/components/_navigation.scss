@@ -37,6 +37,17 @@ ul.custom-side-subnav {
 	}
 }
 
+ul.custom-side-subnav {
+	background-color: #181818 !important;
+	li.custom-side-3rdnav {
+		background-color: #181818 !important;
+		
+		&:hover {
+			background-color: #151515 !important;
+		}
+	}
+}
+
 .custom {
 	width: 100%;
 	margin: 0 auto;
