@@ -56,6 +56,11 @@ $code-container-bc: #cacaca;
 				&:last-child{
 					@extend .padding-1;
 				}
+
+				.xmp {
+						font-size: 13px;
+						font-weight: 600;
+					}
 				// ----- to active scroll
 				// max-height: 20rem;
 				// overflow: auto;

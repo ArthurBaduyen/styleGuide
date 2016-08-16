@@ -44,10 +44,6 @@ if (colors.indexOf("&gt;") > -1) {
     str = str.replace(/&gt;/g, '<span style="color:#47da7d;">&gt;</span>');
 }
 
-// if (colors.indexOf("p ") > -1) {
-    // str = str.replace(/p /g, '<span style="color:green;">p </span>');
-// }
-
 if (colors.indexOf("div") > -1) {
     str = str.replace(/div/g, '<span style="color:#f35393;">div</span>');
 }
@@ -56,19 +52,6 @@ if (colors.indexOf("span") > -1) {
     str = str.replace(/span/g, '<span style="color:#f35393;">span</span>');
 }
 
-
-
-// if (colors.indexOf("class") > -1) {
-//     str = str.replace(/class/g, '<span style="color:orange;">class</span>');
-// }
-
-// if (colors.indexOf("class") > -1) {
-//     str = str.replace(/class/g, '<span class="txt-primary">class</span>');
-// }
-
-
 document.getElementById("myHtml1").innerHTML = str;
-
-
 
 });
