@@ -3,18 +3,17 @@
 	@extend .button;
 }
 
-.button-round {
+.button-round, .banner-button-round {
 	@extend .b-radmax;
 }
 
-.button-radius {
+.button-radius, .banner-button-radius {
 	@extend .b-rad5;
 }
 
 
-// Banner Buttons 
-
-.banner-button {
+// Banner Button
+.banner-button-radius, .banner-button-round, .banner-button {
 	@extend .large;
 	@extend #typo-secondary;
 	@extend .semibold;
@@ -23,12 +22,22 @@
 	padding-bottom: 14px;
 }
 
-.banner-button-round {
-	@extend .banner-button;
-	@extend .button-round;
+.liner {
+	background-color: transparent !important;
+	border-color: $primary !important;
+	color: $primary !important;
+	@extend .b-2;
+	box-sizing: border-box;
+	transition: background-color .50s;
+
+	&:hover {
+		transition: background-color .50s;
+		background-color: $primary !important;
+		color: #fff !important;
+		border-color: transparent !important;
+	}
 }
 
-.banner-button-radius {
-	@extend .banner-button;
-	@extend .button-radius;
-}
+
+
+
