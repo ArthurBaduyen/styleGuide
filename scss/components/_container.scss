@@ -5,8 +5,8 @@ $code-container-bc: #cacaca;
 	@extend .ds-1;
 	@extend .bg-white;
 	@extend .mb-2;
-	@extend .hoverable;
-
+	// @extend .hoverme;
+	
 	.component-title {
 		@extend .bb;
 		@extend .padding-1;

@@ -1,0 +1,28 @@
+// COLOR
+// --------------------
+$primary: map-get($foundation-palette, primary);	
+$secondary: map-get($foundation-palette, secondary);
+$success: map-get($foundation-palette, success);
+$warning: map-get($foundation-palette, warning);
+$alert: map-get($foundation-palette, alert);
+
+// BORDER
+// --------------------
+// Width
+$min-bw: 0;
+$max-bw: 3;
+$default-border:solid 1px #cacaca;
+
+// Radius
+$min-br: 0;
+$max-br: 5;
+
+// MARGIN
+// --------------------
+$min-margin: 0;
+$max-margin: 5;
+
+// PADDING
+// --------------------
+$min-padding: 0;
+$max-padding: 5;

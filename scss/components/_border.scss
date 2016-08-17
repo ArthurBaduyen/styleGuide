@@ -11,46 +11,10 @@
 .b-none { border-style: none;	 }
 .b-mix { border-style: dotted dashed solid double; }
 
-
-.b-1{ border-width: 1px; }
-.b-2{ border-width: 2px; }
-.b-3{ border-width: 3px; }
-.b-4{ border-width: 4px; }
-.b-5{ border-width: 5px; }
-.b-8{ border-width: 8px; }
-
-.bt-0 { border-top: 0px; }
-.bt-1 { border-top: 1px; }
-.bt-2 { border-top: 2px; }
-.bt-3 { border-top: 3px; }
-.bt-4 { border-top: 4px; }
-.bt-5 { border-top: 5px; }
-
-.bb-0 { border-bottom: 0px; }
-.bb-1 { border-bottom: 1px; }
-.bb-2 { border-bottom: 2px; }
-.bb-3 { border-bottom: 3px; }
-.bb-4 { border-bottom: 4px; }
-.bb-5 { border-bottom: 5px; }
-
-.bl-0 { border-left: 0px; }
-.bl-1 { border-left: 1px; }
-.bl-2 { border-left: 2px; }
-.bl-3 { border-left: 3px; }
-.bl-4 { border-left: 4px; }
-.bl-5 { border-left: 5px; }
-
-.br-0 { border-right: 0px; }
-.br-1 { border-right: 1px; }
-.br-2 { border-right: 2px; }
-.br-3 { border-right: 3px; }
-.br-4 { border-right: 4px; }
-.br-5 { border-right: 5px; }
-
-.bt { border-top: solid 1px #cacaca; }
-.bb { border-bottom: solid 1px #cacaca; }
-.bl { border-left: solid 1px #cacaca; }
-.br { border-right: solid 1px #cacaca; }
+.bt { border-top: $default-border; }
+.bb { border-bottom: $default-border; }
+.bl { border-left: $default-border; }
+.br { border-right: $default-border; }
 
 .border {
 	@extend .bt;
@@ -59,35 +23,114 @@
 	@extend .br;
 }
 
-.b-tl-rad1 { border-top-left-radius:1px; }
-.b-tl-rad2 { border-top-left-radius:2px; }
-.b-tl-rad3 { border-top-left-radius:3px; }
-.b-tl-rad4 { border-top-left-radius:4px; }
-.b-tl-rad5 { border-top-left-radius:5px; }
+// BORDER WIDTH
+// ---------------------------------------------------------------------------------
+// Border width of all sides
+// SAMPLE OUTPUT: 
+// .b-1{ border-width: 1px; }
+$class-border-width: b- !default;	//class name
+@for $i from $min-bw through $max-bw {
+	.#{$class-border-width}#{$i}{	//class name + variable 
+		border-width: $i;
+	}
+}
 
-.b-tr-rad1 { border-top-right-radius:1px; }
-.b-tr-rad2 { border-top-right-radius:2px; }
-.b-tr-rad3 { border-top-right-radius:3px; }
-.b-tr-rad4 { border-top-right-radius:4px; }
-.b-tr-rad5 { border-top-right-radius:5px; }
+// Border top width
+// SAMPLE OUTPUT: 
+// .bt-1{ border-top: 1px; }
+$class-border-top: bt- !default;	//class name
+@for $i from $min-bw through $max-bw {
+	.#{$class-border-top}#{$i}{	//class name + variable 
+		border-top: $i;
+	}
+}
 
-.b-bl-rad1 { border-bottom-left-radius:1px; }
-.b-bl-rad2 { border-bottom-left-radius:2px; }
-.b-bl-rad3 { border-bottom-left-radius:3px; }
-.b-bl-rad4 { border-bottom-left-radius:4px; }
-.b-bl-rad5 { border-bottom-left-radius:5px; }
+// Border bottom width
+// SAMPLE OUTPUT: 
+// .bt-1{ border-bottom: 1px; }
+$class-border-bottom: bb- !default;	//class name
+@for $i from $min-bw through $max-bw {
+	.#{$class-border-bottom}#{$i}{	//class name + variable 
+		border-bottom: $i;
+	}
+}
 
-.b-br-rad1 { border-bottom-right-radius:1px; }
-.b-br-rad2 { border-bottom-right-radius:2px; }
-.b-br-rad3 { border-bottom-right-radius:3px; }
-.b-br-rad4 { border-bottom-right-radius:4px; }
-.b-br-rad5 { border-bottom-right-radius:5px; }
+// Border right width
+// SAMPLE OUTPUT: 
+// .bt-1{ border-left: 1px; }
+$class-border-left: bl- !default;	//class name
+@for $i from $min-bw through $max-bw {
+	.#{$class-border-left}#{$i}{	//class name + variable 
+		border-left: $i;
+	}
+}
 
-.b-rad1 { border-radius: 1px; }
-.b-rad2 { border-radius: 2px; }
-.b-rad3 { border-radius: 3px; }
-.b-rad4 { border-radius: 4px; }
-.b-rad5 { border-radius: 5px; }
+// Border right width
+// SAMPLE OUTPUT: 
+// .bt-1{ border-right: 1px; }
+$class-border-right: br- !default;	//class name
+@for $i from $min-bw through $max-bw {
+	.#{$class-border-right}#{$i}{	//class name + variable 
+		border-right: $i;
+	}
+}
+// ---------------------------------------------------------------------------------
+
+
+// BORDER RADIUS
+// ---------------------------------------------------------------------------------
+// Radius all sides
+// SAMPLE OUTPUT: 
+// .b-rad1 { border-radius: 1px; }
+$class-border-Radius: b-rad !default;	//class name
+@for $i from $min-br through $max-br {
+	.#{$class-border-Radius}#{$i}{	//class name + variable 
+		border-radius: $i;
+	}
+}
+
+// Radius top left
+// SAMPLE OUTPUT: 
+// .b-tl-rad1 { border-top-left-radius:1px; }
+$class-border-tlRadius: b-tl-rad !default;	//class name
+@for $i from $min-br through $max-br {
+	.#{$class-border-tlRadius}#{$i}{	//class name + variable 
+		border-top-left-radius: $i;
+	}
+}
+
+// Radius top right
+// SAMPLE OUTPUT: 
+// .b-tr-rad1 { border-top-right-radius:1px; }
+$class-border-trRadius: b-tr-rad !default;	//class name
+@for $i from $min-br through $max-br {
+	.#{$class-border-trRadius}#{$i}{	//class name + variable 
+		border-top-right-radius: $i;
+	}
+}
+
+// Radius bottom left
+// SAMPLE OUTPUT: 
+// .b-bl-rad1 { border-bottom-left-radius:1px; }
+$class-border-blRadius: b-bl-rad !default;	//class name
+@for $i from $min-br through $max-br {
+	.#{$class-border-blRadius}#{$i}{	//class name + variable 
+		border-bottom-left-radius: $i;
+	}
+}
+
+// Radius bottom right
+// SAMPLE OUTPUT: 
+// .b-br-rad1 { border-bottom-right-radius:1px; }
+$class-border-brRadius: b-br-rad !default;	//class name
+@for $i from $min-br through $max-br {
+	.#{$class-border-brRadius}#{$i}{	//class name + variable 
+		border-bottom-right-radius: $i;
+	}
+}
+// ---------------------------------------------------------------------------------
+
+
 .b-radmax { border-radius: 150px; }
 
 

@@ -66,16 +66,19 @@
 	}
 } 
 
+.regular1, .regular, .italic{
+	font-weight:regular;
+	
+}
+
 .regular1
 	{
 		font-size: 25px;
-		font-weight: regular;
 	}
 
 .regular
 	{
 		font-size: 17px;
-		font-weight: regular;
 	}
 
 .light
@@ -87,7 +90,6 @@
 .italic
 	{
 		font-size: 17px;
-		font-weight: regular;
 		font-style: italic;
 	}
 
