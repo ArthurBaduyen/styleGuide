@@ -66,46 +66,37 @@
 	}
 } 
 
-.regular1
-	{
-		font-size: 25px;
-		font-weight: regular;
+.typo-section {
+	.regular, .light, .italic, .semibold, .bold, .extrabold {
+		font-size: 18px;
 	}
+}
 
-.regular
-	{
-		font-size: 17px;
-		font-weight: regular;
-	}
+.regular1, .regular, .italic {	
+	font-weight: regular;
+}
 
-.light
-	{
-		font-size: 17px;
-		font-weight: 300;
-	}
+.regular1{
+	font-size: 25px;
+}
 
-.italic
-	{
-		font-size: 17px;
-		font-weight: regular;
-		font-style: italic;
-	}
+.light{
+	font-weight: 300;
+}
 
-.semibold
-	{
-		font-size: 17px;
-		font-weight: 600;
-	}
+.italic{
+	font-style: italic;
+}
 
-.bold
-	{
-		font-size: 17px;
-		font-weight: bold;
-	}
+.semibold{
+	font-weight: 600;
+}
 
-.extrabold
-	{
-		font-size: 17px;
-		font-weight: 800;
-	}
+.bold{
+	font-weight: bold;
+}
+
+.extrabold{
+	font-weight: 800;
+}
 

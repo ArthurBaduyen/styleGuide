@@ -1,12 +1,34 @@
 
+.button-round, .button-radius, .banner-button {
+	@extend .button;
+}
+
+.button-round {
+	@extend .b-radmax;
+}
+
+.button-radius {
+	@extend .b-rad5;
+}
 
 
-	.button-round {
-		@extend .border;
-		@extend .b-radmax;
-	}
+// Banner Buttons 
 
-	.button-radius {
-		@extend .border;	
-		@extend .b-rad5;
-	}
+.banner-button {
+	@extend .large;
+	@extend #typo-secondary;
+	@extend .semibold;
+	@extend .pl-2; @extend .pr-2;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+.banner-button-round {
+	@extend .banner-button;
+	@extend .button-round;
+}
+
+.banner-button-radius {
+	@extend .banner-button;
+	@extend .button-radius;
+}
