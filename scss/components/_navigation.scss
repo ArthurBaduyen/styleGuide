@@ -41,8 +41,8 @@ ul.custom-side-subnav {
 			// color: rgb(255,255,0) !important;
 			// @extend .txt-primary;
 			// color: #fff;
-			a{
-			@extend .txt-primary;				
+			a:hover{
+				@extend .txt-primary;				
 			}
 		}
 	}
