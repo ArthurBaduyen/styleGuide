@@ -8,6 +8,8 @@
 
 .custom-side-nav {
 	ul {
+
+		font-size: .9rem !important;
 		li {
 			// border-bottom: solid 1px #1f1f1f;
 			-webkit-transition: background-color .2s, color .2s; /* Safari */ 
@@ -60,7 +62,7 @@ ul.custom-side-subnav {
 .custom {
 	width: 100%;
 	@extend .margin-0;
-	@extend .padding-0;
+	// @extend .padding-0;
 	text-align: center;
 
 	img {
