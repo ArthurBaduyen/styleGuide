@@ -13,7 +13,11 @@
 
 
 // Banner Button
-.banner-button-radius, .banner-button-round, .banner-button {
+.banner-button-round, .banner-button-radius {
+	@extend .banner-button;
+}
+
+.banner-button {
 	@extend .large;
 	@extend #typo-secondary;
 	@extend .semibold;
