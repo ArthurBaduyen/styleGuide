@@ -31,7 +31,7 @@
 $class-border-width: b- !default;	//class name
 @for $i from $min-bw through $max-bw {
 	.#{$class-border-width}#{$i}{	//class name + variable 
-		border-width: $i;
+		border-width: #{$i}px;
 	}
 }
 
@@ -41,7 +41,7 @@ $class-border-width: b- !default;	//class name
 $class-border-top: bt- !default;	//class name
 @for $i from $min-bw through $max-bw {
 	.#{$class-border-top}#{$i}{	//class name + variable 
-		border-top: $i;
+		border-top: #{$i}px;
 	}
 }
 
@@ -51,7 +51,7 @@ $class-border-top: bt- !default;	//class name
 $class-border-bottom: bb- !default;	//class name
 @for $i from $min-bw through $max-bw {
 	.#{$class-border-bottom}#{$i}{	//class name + variable 
-		border-bottom: $i;
+		border-bottom: #{$i}px;
 	}
 }
 
@@ -61,7 +61,7 @@ $class-border-bottom: bb- !default;	//class name
 $class-border-left: bl- !default;	//class name
 @for $i from $min-bw through $max-bw {
 	.#{$class-border-left}#{$i}{	//class name + variable 
-		border-left: $i;
+		border-left: #{$i}px;
 	}
 }
 
@@ -71,7 +71,7 @@ $class-border-left: bl- !default;	//class name
 $class-border-right: br- !default;	//class name
 @for $i from $min-bw through $max-bw {
 	.#{$class-border-right}#{$i}{	//class name + variable 
-		border-right: $i;
+		border-right: #{$i}px;
 	}
 }
 // ---------------------------------------------------------------------------------
@@ -85,7 +85,7 @@ $class-border-right: br- !default;	//class name
 $class-border-Radius: b-rad !default;	//class name
 @for $i from $min-br through $max-br {
 	.#{$class-border-Radius}#{$i}{	//class name + variable 
-		border-radius: $i;
+		border-radius: #{$i}px;
 	}
 }
 
@@ -95,7 +95,7 @@ $class-border-Radius: b-rad !default;	//class name
 $class-border-tlRadius: b-tl-rad !default;	//class name
 @for $i from $min-br through $max-br {
 	.#{$class-border-tlRadius}#{$i}{	//class name + variable 
-		border-top-left-radius: $i;
+		border-top-left-radius: #{$i}px;
 	}
 }
 
@@ -105,7 +105,7 @@ $class-border-tlRadius: b-tl-rad !default;	//class name
 $class-border-trRadius: b-tr-rad !default;	//class name
 @for $i from $min-br through $max-br {
 	.#{$class-border-trRadius}#{$i}{	//class name + variable 
-		border-top-right-radius: $i;
+		border-top-right-radius: #{$i}px;
 	}
 }
 
@@ -115,7 +115,7 @@ $class-border-trRadius: b-tr-rad !default;	//class name
 $class-border-blRadius: b-bl-rad !default;	//class name
 @for $i from $min-br through $max-br {
 	.#{$class-border-blRadius}#{$i}{	//class name + variable 
-		border-bottom-left-radius: $i;
+		border-bottom-left-radius: #{$i}px;
 	}
 }
 
@@ -125,7 +125,7 @@ $class-border-blRadius: b-bl-rad !default;	//class name
 $class-border-brRadius: b-br-rad !default;	//class name
 @for $i from $min-br through $max-br {
 	.#{$class-border-brRadius}#{$i}{	//class name + variable 
-		border-bottom-right-radius: $i;
+		border-bottom-right-radius: #{$i}px;
 	}
 }
 // ---------------------------------------------------------------------------------
