@@ -1,0 +1,12 @@
+
+
+
+	.button-round {
+		@extend .border;
+		@extend .b-radmax;
+	}
+
+	.button-radius {
+		@extend .border;	
+		@extend .b-rad5;
+	}
