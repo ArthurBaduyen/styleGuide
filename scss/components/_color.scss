@@ -1,25 +1,25 @@
 
+// TEXT AND BG COLOR
+// ---------------------------------------------------------------------------------
+// SAMPLE OUTPUT
+// .txt-black { color: #000 }
+// .bg-black { background-color: #000 }
+$list-color: (primary, $primary),(secondary,$secondary),(success,$success),(warning,$warning),(alert,$alert),(black,$black);
 
-.txt-primary { color: $primary; }
-.txt-secondary { color: $secondary; }
-.txt-success { color: $success; }
-.txt-warning { color: $warning; }
-.txt-alert { color: $alert; }
-
-.bg-primary { background-color: $primary; }
-.bg-secondary { background-color: $secondary; }
-.bg-success { background-color: $success; }
-.bg-warning { background-color: $warning; }
-.bg-alert { background-color: $alert; }
+@each $class,$val in $list-color {
+	.txt-#{$class} { color: $val; }
+	.bg-#{$class} { background-color: $val }
+}
 
 
 .bg-white { background-color: #fff; }
-.bg-black { background-color: #000; }
+.txt-white{ color: #fff; }
+
 .bg-grey { background-color: #808080; }
+.txt-grey { color: #808080; }
+
 .custom-label{background-color: #777; color: #fff; font-size: .7rem; border-color: #777;}
 
-.txt-white{ color: #fff; }
-.txt-grey { color: #808080; }
 
 
 
