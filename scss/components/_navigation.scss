@@ -59,8 +59,8 @@ ul.custom-side-subnav {
 
 .custom {
 	width: 100%;
-	margin: 0 auto;
-	padding: 0 auto;
+	@extend .margin-0;
+	@extend .padding-0;
 	text-align: center;
 
 	img {
