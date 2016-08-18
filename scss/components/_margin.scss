@@ -4,51 +4,24 @@
 // SAMPLE OUTPUT: 
 // .mt-1 { margin-top: 0 ; }
 $class-margin-top: mt- !default;	//class name
-@for $i from $min-margin through $max-margin {
-	.#{$class-margin-top}#{$i}{	//class name + variable 
-		margin-top: #{$i}rem !important;
-	}
-}
+$class-margin-left: ml- !default;	//class name
+$class-margin-bottom: mb- !default;	//class name
+$class-margin-right: mr- !default;	//class name
+$class-margin: margin- !default;	//class name
+
+	
 
 // left margin
 // SAMPLE OUTPUT: 
 // .ml-1 { margin-left: 0 ; }
-$class-margin-left: ml- !default;	//class name
 @for $i from $min-margin through $max-margin {
-	.#{$class-margin-left}#{$i}{	//class name + variable 
-		margin-left: #{$i}rem !important;
-	}
+	.#{$class-margin-top}#{$i} { margin-top: #{$i}rem !important; }
+	.#{$class-margin-left}#{$i} { margin-left: #{$i}rem !important; }
+	.#{$class-margin-bottom}#{$i} { margin-bottom: #{$i}rem !important; }
+	.#{$class-margin-right}#{$i} { margin-right: #{$i}rem !important; }
+	.#{$class-margin}#{$i} { margin: #{$i}rem !important; }
 }
 
-// bottom margin
-// SAMPLE OUTPUT: 
-// .ml-1 { margin-bottom: 0 ; }
-$class-margin-bottom: mb- !default;	//class name
-@for $i from $min-margin through $max-margin {
-	.#{$class-margin-bottom}#{$i}{	//class name + variable 
-		margin-bottom: #{$i}rem !important;
-	}
-}
-
-// right margin
-// SAMPLE OUTPUT: 
-// .ml-1 { margin-right: 0 ; }
-$class-margin-right: mr- !default;	//class name
-@for $i from $min-margin through $max-margin {
-	.#{$class-margin-right}#{$i}{	//class name + variable 
-		margin-right: #{$i}rem !important;
-	}
-}
-
-// margin all sides
-// SAMPLE OUTPUT: 
-// .margin-1 { margin-right: 0 ; }
-$class-margin: margin- !default;	//class name
-@for $i from $min-margin through $max-margin {
-	.#{$class-margin}#{$i}{	//class name + variable 
-		margin: #{$i}rem !important;
-	}
-}
 // ---------------------------------------------------------------------------------
 
 // Half margin
@@ -57,3 +30,16 @@ $class-margin: margin- !default;	//class name
 .mb-half { margin-bottom: .5rem !important; }
 .mr-half { margin-right: .5rem !important; }
 .margin-half{ @extend .mt-half; @extend .mb-half; @extend .ml-half; @extend .mr-half; }
+
+
+// Custom left margin
+// $custom-ml:(Class name, amount),(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+
+$custom-ml:(ml-8, 8rem),(ml-9, 9rem);
+@each $class, $amount in $custom-ml {
+	.#{$class} {
+		margin-left: $amount;
+	}
+}
+// ---------------------------------------------------------------------------------

@@ -27,141 +27,60 @@
 .bl-nav-green { border-left: 5px solid #57d483; }
 .bl-nav-blue { border-left: 5px solid #55b8ff; }
 
+// Custom border
+// ---------------------------------------------------------------------------------
+
+@mixin dynamic-border($width,$style,$color){
+	border: $width $style $color;
+}
 
 
 // BORDER WIDTH
 // ---------------------------------------------------------------------------------
-// Border width of all sides
 // SAMPLE OUTPUT: 
-// .b-1{ border-width: 1px; }
-// $class-border-width: b- !default;	//class name
-// @for $i from $min-bw through $max-bw {
-// 	.#{$class-border-width}#{$i}{	//class name + variable 
-// 		border-width: #{$i}px;
-// 	}
-// }
-
-// // Border top width
-// // SAMPLE OUTPUT: 
-// // .bt-1{ border-top: 1px; }
-// $class-border-top: bt- !default;	//class name
-// @for $i from $min-bw through $max-bw {
-// 	.#{$class-border-top}#{$i}{	//class name + variable 
-// 		border-top: #{$i}px;
-// 	}
-// }
-
-// // Border bottom width
-// // SAMPLE OUTPUT: 
-// // .bt-1{ border-bottom: 1px; }
-// $class-border-bottom: bb- !default;	//class name
-// @for $i from $min-bw through $max-bw {
-// 	.#{$class-border-bottom}#{$i}{	//class name + variable 
-// 		border-bottom: #{$i}px;
-// 	}
-// }
-
-// // Border left width
-// // SAMPLE OUTPUT: 
-// // .bt-1{ border-left: 1px; }
-// $class-border-left: bl- !default;	//class name
-// @for $i from $min-bw through $max-bw {
-// 	.#{$class-border-left}#{$i}{	//class name + variable 
-// 		border-left: #{$i}px;
-// 	}
-// }
-
-// // Border right width
-// // SAMPLE OUTPUT: 
-// // .bt-1{ border-right: 1px; }
-// $class-border-right: br- !default;	//class name
-// @for $i from $min-bw through $max-bw {
-// 	.#{$class-border-right}#{$i}{	//class name + variable 
-// 		border-right: #{$i}px;
-// 	}
-// }
-
-
-
-// -----
-$class-border-width: b- !default;	//class name
-$class-border-top: bt- !default;	//class name
-$class-border-bottom: bb- !default;	//class name
-$class-border-left: bl- !default;	//class name
-$class-border-right: br- !default;	//class name
-
+// .b-1 { border-width: 1px; }
+// .bt-1 { border-top: 1px; }
+// .bb-1 { border-bottom: 1px; }
+// .bl-1 { border-left: 1px; }
+// .br-1 { border-right: 1px; }
+$class-border-width: b- !default;
+$class-border-top: bt- !default;
+$class-border-bottom: bb- !default;
+$class-border-left: bl- !default;
+$class-border-right: br- !default;
 
 @for $i from $min-bw through $max-bw {
-	.#{$class-border-width}#{$i}{	//class name + variable 
-		border-width: #{$i}px;
-	}
-	.#{$class-border-top}#{$i}{	//class name + variable 
-		border-top: #{$i}px;
-	}
-	.#{$class-border-bottom}#{$i}{	//class name + variable 
-		border-bottom: #{$i}px;
-	}
-	.#{$class-border-left}#{$i}{	//class name + variable 
-		border-left: #{$i}px;
-	}
-	.#{$class-border-right}#{$i}{	//class name + variable 
-		border-right: #{$i}px;
-	}
+	.#{$class-border-width}#{$i} { border-width: #{$i}px; }
+	.#{$class-border-top}#{$i} { border-top: #{$i}px; }
+	.#{$class-border-bottom}#{$i} { border-bottom: #{$i}px; }
+	.#{$class-border-left}#{$i} { border-left: #{$i}px; }
+	.#{$class-border-right}#{$i} { border-right: #{$i}px; }
 }
-// -----
+
+
 // ---------------------------------------------------------------------------------
 
 
 // BORDER RADIUS
 // ---------------------------------------------------------------------------------
-// Radius all sides
 // SAMPLE OUTPUT: 
 // .b-rad1 { border-radius: 1px; }
-$class-border-Radius: b-rad !default;	//class name
-@for $i from $min-br through $max-br {
-	.#{$class-border-Radius}#{$i}{	//class name + variable 
-		border-radius: #{$i}px;
-	}
-}
-
-// Radius top left
-// SAMPLE OUTPUT: 
-// .b-tl-rad1 { border-top-left-radius:1px; }
+// .b-tl-rad1 { border-top-left-radius: 1px; }
+// .b-tr-rad1 { border-top-right-radius: 1px; }
+// .b-bl-rad1 { border-bottom-left-radius: 1px; }
+// .b-br-rad1 { border-bottom-right-radius: 1px; }
+$class-border-Radius: b-rad !default;
 $class-border-tlRadius: b-tl-rad !default;	//class name
-@for $i from $min-br through $max-br {
-	.#{$class-border-tlRadius}#{$i}{	//class name + variable 
-		border-top-left-radius: #{$i}px;
-	}
-}
-
-// Radius top right
-// SAMPLE OUTPUT: 
-// .b-tr-rad1 { border-top-right-radius:1px; }
 $class-border-trRadius: b-tr-rad !default;	//class name
-@for $i from $min-br through $max-br {
-	.#{$class-border-trRadius}#{$i}{	//class name + variable 
-		border-top-right-radius: #{$i}px;
-	}
-}
-
-// Radius bottom left
-// SAMPLE OUTPUT: 
-// .b-bl-rad1 { border-bottom-left-radius:1px; }
 $class-border-blRadius: b-bl-rad !default;	//class name
-@for $i from $min-br through $max-br {
-	.#{$class-border-blRadius}#{$i}{	//class name + variable 
-		border-bottom-left-radius: #{$i}px;
-	}
-}
-
-// Radius bottom right
-// SAMPLE OUTPUT: 
-// .b-br-rad1 { border-bottom-right-radius:1px; }
 $class-border-brRadius: b-br-rad !default;	//class name
+
 @for $i from $min-br through $max-br {
-	.#{$class-border-brRadius}#{$i}{	//class name + variable 
-		border-bottom-right-radius: #{$i}px;
-	}
+	.#{$class-border-Radius}#{$i} { border-radius: #{$i}px; }
+	.#{$class-border-tlRadius}#{$i} { border-top-left-radius: #{$i}px; }
+	.#{$class-border-trRadius}#{$i} { border-top-right-radius: #{$i}px; }
+	.#{$class-border-blRadius}#{$i} { border-bottom-left-radius: #{$i}px; }
+	.#{$class-border-brRadius}#{$i} { border-bottom-right-radius: #{$i}px; }
 }
 // ---------------------------------------------------------------------------------
 

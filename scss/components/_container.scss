@@ -44,16 +44,6 @@ $code-container-bc: #cacaca;
 				// @extend .pl-1;
 				// @extend .r-1;
 
-				h6 {
-					@extend .margin-0;
-					@extend .bg-primary;
-					@extend .mb-1;
-					@extend .txt-white;
-					@extend .pl-half;
-					@extend .pr-half;
-					font-weight: bold;
-					display: inline-block;
-				}
 				&:last-child{
 					@extend .padding-1;
 				}
