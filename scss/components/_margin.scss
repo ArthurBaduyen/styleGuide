@@ -36,7 +36,7 @@ $class-margin: margin- !default;	//class name
 // $custom-ml:(Class name, amount),(Class name, amount),(n, n);
 // ---------------------------------------------------------------------------------
 
-$custom-ml:(ml-8, 8rem),(ml-9, 9rem);
+$custom-ml:(ml-8, 8rem),(ml-9, 9rem); 
 @each $class, $amount in $custom-ml {
 	.#{$class} {
 		margin-left: $amount;
