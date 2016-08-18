@@ -23,57 +23,92 @@
 	@extend .br;
 }
 
+.bl-nav-red { border-left: 5px solid #ff7272; }
+.bl-nav-green { border-left: 5px solid #57d483; }
+.bl-nav-blue { border-left: 5px solid #55b8ff; }
+
+
+
 // BORDER WIDTH
 // ---------------------------------------------------------------------------------
 // Border width of all sides
 // SAMPLE OUTPUT: 
 // .b-1{ border-width: 1px; }
+// $class-border-width: b- !default;	//class name
+// @for $i from $min-bw through $max-bw {
+// 	.#{$class-border-width}#{$i}{	//class name + variable 
+// 		border-width: #{$i}px;
+// 	}
+// }
+
+// // Border top width
+// // SAMPLE OUTPUT: 
+// // .bt-1{ border-top: 1px; }
+// $class-border-top: bt- !default;	//class name
+// @for $i from $min-bw through $max-bw {
+// 	.#{$class-border-top}#{$i}{	//class name + variable 
+// 		border-top: #{$i}px;
+// 	}
+// }
+
+// // Border bottom width
+// // SAMPLE OUTPUT: 
+// // .bt-1{ border-bottom: 1px; }
+// $class-border-bottom: bb- !default;	//class name
+// @for $i from $min-bw through $max-bw {
+// 	.#{$class-border-bottom}#{$i}{	//class name + variable 
+// 		border-bottom: #{$i}px;
+// 	}
+// }
+
+// // Border left width
+// // SAMPLE OUTPUT: 
+// // .bt-1{ border-left: 1px; }
+// $class-border-left: bl- !default;	//class name
+// @for $i from $min-bw through $max-bw {
+// 	.#{$class-border-left}#{$i}{	//class name + variable 
+// 		border-left: #{$i}px;
+// 	}
+// }
+
+// // Border right width
+// // SAMPLE OUTPUT: 
+// // .bt-1{ border-right: 1px; }
+// $class-border-right: br- !default;	//class name
+// @for $i from $min-bw through $max-bw {
+// 	.#{$class-border-right}#{$i}{	//class name + variable 
+// 		border-right: #{$i}px;
+// 	}
+// }
+
+
+
+// -----
 $class-border-width: b- !default;	//class name
+$class-border-top: bt- !default;	//class name
+$class-border-bottom: bb- !default;	//class name
+$class-border-left: bl- !default;	//class name
+$class-border-right: br- !default;	//class name
+
+
 @for $i from $min-bw through $max-bw {
 	.#{$class-border-width}#{$i}{	//class name + variable 
 		border-width: #{$i}px;
 	}
-}
-
-// Border top width
-// SAMPLE OUTPUT: 
-// .bt-1{ border-top: 1px; }
-$class-border-top: bt- !default;	//class name
-@for $i from $min-bw through $max-bw {
 	.#{$class-border-top}#{$i}{	//class name + variable 
 		border-top: #{$i}px;
 	}
-}
-
-// Border bottom width
-// SAMPLE OUTPUT: 
-// .bt-1{ border-bottom: 1px; }
-$class-border-bottom: bb- !default;	//class name
-@for $i from $min-bw through $max-bw {
 	.#{$class-border-bottom}#{$i}{	//class name + variable 
 		border-bottom: #{$i}px;
 	}
-}
-
-// Border left width
-// SAMPLE OUTPUT: 
-// .bt-1{ border-left: 1px; }
-$class-border-left: bl- !default;	//class name
-@for $i from $min-bw through $max-bw {
 	.#{$class-border-left}#{$i}{	//class name + variable 
 		border-left: #{$i}px;
 	}
-}
-
-// Border right width
-// SAMPLE OUTPUT: 
-// .bt-1{ border-right: 1px; }
-$class-border-right: br- !default;	//class name
-@for $i from $min-bw through $max-bw {
 	.#{$class-border-right}#{$i}{	//class name + variable 
 		border-right: #{$i}px;
 	}
 }
+// -----
 // ---------------------------------------------------------------------------------
 
 

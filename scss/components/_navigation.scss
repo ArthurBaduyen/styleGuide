@@ -10,7 +10,7 @@
 
 		font-size: .9rem !important;
 		li {
-			@extend .mb-half;
+			// @extend .mb-half;
 			
 			-webkit-transition: background-color .2s, color .2s; /* Safari */ 
 			transition: background-color .2s color .2s;
@@ -19,9 +19,9 @@
 				// background-color:#f0f0f0;
 				a:hover{
 					@extend .txt-secondary;
-					@extend .bg-success-light30;
-				}
-					
+					// @extend .bg-success-light30;
+					@extend .bg-secondary-light40;
+				}				
 			}
 			
 			a {
@@ -36,27 +36,33 @@
 			}
 			ul.custom-side-subnav {
 				font-size: .9rem !important;
-				// @extend .bg-secondary-light40;
 				background-color: #f7f7f7 !important;
 				@extend .ml-0;
 				@extend .pl-0;
 				li {
-					@extend .mb-half;
+					// @extend .mb-half;
+					i {
+						@extend .pl-1;
+					}
 					a{
 						@extend .pl-2;
 					}
 					&:hover {
 						a:hover{
 							@extend .txt-secondary;
-							@extend .bg-success-light30;
+							@extend .bg-secondary-light40;
 						}
+					}
+					&:last-child {
+						// @extend .border;
+						// @extend .bb;
 					}
 				}
 			}
 		}
 		li.selected {
-			// @extend .bg-secondary-light20;
-			@extend .bg-success;
+			@extend .bg-secondary-light30;
+			// @extend .bg-success;
 			@extend .txt-white;
 		}		
 	}

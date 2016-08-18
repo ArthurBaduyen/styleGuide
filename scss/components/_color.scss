@@ -4,7 +4,7 @@
 // SAMPLE OUTPUT
 // .txt-black { color: #000 }
 // .bg-black { background-color: #000 }
-$list-color: (primary, $primary),(secondary,$secondary),(success,$success),(warning,$warning),(alert,$alert),(black,$black);
+$list-color: (primary, $primary),(secondary,$secondary),(success,$success),(warning,$warning),(alert,$alert),(black,$black),(grey,#808080);
 
 @each $class,$val in $list-color {
 	.txt-#{$class} { color: $val; }
@@ -15,11 +15,68 @@ $list-color: (primary, $primary),(secondary,$secondary),(success,$success),(warn
 .bg-white { background-color: #fff; }
 .txt-white{ color: #fff; }
 
-.bg-grey { background-color: #808080; }
-.txt-grey { color: #808080; }
-
 .custom-label{background-color: #777; color: #fff; font-size: .7rem; border-color: #777;}
 
+$colors: primary, secondary, success, warning, alert;
+$color-val: $primary, $secondary, $success, $warning, $alert;
+
+@for $x from 1 through length($colors) {
+	$class: nth($colors,$x);
+	$val: nth($color-val,$x);
+	@for $y from 1 through 4 {
+		.bg-#{$class}-light#{$y*10} {
+			background-color: lighten($val,$y*10);
+		}
+		.bg-#{$class}-dark#{$y*10} {
+			background-color: darken($val,$y*10);
+		}
+	}
+}
+
+
+
+
+// @for $i from 1 through length($colors-to-adjust) {
+// 	.bg-#{$class}-light#{$i*10} {
+// 		background-color: lighten($val,$amount); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// 	.bg-#{$class}-dark#{$i*10} {
+// 		background-color: darken($val,$amount); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
+
+
+
+
+
+// @each $class,$val in $colors-to-adjust {
+
+// 	$class-light: bg-#{$class}-light !default;	//class name
+// 	@for $i from 1 through 4 {
+// 		.#{$class-light}#{$i*10}{	//class name + variable i
+// 			$amount: $i * 10;
+// 			background-color: lighten($val,$amount); //adjust the color using percentage i*10 (eg. 3*10)
+// 			// @include color-adjust-light($val,$i);
+// 			// background-color: lighten($val,$i*10);
+// 		}
+// 	}
+// 	$class-dark: bg-#{$class}-dark !default;	//class name
+// 	@for $i from 1 through 4 {
+// 		.#{$class-dark}#{$i*10}{	//class name + variable i
+// 			$amount: $i * 10;
+// 			background-color: darken($val,$amount); //adjust the color using percentage i*10 (eg. 3*10)
+// 			// @include color-adjust-darken($val,$i);
+// 			// background-color: darken($val,$i*10);
+// 		}
+// 	}
+// }
+
+// @mixin color-adjust-light($val,$i){
+// 	background-color: lighten($val,$i*10);
+// }
+// @mixin color-adjust-dark($val,$i){
+// 	background-color: darken($val,$i*10);
+// }
 
 
 
@@ -28,89 +85,154 @@ $list-color: (primary, $primary),(secondary,$secondary),(success,$success),(warn
 // LIGHTEN COLOR by 10%,20%,30% and 40%(n)
 // SAMPLE OUTPUT: 
 // .bg-primary-light20 { background-color: lighten($primary, 20%) }
-$class-bg-primary-light: bg-primary-light !default;	//class name
-@for $i from 1 through 4 {
-	.#{$class-bg-primary-light}#{$i*10}{	//class name + variable i
-		background-color: lighten($primary,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
-	}
-}
+// $class-bg-primary-light: bg-primary-light !default;	//class name
+// @for $i from 1 through 4 {
+// 	.#{$class-bg-primary-light}#{$i*10}{	//class name + variable i
+// 		background-color: lighten($primary,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
 
-$class-bg-secondary-light: bg-secondary-light !default;	//class name
-@for $i from 1 through 4 {
-	.#{$class-bg-secondary-light}#{$i*10}{	//class name + variable i
-		background-color: lighten($secondary,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
-	}
-}
+// $class-bg-secondary-light: bg-secondary-light !default;	//class name
+// @for $i from 1 through 4 {
+// 	.#{$class-bg-secondary-light}#{$i*10}{	//class name + variable i
+// 		background-color: lighten($secondary,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
 
-$class-bg-success: bg-success-light !default;	//class name
-@for $i from 1 through 4 {
-	.#{$class-bg-success}#{$i*10}{	//class name + variable i
-		background-color: lighten($success,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
-	}
-}
+// $class-bg-success: bg-success-light !default;	//class name
+// @for $i from 1 through 4 {
+// 	.#{$class-bg-success}#{$i*10}{	//class name + variable i
+// 		background-color: lighten($success,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
 
-$class-bg-warning: bg-warning-light !default;	//class name
-@for $i from 1 through 4 {
-	.#{$class-bg-warning}#{$i*10}{	//class name + variable i
-		background-color: lighten($warning,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
-	}
-}
+// $class-bg-warning: bg-warning-light !default;	//class name
+// @for $i from 1 through 4 {
+// 	.#{$class-bg-warning}#{$i*10}{	//class name + variable i
+// 		background-color: lighten($warning,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
 
-$class-bg-alert: bg-alert-light !default;	//class name
-@for $i from 1 through 4 {
-	.#{$class-bg-alert}#{$i*10}{	//class name + variable i
-		background-color: lighten($alert,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
-	}
-}
+// $class-bg-alert: bg-alert-light !default;	//class name
+// @for $i from 1 through 4 {
+// 	.#{$class-bg-alert}#{$i*10}{	//class name + variable i
+// 		background-color: lighten($alert,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
+// // ---------------------------------------------------------------------------------
+
+
+// // DARKEN
+// // ---------------------------------------------------------------------------------
+// // DARKEN COLOR by 10%,20%,30% and 40%
+// // SAMPLE OUTPUT: 
+// // .bg-primary-light20 { background-color: darken($primary, 20%) }
+// $class-bg-primary-dark: bg-primary-dark !default;	//class name
+// @for $i from 1 through 4 {
+// 	.#{$class-bg-primary-dark}#{$i*10}{	//class name + variable i
+// 		background-color: darken($primary,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
+
+// $class-bg-secondary-dark: bg-secondary-dark !default;	//class name
+// @for $i from 1 through 4 {
+// 	.#{$class-bg-secondary-dark}#{$i*10}{	//class name + variable i
+// 		background-color: darken($secondary,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
+
+// $class-bg-success-dark: bg-success-dark !default;	//class name
+// @for $i from 1 through 4 {
+// 	.#{$class-bg-success-dark}#{$i*10}{	//class name + variable i
+// 		background-color: darken($success,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
+
+// $class-bg-warning-dark: bg-warning-dark !default;	//class name
+// @for $i from 1 through 4 {
+// 	.#{$class-bg-warning-dark}#{$i*10}{	//class name + variable i
+// 		background-color: darken($warning,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
+
+// $class-bg-alert-dark: bg-alert-dark !default;	//class name
+// @for $i from 1 through 4 {
+// 	.#{$class-bg-alert-dark}#{$i*10}{	//class name + variable i
+// 		background-color: darken($alert,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
+// 	}
+// }
 // ---------------------------------------------------------------------------------
 
 
-// DARKEN
-// ---------------------------------------------------------------------------------
-// DARKEN COLOR by 10%,20%,30% and 40%
-// SAMPLE OUTPUT: 
-// .bg-primary-light20 { background-color: darken($primary, 20%) }
-$class-bg-primary-dark: bg-primary-dark !default;	//class name
-@for $i from 1 through 4 {
-	.#{$class-bg-primary-dark}#{$i*10}{	//class name + variable i
-		background-color: darken($primary,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
-	}
-}
-
-$class-bg-secondary-dark: bg-secondary-dark !default;	//class name
-@for $i from 1 through 4 {
-	.#{$class-bg-secondary-dark}#{$i*10}{	//class name + variable i
-		background-color: darken($secondary,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
-	}
-}
-
-$class-bg-success-dark: bg-success-dark !default;	//class name
-@for $i from 1 through 4 {
-	.#{$class-bg-success-dark}#{$i*10}{	//class name + variable i
-		background-color: darken($success,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
-	}
-}
-
-$class-bg-warning-dark: bg-warning-dark !default;	//class name
-@for $i from 1 through 4 {
-	.#{$class-bg-warning-dark}#{$i*10}{	//class name + variable i
-		background-color: darken($warning,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
-	}
-}
-
-$class-bg-alert-dark: bg-alert-dark !default;	//class name
-@for $i from 1 through 4 {
-	.#{$class-bg-alert-dark}#{$i*10}{	//class name + variable i
-		background-color: darken($alert,$i*10); //adjust the color using percentage i*10 (eg. 3*10)
-	}
-}
-// ---------------------------------------------------------------------------------
 
 
+// .txt-primary { color: map-get($foundation-palette, primary); }
+// .txt-secondary { color: map-get($foundation-palette, secondary); }
+// .txt-success { color: map-get($foundation-palette, success); }
+// .txt-warning { color: map-get($foundation-palette, warning); }
+// .txt-alert { color: map-get($foundation-palette, alert); }
+
+// .bg-primary { background-color: map-get($foundation-palette, primary); }
+// .bg-secondary { background-color: map-get($foundation-palette, secondary); }
+// .bg-success { background-color: map-get($foundation-palette, success); }
+// .bg-warning { background-color: map-get($foundation-palette, warning); }
+// .bg-alert { background-color: map-get($foundation-palette, alert); }
+
+// .bg-primary-light10 { background-color: lighten(map-get($foundation-palette, primary), 10%) }
+// .bg-primary-light20 { background-color: lighten(map-get($foundation-palette, primary), 20%) }
+// .bg-primary-light30 { background-color: lighten(map-get($foundation-palette, primary), 30%) }
+// .bg-primary-light40 { background-color: lighten(map-get($foundation-palette, primary), 40%) }
+// .bg-primary-light50 { background-color: lighten(map-get($foundation-palette, primary), 50%) }
+// .bg-primary-dark10 { background-color: darken(map-get($foundation-palette, primary), 10%) }
+// .bg-primary-dark20 { background-color: darken(map-get($foundation-palette, primary), 20%) }
+// .bg-primary-dark30 { background-color: darken(map-get($foundation-palette, primary), 30%) }
+// .bg-primary-dark40 { background-color: darken(map-get($foundation-palette, primary), 40%) }
+// .bg-primary-dark50 { background-color: darken(map-get($foundation-palette, primary), 50%) }
 
 
+// .bg-secondary-light10 { background-color: lighten(map-get($foundation-palette, secondary), 10%) }
+// .bg-secondary-light20 { background-color: lighten(map-get($foundation-palette, secondary), 20%) }
+// .bg-secondary-light30 { background-color: lighten(map-get($foundation-palette, secondary), 30%) }
+// .bg-secondary-light40 { background-color: lighten(map-get($foundation-palette, secondary), 40%) }
+// .bg-secondary-light50 { background-color: lighten(map-get($foundation-palette, secondary), 50%) }
+// .bg-secondary-dark10 { background-color: darken(map-get($foundation-palette, secondary), 10%) }
+// .bg-secondary-dark20 { background-color: darken(map-get($foundation-palette, secondary), 20%) }
+// .bg-secondary-dark30 { background-color: darken(map-get($foundation-palette, secondary), 30%) }
+// .bg-secondary-dark40 { background-color: darken(map-get($foundation-palette, secondary), 40%) }
+// .bg-secondary-dark50 { background-color: darken(map-get($foundation-palette, secondary), 50%) }
 
+// .bg-secondary-light10 { background-color: lighten(map-get($foundation-palette, secondary), 10%) }
+// .bg-secondary-light20 { background-color: lighten(map-get($foundation-palette, secondary), 20%) }
+// .bg-secondary-light30 { background-color: lighten(map-get($foundation-palette, secondary), 30%) }
+// .bg-secondary-light40 { background-color: lighten(map-get($foundation-palette, secondary), 40%) }
+// .bg-secondary-light50 { background-color: lighten(map-get($foundation-palette, secondary), 50%) }
+// .bg-secondary-dark10 { background-color: darken(map-get($foundation-palette, secondary), 10%) }
+// .bg-secondary-dark20 { background-color: darken(map-get($foundation-palette, secondary), 20%) }
+// .bg-secondary-dark30 { background-color: darken(map-get($foundation-palette, secondary), 30%) }
+// .bg-secondary-dark40 { background-color: darken(map-get($foundation-palette, secondary), 40%) }
+// .bg-secondary-dark50 { background-color: darken(map-get($foundation-palette, secondary), 50%) }
 
+// .bg-secondary-light10 { background-color: lighten(map-get($foundation-palette, secondary), 10%) }
+// .bg-secondary-light20 { background-color: lighten(map-get($foundation-palette, secondary), 20%) }
+// .bg-secondary-light30 { background-color: lighten(map-get($foundation-palette, secondary), 30%) }
+// .bg-secondary-light40 { background-color: lighten(map-get($foundation-palette, secondary), 40%) }
+// .bg-secondary-light50 { background-color: lighten(map-get($foundation-palette, secondary), 50%) }
+// .bg-secondary-dark10 { background-color: darken(map-get($foundation-palette, secondary), 10%) }
+// .bg-secondary-dark20 { background-color: darken(map-get($foundation-palette, secondary), 20%) }
+// .bg-secondary-dark30 { background-color: darken(map-get($foundation-palette, secondary), 30%) }
+// .bg-secondary-dark40 { background-color: darken(map-get($foundation-palette, secondary), 40%) }
+// .bg-secondary-dark50 { background-color: darken(map-get($foundation-palette, secondary), 50%) }
+
+// .bg-secondary-light10 { background-color: lighten(map-get($foundation-palette, secondary), 10%) }
+// .bg-secondary-light20 { background-color: lighten(map-get($foundation-palette, secondary), 20%) }
+// .bg-secondary-light30 { background-color: lighten(map-get($foundation-palette, secondary), 30%) }
+// .bg-secondary-light40 { background-color: lighten(map-get($foundation-palette, secondary), 40%) }
+// .bg-secondary-light50 { background-color: lighten(map-get($foundation-palette, secondary), 50%) }
+// .bg-secondary-dark10 { background-color: darken(map-get($foundation-palette, secondary), 10%) }
+// .bg-secondary-dark20 { background-color: darken(map-get($foundation-palette, secondary), 20%) }
+// .bg-secondary-dark30 { background-color: darken(map-get($foundation-palette, secondary), 30%) }
+// .bg-secondary-dark40 { background-color: darken(map-get($foundation-palette, secondary), 40%) }
+// .bg-secondary-dark50 { background-color: darken(map-get($foundation-palette, secondary), 50%) }
 
 
 
