@@ -1,6 +1,6 @@
 // MARGINS
 // ---------------------------------------------------------------------------------
-// SAMPLE OUTPUT: 
+// OUTPUT: 
 // .mt-1 { margin-top: 0 ; }
 // .ml-1 { margin-left: 0 ; }
 // .mr-1 { margin-right: 0 ; }
@@ -21,44 +21,28 @@ $class-mar: margin- !default;
 	.#{$class-mar-right}#{$i} { margin-right: #{$i}rem !important; }
 	.#{$class-mar}#{$i} { margin: #{$i}rem !important; }
 }
-// ---------------------------------------------------------------------------------
 
 
-// Custom Top margin
-// $custom-mt:(Class name, amount),(Class name, amount),(n, n);
+// Custom Margin
 // ---------------------------------------------------------------------------------
-$custom-mt:(mt-half,.5rem),(mt-1half,1.5rem),(mt-2half,2.5rem);
-@each $class, $val in $custom-mt {
-	.#{$class} { margin-top: $val; }
+// INPUT ($class, $value,$side)
+// $class - name of the output class.
+// $value - amout of radius (e.g. 5px)
+// $side -  w/c side of the element will appear. Use -top, -bottom, -left, -right or leave blank to apply all sides.
+$custom-margin:
+	(mb-half,.5rem,-bottom),
+	(mb-1half,1.5rem,-bottom),
+	(mb-2half,2.5rem,-bottom),
+	(mt-half,.5rem,-top),
+	(mt-1half,1.5rem,-top),
+	(mt-2half,2.5rem,-top),
+	(mr-half,.5rem,-right),
+	(mr-1half,1.5rem,-right),
+	(mr-2half,2.5rem,-right),
+	(ml-half,.5rem,-left),
+	(ml-1half,1.5rem,-left),
+	(ml-2half,2.5rem,-left);
+	
+@each $class, $val, $side in $custom-margin {
+	.#{$class} { margin#{$side}: $val; }
 }
-// ---------------------------------------------------------------------------------
-
-
-// Custom left margin
-// $custom-ml:(Class name, amount),(Class name, amount),(n, n);
-// ---------------------------------------------------------------------------------
-$custom-ml:(ml-half,.5rem),(ml-1half,1.5rem),(ml-2half,2.5rem);
-@each $class, $val in $custom-ml {
-	.#{$class} { margin-left: $val; }
-}
-// ---------------------------------------------------------------------------------
-
-
-// Custom Right margin
-// $custom-mr:(Class name, amount),(Class name, amount),(n, n);
-// ---------------------------------------------------------------------------------
-$custom-mr:(mr-half,.5rem),(mr-1half,1.5rem),(mr-2half,2.5rem);
-@each $class, $val in $custom-mr {
-	.#{$class} { margin-right: $val; }
-}
-// ---------------------------------------------------------------------------------
-
-
-// Custom Bottom margin
-// $custom-mb:(Class name, amount),(Class name, amount),(n, n);
-// ---------------------------------------------------------------------------------
-$custom-mb:(mb-half,.5rem),(mb-1half,1.5rem),(mb-2half,2.5rem);
-@each $class, $val in $custom-mb {
-	.#{$class} { margin-bottom: $val; }
-}
-// ---------------------------------------------------------------------------------

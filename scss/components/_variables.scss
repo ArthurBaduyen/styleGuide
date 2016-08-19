@@ -1,34 +1,40 @@
 // COLOR
-// --------------------
+// ---------------------------------------------------------------------------------
 $primary: map-get($foundation-palette, primary);	
 $secondary: map-get($foundation-palette, secondary);
 $success: map-get($foundation-palette, success);
 $warning: map-get($foundation-palette, warning);
 $alert: map-get($foundation-palette, alert);
+// ---------------------------------------------------------------------------------
 
 
 // BORDER
-// --------------------
+// ---------------------------------------------------------------------------------
 // Width
+// ----------
 $min-bw: 0;
 $max-bw: 10;
-$default-border:solid 1px #cacaca;
-$borderList:
-	(bt-80,8px,solid,#323,-top),
-	(bb-8, 8px, solid, #777,-bottom);
+$default-border: solid 1px #cacaca;
 
 // Radius
+// ----------
 $min-br: 0;
 $max-br: 5;
 
 
 // MARGIN
-// --------------------
+// ---------------------------------------------------------------------------------
 $min-mar: 0;
 $max-mar: 5;
 
 
 // PADDING
-// --------------------
+// ---------------------------------------------------------------------------------
 $min-pad: 0;
 $max-pad: 5;
+
+
+
+
+
+

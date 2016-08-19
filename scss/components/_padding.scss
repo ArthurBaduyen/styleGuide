@@ -7,7 +7,6 @@
 // .ptb1 { padding-bottom: 0 ; }
 
 // class prefix 
-// DO NOT CHANGE
 $class-pad-top: pt- !default;
 $class-pad-left: pl- !default;
 $class-pad-bottom: pb- !default;
@@ -22,44 +21,28 @@ $class-pad: padding- !default;
 	.#{$class-pad-right}#{$i} { padding-right: #{$i}rem; }
 	.#{$class-pad}#{$i} { padding: #{$i}rem; }
 }
-// ---------------------------------------------------------------------------------
 
 
-// Custom Top padding
-// $custom-mt:(Class name, amount),(Class name, amount),(n, n);
+// Custom Padding
 // ---------------------------------------------------------------------------------
-$custom-pt:(pt-half,.5rem),(pt-1half,1.5rem),(pt-2half,2.5rem);
-@each $class, $val in $custom-pt {
-	.#{$class} { padding-top: $val; }
+// INPUT ($class, $value,$side)
+// $class - name of the output class.
+// $value - amout of radius (e.g. 5px)
+// $side -  w/c side of the element will appear. Use -top, -bottom, -left, -right or leave blank to apply all sides.
+$custom-padding:
+	(pt-half,.5rem,-top),
+	(pt-1half,1.5rem,-top),
+	(pt-2half,2.5rem,-top),
+	(pb-half,.5rem,-bottom),
+	(pb-1half,1.5rem,-bottom),
+	(pb-2half,2.5rem,-bottom),
+	(pl-half,.5rem,-left),
+	(pl-1half,1.5rem,-left),
+	(pl-2half,2.5rem,-left),
+	(pr-half,.5rem,-right),
+	(pr-1half,1.5rem,-right),
+	(pr-2half,2.5rem,-right);
+
+@each $class, $val, $side in $custom-padding {
+	.#{$class} { padding-#{$side}: $val; }
 }
-// ---------------------------------------------------------------------------------
-
-
-// Custom left padding
-// $custom-ml:(Class name, amount),(Class name, amount),(n, n);
-// ---------------------------------------------------------------------------------
-$custom-pl:(pl-half,.5rem),(pl-1half,1.5rem),(pl-2half,2.5rem);
-@each $class, $val in $custom-pl {
-	.#{$class} { padding-left: $val; }
-}
-// ---------------------------------------------------------------------------------
-
-
-// Custom Right padding
-// $custom-mr:(Class name, amount),(Class name, amount),(n, n);
-// ---------------------------------------------------------------------------------
-$custom-pr:(pr-half,.5rem),(pr-1half,1.5rem),(pr-2half,2.5rem);
-@each $class, $val in $custom-pr {
-	.#{$class} { padding-right: $val; }
-}
-// ---------------------------------------------------------------------------------
-
-
-// Custom Bottom padding
-// $custom-mb:(Class name, amount),(Class name, amount),(n, n);
-// ---------------------------------------------------------------------------------
-$custom-pb:(pb-half,.5rem),(pb-1half,1.5rem),(pb-2half,2.5rem);
-@each $class, $val in $custom-pb {
-	.#{$class} { padding-bottom: $val; }
-}
-// ---------------------------------------------------------------------------------

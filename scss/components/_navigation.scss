@@ -42,7 +42,7 @@
 				li {
 					// @extend .mb-half;
 					i {
-						@extend .pl-1;
+						@extend .pl-half;
 					}
 					a{
 						@extend .pl-2;
@@ -64,6 +64,7 @@
 			@extend .bg-secondary-light30;
 			// @extend .bg-success;
 			@extend .txt-white;
+			
 		}		
 	}
 }

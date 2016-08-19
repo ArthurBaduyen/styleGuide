@@ -20,10 +20,6 @@ $b-mix: dotted dashed solid double;
 	@extend .br;
 }
 
-.bl-nav-red { border-left: 5px solid #ff7272; }
-.bl-nav-green { border-left: 5px solid #57d483; }
-.bl-nav-blue { border-left: 5px solid #55b8ff; }
-
 
 // BORDER WIDTH
 // ---------------------------------------------------------------------------------
@@ -48,63 +44,28 @@ $class-border-right: br- !default;
 }
 // ---------------------------------------------------------------------------------
 
-// Custom Border width
-// ---------------------------------------------------------------------------------
-$custom-bw:(b-8,8px,$b-solid,#777),(b-88,10px,dotted,#999);
-@each $class, $val,$style,$color in $custom-bw {
-	.#{$class} { border: $val $style $color; }
-}
-// ---------------------------------------------------------------------------------
-
-// Custom Top Border width
-// ---------------------------------------------------------------------------------
-$custom-btw:(bt-8,8px,$b-solid,#777),(bt-88,10px,dotted,#999),(bt-1,1px,$b-solid,#777);
-@each $class, $val,$style,$color in $custom-btw {
-	.#{$class} { border-top: $val $style $color; }
-}
-// ---------------------------------------------------------------------------------
-
-
-// Custom Left Border width
-// ---------------------------------------------------------------------------------
-$custom-blw:(bl-8,8px,$b-solid,#777),(bl-88,10px,$b-dotted,#999);
-@each $class, $val,$style,$color in $custom-blw {
-	.#{$class} { border-left: $val $style $color; }
-}
-// ---------------------------------------------------------------------------------
-
-// Custom Right Border width
-// ---------------------------------------------------------------------------------
-$custom-brw:(br-8,8px,$b-solid,#777),(br-88,10px,$b-dotted#999);
-@each $class, $val,$style,$color in $custom-brw {
-	.#{$class} { border-right: $val $style $color; }
-}
-// ---------------------------------------------------------------------------------
-
-// Custom Bottom Border width
-// ---------------------------------------------------------------------------------
-$custom-bbw:(bb-8,8px,solid,#777),(bb-88,10px,dotted,#999),(bt-1,1px,$b-solid,#777);
-@each $class, $val,$style,$color in $custom-bbw {
-	.#{$class} { border-bottom: $val $style $color; }
-}
-// ---------------------------------------------------------------------------------
-
 
 // Custom Border
-// OUTPUT: .($class) { border($side): $width $style $color; }
-// Use -top, -bottom, -left, -right or leave blank for $side
+// INPUT ($class, $width,$style,$side)
+// $class - name of the output class.
+// $width - amount of border width.
+// $style - border style(e.g. solid).
+// $side -  w/c side of the element will appear. Use -top, -bottom, -left, -right or leave blank for both 4 sides
 // ---------------------------------------------------------------------------------
-$borderList:(bt-80,8px,solid,#323,-top),(bb-8, 8px, solid, #777,-bottom);
+$borderList:
+	(bt-80, 8px, solid, #323, -top),
+	(bb-8, 8px, solid, #777, -bottom),
+	(bl-nav-red, 5px, solid, #ff7272, -left),
+	(bl-nav-green, 5px, solid, #57d483, -left),
+	(bl-nav-blue, 5px, solid, #55b8ff, -left);
 
-
-@mixin bl($width, $style, $color,$side) { 
+@mixin create-border-class($width, $style, $color,$side) { 
 	border#{$side}: $width $style $color; 
 }
 @each $class, $width, $style, $color, $side in $borderList{
-  .#{$class} { @include bl($width,$style,$color,$side) }
+  .#{$class} { @include create-border-class($width,$style,$color,$side) }
 }
 // ---------------------------------------------------------------------------------
-
 
 
 // BORDER RADIUS
@@ -116,10 +77,10 @@ $borderList:(bt-80,8px,solid,#323,-top),(bb-8, 8px, solid, #777,-bottom);
 // .b-bl-rad1 { border-bottom-left-radius: 1px; }
 // .b-br-rad1 { border-bottom-right-radius: 1px; }
 $class-border-Radius: b-rad !default;
-$class-border-tlRadius: b-tl-rad !default;	//class name
-$class-border-trRadius: b-tr-rad !default;	//class name
-$class-border-blRadius: b-bl-rad !default;	//class name
-$class-border-brRadius: b-br-rad !default;	//class name
+$class-border-tlRadius: b-tl-rad !default;
+$class-border-trRadius: b-tr-rad !default;
+$class-border-blRadius: b-bl-rad !default;
+$class-border-brRadius: b-br-rad !default;
 
 @for $i from $min-br through $max-br { //for $min-br & $max-br value please refer to _variables.scss
 	.#{$class-border-Radius}#{$i} { border-radius: #{$i}px; }
@@ -132,11 +93,16 @@ $class-border-brRadius: b-br-rad !default;	//class name
 
 
 // Custom Border Radius
-// $custom-mt:(Class name, amount),(n, n);
+// INPUT ($class, $value)
+// $class - name of the output class.
+// $value - amout of radius (e.g. 5px)
 // ---------------------------------------------------------------------------------
-$custom-br:(b-radmax,150px),(b-rad-50,50rem),(b-rad-25,25rem);
-@each $class, $val in $custom-br {
-	.#{$class} { border-radius: $val; }
+$custom-border-radius:
+	(b-radmax,150px),
+	(b-rad-50,50rem,-top-left),
+	(b-rad-25,25rem);
+@each $class, $val, $edge in $custom-border-radius {
+	.#{$class} { border#{$edge}-radius: $val; }
 }
 // ---------------------------------------------------------------------------------
 
