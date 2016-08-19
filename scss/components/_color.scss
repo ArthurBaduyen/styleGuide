@@ -9,6 +9,8 @@ $list-color: (primary, $primary),(secondary,$secondary),(success,$success),(warn
 	.txt-#{$class} { color: $val; }
 	.bg-#{$class} { background-color: $val }
 }
+
+
 // ---------------------------------------------------------------------------------
 
 
@@ -33,17 +35,6 @@ $color-val: $primary, $secondary, $success, $warning, $alert;
 // ---------------------------------------------------------------------------------
 
 
-.custom-label{
-	background-color: #777; 
-	color: #fff; 
-	font-size: .7rem;
-	border-color: #777;
-}
-
-
-
-
-
 // Custom Background color
 // $custom-bg:(Class name, color),(n, n);
 // ---------------------------------------------------------------------------------
@@ -58,6 +49,21 @@ $custom-bg:(bg-white,#fff),(myColor2,#E1E1E1),(myColor3,#D9D9D9);
 // ---------------------------------------------------------------------------------
 $custom-txt:(txt-white,#fff),(myColor2,#E1E1E1),(myColor3,#D9D9D9);
 @each $class, $val in $custom-txt {
-	.#{$class} { background-color: $val; }
+	.#{$class} { color: $val; }
 }
 // ---------------------------------------------------------------------------------
+
+.custom-label{
+	background-color: #777; 
+	color: #fff; 
+	font-size: .7rem;
+	border-color: #777;
+}
+
+.pvw-title span {
+  display: none;
+}
+$test: Hello;
+.pvw-title:after {
+  content: $test;
+}
