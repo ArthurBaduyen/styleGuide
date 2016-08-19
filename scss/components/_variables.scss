@@ -11,8 +11,11 @@ $alert: map-get($foundation-palette, alert);
 // --------------------
 // Width
 $min-bw: 0;
-$max-bw: 3;
+$max-bw: 10;
 $default-border:solid 1px #cacaca;
+$borderList:
+	(bt-80,8px,solid,#323,-top),
+	(bb-8, 8px, solid, #777,-bottom);
 
 // Radius
 $min-br: 0;

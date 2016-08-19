@@ -66,6 +66,26 @@ $custom-btw:(bt-8,8px,$b-solid,#777),(bt-88,10px,dotted,#999),(bt-1,1px,$b-solid
 }
 // ---------------------------------------------------------------------------------
 
+// @mixin bl($w. $s, $c){
+// 	border-width: $w;
+// 	border-color: $c;
+// 	border-style: $s;
+// }
+
+@mixin bl($w, $s, $c){
+	border-width: $w;
+	border-style: $s;
+	border-color: $c;
+}
+
+$borderList:(bt-80,8px,solid,#323),(bt-89,10px,dotted,#999),(bt-88,1px,solid,red);
+@each $class, $width, $style, $color in $borderList{
+  .#{$class}{
+    @include bl($width,$style,$color)
+  }  
+}
+
+
 // Custom Left Border width
 // $custom-blw:(Class name, amount),(n, n);
 // ---------------------------------------------------------------------------------
