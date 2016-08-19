@@ -6,8 +6,6 @@ $success: map-get($foundation-palette, success);
 $warning: map-get($foundation-palette, warning);
 $alert: map-get($foundation-palette, alert);
 
-// $c-white: #fff;
-// $c-black: #000;
 
 // BORDER
 // --------------------
@@ -20,12 +18,14 @@ $default-border:solid 1px #cacaca;
 $min-br: 0;
 $max-br: 5;
 
+
 // MARGIN
 // --------------------
-$min-margin: 0;
-$max-margin: 5;
+$min-mar: 0;
+$max-mar: 5;
+
 
 // PADDING
 // --------------------
-$min-padding: 0;
-$max-padding: 5;
+$min-pad: 0;
+$max-pad: 5;

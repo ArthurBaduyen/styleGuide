@@ -1,6 +1,3 @@
-
-// border 1, 2, 3
-
 .b-dotted { border-style: dotted; }
 .b-dashed { border-style: dashed; }
 .b-solid { border-style: solid; }
@@ -27,13 +24,6 @@
 .bl-nav-green { border-left: 5px solid #57d483; }
 .bl-nav-blue { border-left: 5px solid #55b8ff; }
 
-// Custom border
-// ---------------------------------------------------------------------------------
-
-@mixin dynamic-border($width,$style,$color){
-	border: $width $style $color;
-}
-
 
 // BORDER WIDTH
 // ---------------------------------------------------------------------------------
@@ -49,15 +39,13 @@ $class-border-bottom: bb- !default;
 $class-border-left: bl- !default;
 $class-border-right: br- !default;
 
-@for $i from $min-bw through $max-bw {
+@for $i from $min-bw through $max-bw { //for $min-bw & $max-bw value please refer to _variables.scss
 	.#{$class-border-width}#{$i} { border-width: #{$i}px; }
 	.#{$class-border-top}#{$i} { border-top: #{$i}px; }
 	.#{$class-border-bottom}#{$i} { border-bottom: #{$i}px; }
 	.#{$class-border-left}#{$i} { border-left: #{$i}px; }
 	.#{$class-border-right}#{$i} { border-right: #{$i}px; }
 }
-
-
 // ---------------------------------------------------------------------------------
 
 
@@ -75,7 +63,7 @@ $class-border-trRadius: b-tr-rad !default;	//class name
 $class-border-blRadius: b-bl-rad !default;	//class name
 $class-border-brRadius: b-br-rad !default;	//class name
 
-@for $i from $min-br through $max-br {
+@for $i from $min-br through $max-br { //for $min-br & $max-br value please refer to _variables.scss
 	.#{$class-border-Radius}#{$i} { border-radius: #{$i}px; }
 	.#{$class-border-tlRadius}#{$i} { border-top-left-radius: #{$i}px; }
 	.#{$class-border-trRadius}#{$i} { border-top-right-radius: #{$i}px; }
@@ -85,8 +73,14 @@ $class-border-brRadius: b-br-rad !default;	//class name
 // ---------------------------------------------------------------------------------
 
 
-.b-radmax { border-radius: 150px; }
-
+// Custom Border Radius
+// $custom-mt:(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+$custom-br:(b-radmax,150rem),(b-rad-50,50rem),(b-rad-25,25rem);
+@each $class, $val in $custom-br {
+	.#{$class} { border-radius: $val; }
+}
+// ---------------------------------------------------------------------------------
 
 
 

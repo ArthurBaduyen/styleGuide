@@ -1,59 +1,65 @@
 // MARGINS
 // ---------------------------------------------------------------------------------
-// top padding
-// SAMPLE OUTPUT: 
-// .mt-1 { padding-top: 0 ; }
-$class-padding-top: pt- !default;	//class name
-@for $i from $min-padding through $max-padding {
-	.#{$class-padding-top}#{$i}{	//class name + variable 	
-		padding-top: #{$i}rem;
-	}
-}
+// OUTPUT: 
+// .pt-1 { padding-top: 0 ; }
+// .pl-1 { padding-left: 0 ; }
+// .pr-1 { padding-right: 0 ; }
+// .ptb1 { padding-bottom: 0 ; }
 
-// left padding
-// SAMPLE OUTPUT: 
-// .ml-1 { padding-left: 0 ; }
-$class-padding-left: pl- !default;	//class name
-@for $i from $min-padding through $max-padding {
-	.#{$class-padding-left}#{$i}{	//class name + variable 
-		padding-left: #{$i}rem;
-	}
-}
+// class prefix 
+// DO NOT CHANGE
+$class-pad-top: pt- !default;
+$class-pad-left: pl- !default;
+$class-pad-bottom: pb- !default;
+$class-pad-right: pr- !default;
+$class-pad: padding- !default;
 
-// bottom padding
-// SAMPLE OUTPUT: 
-// .ml-1 { padding-bottom: 0 ; }
-$class-padding-bottom: pb- !default;	//class name
-@for $i from $min-padding through $max-padding {
-	.#{$class-padding-bottom}#{$i}{	//class name + variable 
-		padding-bottom: #{$i}rem;
-	}
-}
-
-// right padding
-// SAMPLE OUTPUT: 
-// .ml-1 { padding-right: 0 ; }
-$class-padding-right: pr- !default;	//class name
-@for $i from $min-padding through $max-padding {
-	.#{$class-padding-right}#{$i}{	//class name + variable 
-		padding-right: #{$i}rem;
-	}
-}
-
-// padding all sides
-// SAMPLE OUTPUT: 
-// .ml-1 { padding-right: 0 ; }
-$class-padding: padding- !default;	//class name
-@for $i from $min-padding through $max-padding {
-	.#{$class-padding}#{$i}{	//class name + variable 
-		padding: #{$i}rem;
-	}
+// class creation
+@for $i from $min-pad through $max-pad { //for $min-padding & $max-padding value please refer to _variables.scss
+	.#{$class-pad-top}#{$i} { padding-top: #{$i}rem; }
+	.#{$class-pad-left}#{$i} { padding-left: #{$i}rem; }
+	.#{$class-pad-bottom}#{$i} { padding-bottom: #{$i}rem; }
+	.#{$class-pad-right}#{$i} { padding-right: #{$i}rem; }
+	.#{$class-pad}#{$i} { padding: #{$i}rem; }
 }
 // ---------------------------------------------------------------------------------
 
-// Half padding
-.pt-half { padding-top: .5rem !important; }
-.pl-half { padding-left: .5rem !important; }
-.pb-half { padding-bottom: .5rem !important; }
-.pr-half { padding-right: .5rem !important; }
-.padding-half{ @extend .pt-half; @extend .pb-half; @extend .pl-half; @extend .pr-half; }
+
+// Custom Top padding
+// $custom-mt:(Class name, amount),(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+$custom-pt:(pt-half,.5rem),(pt-1half,1.5rem),(pt-2half,2.5rem);
+@each $class, $val in $custom-pt {
+	.#{$class} { padding-top: $val; }
+}
+// ---------------------------------------------------------------------------------
+
+
+// Custom left padding
+// $custom-ml:(Class name, amount),(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+$custom-pl:(pl-half,.5rem),(pl-1half,1.5rem),(pl-2half,2.5rem);
+@each $class, $val in $custom-pl {
+	.#{$class} { padding-left: $val; }
+}
+// ---------------------------------------------------------------------------------
+
+
+// Custom Right padding
+// $custom-mr:(Class name, amount),(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+$custom-pr:(pr-half,.5rem),(pr-1half,1.5rem),(pr-2half,2.5rem);
+@each $class, $val in $custom-pr {
+	.#{$class} { padding-right: $val; }
+}
+// ---------------------------------------------------------------------------------
+
+
+// Custom Bottom padding
+// $custom-mb:(Class name, amount),(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+$custom-pb:(pb-half,.5rem),(pb-1half,1.5rem),(pb-2half,2.5rem);
+@each $class, $val in $custom-pb {
+	.#{$class} { padding-bottom: $val; }
+}
+// ---------------------------------------------------------------------------------
