@@ -49,7 +49,6 @@ $class-border-right: br- !default;
 // ---------------------------------------------------------------------------------
 
 // Custom Border width
-// $custom-bw:(Class name, amount),(n, n);
 // ---------------------------------------------------------------------------------
 $custom-bw:(b-8,8px,$b-solid,#777),(b-88,10px,dotted,#999);
 @each $class, $val,$style,$color in $custom-bw {
@@ -58,7 +57,6 @@ $custom-bw:(b-8,8px,$b-solid,#777),(b-88,10px,dotted,#999);
 // ---------------------------------------------------------------------------------
 
 // Custom Top Border width
-// $custom-btw:(Class name, amount),(n, n);
 // ---------------------------------------------------------------------------------
 $custom-btw:(bt-8,8px,$b-solid,#777),(bt-88,10px,dotted,#999),(bt-1,1px,$b-solid,#777);
 @each $class, $val,$style,$color in $custom-btw {
@@ -66,28 +64,8 @@ $custom-btw:(bt-8,8px,$b-solid,#777),(bt-88,10px,dotted,#999),(bt-1,1px,$b-solid
 }
 // ---------------------------------------------------------------------------------
 
-// @mixin bl($w. $s, $c){
-// 	border-width: $w;
-// 	border-color: $c;
-// 	border-style: $s;
-// }
-
-@mixin bl($w, $s, $c){
-	border-width: $w;
-	border-style: $s;
-	border-color: $c;
-}
-
-$borderList:(bt-80,8px,solid,#323),(bt-89,10px,dotted,#999),(bt-88,1px,solid,red);
-@each $class, $width, $style, $color in $borderList{
-  .#{$class}{
-    @include bl($width,$style,$color)
-  }  
-}
-
 
 // Custom Left Border width
-// $custom-blw:(Class name, amount),(n, n);
 // ---------------------------------------------------------------------------------
 $custom-blw:(bl-8,8px,$b-solid,#777),(bl-88,10px,$b-dotted,#999);
 @each $class, $val,$style,$color in $custom-blw {
@@ -96,7 +74,6 @@ $custom-blw:(bl-8,8px,$b-solid,#777),(bl-88,10px,$b-dotted,#999);
 // ---------------------------------------------------------------------------------
 
 // Custom Right Border width
-// $custom-brw:(Class name, amount),(n, n);
 // ---------------------------------------------------------------------------------
 $custom-brw:(br-8,8px,$b-solid,#777),(br-88,10px,$b-dotted#999);
 @each $class, $val,$style,$color in $custom-brw {
@@ -105,13 +82,30 @@ $custom-brw:(br-8,8px,$b-solid,#777),(br-88,10px,$b-dotted#999);
 // ---------------------------------------------------------------------------------
 
 // Custom Bottom Border width
-// $custom-bbw:(Class name, amount),(n, n);
 // ---------------------------------------------------------------------------------
 $custom-bbw:(bb-8,8px,solid,#777),(bb-88,10px,dotted,#999),(bt-1,1px,$b-solid,#777);
 @each $class, $val,$style,$color in $custom-bbw {
 	.#{$class} { border-bottom: $val $style $color; }
 }
 // ---------------------------------------------------------------------------------
+
+
+// Custom Border
+// OUTPUT: .($class) { border($side): $width $style $color; }
+// Use -top, -bottom, -left, -right or leave blank for $side
+// ---------------------------------------------------------------------------------
+$borderList:(bt-80,8px,solid,#323,-top),(bb-8, 8px, solid, #777,-bottom);
+
+
+@mixin bl($width, $style, $color,$side) { 
+	border#{$side}: $width $style $color; 
+}
+@each $class, $width, $style, $color, $side in $borderList{
+  .#{$class} { @include bl($width,$style,$color,$side) }
+}
+// ---------------------------------------------------------------------------------
+
+
 
 // BORDER RADIUS
 // ---------------------------------------------------------------------------------
