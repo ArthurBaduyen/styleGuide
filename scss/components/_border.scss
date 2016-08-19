@@ -1,12 +1,12 @@
-.b-dotted { border-style: dotted; }
-.b-dashed { border-style: dashed; }
-.b-solid { border-style: solid; }
-.b-double { border-style: double; }
-.b-groove { border-style: groove; }
-.b-ridge { border-style: ridge; }
-.b-outset { border-style: outset; }
-.b-none { border-style: none;	 }
-.b-mix { border-style: dotted dashed solid double; }
+$b-dotted: dotted;
+$b-dashed: dashed;
+$b-solid: solid;
+$b-double: double;
+$b-groove: groove;
+$b-ridge:  ridge;
+$b-outset: outset;
+$b-none:  none;
+$b-mix: dotted dashed solid double;
 
 .bt { border-top: $default-border; }
 .bb { border-bottom: $default-border; }
@@ -41,13 +41,57 @@ $class-border-right: br- !default;
 
 @for $i from $min-bw through $max-bw { //for $min-bw & $max-bw value please refer to _variables.scss
 	.#{$class-border-width}#{$i} { border-width: #{$i}px; }
-	.#{$class-border-top}#{$i} { border-top: #{$i}px; }
-	.#{$class-border-bottom}#{$i} { border-bottom: #{$i}px; }
+	.#{$class-border-top}#{$i} { border-top: #{$i}px solid inherit; }
+	.#{$class-border-bottom}#{$i} { border-bottom: #{$i}px solid inherit; }
 	.#{$class-border-left}#{$i} { border-left: #{$i}px; }
 	.#{$class-border-right}#{$i} { border-right: #{$i}px; }
 }
 // ---------------------------------------------------------------------------------
 
+// Custom Border width
+// $custom-bw:(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+$custom-bw:(b-8,8px,$b-solid,#777),(b-88,10px,dotted,#999);
+@each $class, $val,$style,$color in $custom-bw {
+	.#{$class} { border: $val $style $color; }
+}
+// ---------------------------------------------------------------------------------
+
+// Custom Top Border width
+// $custom-btw:(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+$custom-btw:(bt-8,8px,$b-solid,#777),(bt-88,10px,dotted,#999),(bt-1,1px,$b-solid,#777);
+@each $class, $val,$style,$color in $custom-btw {
+	.#{$class} { border-top: $val $style $color; }
+}
+// ---------------------------------------------------------------------------------
+
+// Custom Left Border width
+// $custom-blw:(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+$custom-blw:(bl-8,8px,$b-solid,#777),(bl-88,10px,$b-dotted,#999);
+@each $class, $val,$style,$color in $custom-blw {
+	.#{$class} { border-left: $val $style $color; }
+}
+// ---------------------------------------------------------------------------------
+
+// Custom Right Border width
+// $custom-brw:(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+$custom-brw:(br-8,8px,$b-solid,#777),(br-88,10px,$b-dotted#999);
+@each $class, $val,$style,$color in $custom-brw {
+	.#{$class} { border-right: $val $style $color; }
+}
+// ---------------------------------------------------------------------------------
+
+// Custom Bottom Border width
+// $custom-bbw:(Class name, amount),(n, n);
+// ---------------------------------------------------------------------------------
+$custom-bbw:(bb-8,8px,solid,#777),(bb-88,10px,dotted,#999),(bt-1,1px,$b-solid,#777);
+@each $class, $val,$style,$color in $custom-bbw {
+	.#{$class} { border-bottom: $val $style $color; }
+}
+// ---------------------------------------------------------------------------------
 
 // BORDER RADIUS
 // ---------------------------------------------------------------------------------
@@ -76,11 +120,27 @@ $class-border-brRadius: b-br-rad !default;	//class name
 // Custom Border Radius
 // $custom-mt:(Class name, amount),(n, n);
 // ---------------------------------------------------------------------------------
-$custom-br:(b-radmax,150rem),(b-rad-50,50rem),(b-rad-25,25rem);
+$custom-br:(b-radmax,150px),(b-rad-50,50rem),(b-rad-25,25rem);
 @each $class, $val in $custom-br {
 	.#{$class} { border-radius: $val; }
 }
 // ---------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
