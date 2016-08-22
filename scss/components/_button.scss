@@ -1,18 +1,20 @@
-
+// Getting the default button style
 .button-round, .button-radius, .banner-button {
 	@extend .button;
 }
 
+// Made your button round corner
 .button-round, .banner-button-round {
 	@extend .b-radmax;
 }
 
+// Made your button radius tip
 .button-radius, .banner-button-radius {
 	@extend .b-rad5;
 }
 
 
-// Banner Button
+// Custom Banner Button
 .banner-button-round, .banner-button-radius {
 	@extend .banner-button;
 }
@@ -26,22 +28,64 @@
 	padding-bottom: 14px;
 }
 
-.liner {
+
+ // Custom Style : Liner and Liner Reverse
+.liner, .liner-reverse {
+	@extend .b-2;
+}
+
+.liner:hover {
+	background-color: $primary !important;
+	color: #fff !important;
+	border-color: transparent !important;
+}
+
+.liner, .liner-reverse:hover {
 	background-color: transparent !important;
 	border-color: $primary !important;
 	color: $primary !important;
-	@extend .b-2;
-	box-sizing: border-box;
-	transition: background-color .50s;
-
-	&:hover {
-		transition: background-color .50s;
-		background-color: $primary !important;
-		color: #fff !important;
-		border-color: transparent !important;
-	}
 }
 
+.liner, .liner:hover, .liner-reverse:hover {
+	transition: background-color .3s;
+}
+
+
+ // Custom Style : Slice
+.slice {
+	@extend .b-2;
+	padding: auto 5rem;
+	background-color: $primary !important;
+	color: #fff !important;
+	border-color: transparent !important;
+}
+
+.slice, .slice:hover {
+	transition: all .35s ease-in-out;
+}
+
+.slice:hover {
+	background-color: #fff;
+	background-image: -webkit-linear-gradient(135deg, transparent 5%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 95%, transparent 50%);
+	border-color: $primary !important;
+	color: $primary !important;
+	animation-name: animate;
+	animation-duration: .35s;
+	transition: all .35s ease-in-out;
+
+}
+
+@-webkit-Keyframes animate {
+	10% {background-image: -webkit-linear-gradient(135deg, transparent 45%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 55%, transparent 50%);}
+	20% {background-image: -webkit-linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 60%, transparent 50%);}
+	30% {background-image: -webkit-linear-gradient(135deg, transparent 35%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 65%, transparent 50%);}
+	40% {background-image: -webkit-linear-gradient(135deg, transparent 30%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 70%, transparent 50%);}
+	55% {background-image: -webkit-linear-gradient(135deg, transparent 25%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 75%, transparent 50%);}
+	65% {background-image: -webkit-linear-gradient(135deg, transparent 20%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 80%, transparent 50%);}
+	75% {background-image: -webkit-linear-gradient(135deg, transparent 15%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 85%, transparent 50%);}
+	85% {background-image: -webkit-linear-gradient(135deg, transparent 10%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 90%, transparent 50%);}
+	100% {background-image: -webkit-linear-gradient(135deg, transparent 5%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 95%, transparent 50%);}
+}
 
 
 

@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GUI Style Guide</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="scss/vendor/hint.css-master/hint.css">
     <link rel="shortcut icon" type="image/x-icon" href="./etc/logo2.png" />
+
+    <script src="js/modernizr.custom.js"></script>
   </head>
   <body class="txt-secondary">
 
@@ -731,9 +734,17 @@
                 <button type="button" class="banner-button-radius">Banner Button Radius</button>
                 <button type="button" class="banner-button-round">Banner Button Round</button> <br />
 
-                <button type="button" class="banner-button liner bb-8 b-10">Banner Button Liner</button>
+                <button type="button" class="banner-button liner">Banner Button Liner</button>
                 <button type="button" class="banner-button-radius liner">Banner Button Liner Radius</button>
-                <button type="button" class="banner-button-round liner">Banner Button Liner Round</button> 
+                <button type="button" class="banner-button-round liner">Banner Button Liner Round</button>  <br />
+
+                <button type="button" class="banner-button liner-reverse">Banner Button Liner Reverse</button>
+                <button type="button" class="banner-button-radius liner-reverse">Banner Button Liner Reverse</button>
+                <button type="button" class="banner-button-round liner-reverse">Banner Button Liner Reverse</button>   <br />
+
+                <button type="button" class="banner-button slice">Banner Button Slice</button>
+                <button type="button" class="banner-button-radius slice">Banner Button Slice</button>
+                <button type="button" class="banner-button-round slice">Banner Button Slice</button>
               </div>
               <div class="row component-code">
                 <div class="medium-6 column">
@@ -781,6 +792,16 @@
                           <li>
                             <span class="hint--bounce hint--right" aria-label="Custom class for banner button">
                               .liner
+                            </span>
+                          </li>
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="Custom class for banner button">
+                              .liner-reverse
+                            </span>
+                          </li>
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="Custom class for banner button">
+                              .slice
                             </span>
                           </li>
                         </ul>
@@ -1656,14 +1677,7 @@
               <div class="component-title">
                 COMPONENT NAME
               </div>
-              <div class="component-main">
-                <h6>COMPONENT GOES HERE</h6>
-                <div class="bt-80">wwwwww</div>
-                <div class="bt-89">wwwwww</div>
-                <div class="bt-88">wwwwww</div>
 
-
-              </div>
 
               <div class="row component-code">
                 <div class="medium-6 column">
@@ -1717,6 +1731,6 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js"></script> 
   </body>
 </html>
