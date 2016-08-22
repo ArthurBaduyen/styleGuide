@@ -60,10 +60,3 @@ $custom-txt:(txt-white,#fff),(myColor2,#E1E1E1),(myColor3,#D9D9D9);
 	border-color: #777;
 }
 
-.pvw-title span {
-  display: none;
-}
-$test: Hello;
-.pvw-title:after {
-  content: $test;
-}
