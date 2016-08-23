@@ -1,0 +1,45 @@
+
+
+@mixin rotate($deg) {
+	transform:rotate(#{$deg}deg)
+}
+
+$custom-rotation:
+	(r28deg,-28),
+	(r32deg,32),
+	(r13deg,13);
+
+@each $class, $deg in $custom-rotation {
+	.#{$class} { @include rotate($deg); }
+}
+
+
+
+// RotateX
+@mixin rotateX($deg) {
+	transform:rotateX(#{$deg}deg)
+}
+
+$custom-rotationX:
+	(rX28deg,28),
+	(rX32deg,32),
+	(rX13deg,13);
+
+@each $class, $deg in $custom-rotationX {
+	.#{$class} { @include rotateX($deg); }
+}
+
+
+// RotateY
+@mixin rotateY($deg) {
+	transform:rotateY(#{$deg}deg)
+}
+
+$custom-rotationY:
+	(rY28deg,28),
+	(rY32deg,32),
+	(rY13deg,13);
+
+@each $class, $deg in $custom-rotationY {
+	.#{$class} { @include rotateY($deg); }
+}

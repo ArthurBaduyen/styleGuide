@@ -25,10 +25,14 @@
             <li class="bl-nav-blue selected"><a href="#"><i class="fa fa-gears mr-1"></i> Class</a>
               <ul class="custom-side-subnav menu vertical ">
                 <li><a href="#anchor-color-palette"><i class="fa fa-paint-brush mr-1"></i> Color Pallete</a></li>
-                <li><a href="#anchor-color-palette"><i class="fa fa-square-o mr-1"></i> Border</a></li>
-                <li><a href="#anchor-color-palette"><i class="fa fa-clone mr-1"></i> Margin</a></li>
-                <li><a href="#anchor-color-palette"><i class="fa fa-clone mr-1"></i> Padding</a></li>
-                <li><a href="#anchor-color-palette"><i class="fa fa-square mr-1"></i> Drop shadow</a></li>
+                <li><a href="#anchor-border"><i class="fa fa-square-o mr-1"></i> Border</a></li>
+                <li><a href="#anchor-margin"><i class="fa fa-clone mr-1"></i> Margin</a></li>
+                <li><a href="#anchor-padding"><i class="fa fa-clone mr-1"></i> Padding</a></li>
+                <li><a href="#anchor-drop-shadow"><i class="fa fa-square mr-1"></i> Drop shadow</a></li>
+                <li><a href="#anchor-rotate"><i class="fa fa-repeat mr-1"></i> Rotate</a></li>
+                <li><a href="#anchor-scale"><i class="fa fa-expand mr-1"></i> Scale</a></li>
+                <li><a href="#anchor-skew"><i class="fa fa-arrows-alt mr-1"></i> Skew</a></li>
+                <li><a href="#anchor-animation"><i class="fa fa-rocket mr-1"></i> Animation</a></li>
               </ul>
             </li>
           </ul>
@@ -40,7 +44,113 @@
       <!-- START OF STYLE GUIDE COMPONENTS -->
       <div class="medium-10 columns pl-0">
         <div class="mt-1">
-          <h1>Basic Classess</h1>
+          <h1>Basic Classes</h1>
+        </div>
+
+        <!-- COLOR PALETTE -->
+        <div class="row">
+          <div class="medium-12">
+            
+            <div class="component-container ">
+              <div class="component-title">
+                <a name="anchor-color-palette"></a>Color Palette
+              </div>
+              <div class="component-main">
+
+                <div class="row">
+                  <div class="medium-2 columns">
+                    <div class="row">
+                      <div class="medium-6 columns pr-0">
+                        <div class="border pt-1 pb-1 b-tl-rad5 b-bl-rad5 bg-primary"></div>
+                        <!-- <p>#000000</p> -->
+                        <div class="pvw-title"><span>Facts</span></div>
+                      </div>
+                      <div class="medium-6 columns pl-0">
+                        <div class=" pt-1 pb-1 b-tr-rad5 b-br-rad5 bg-primary-dark10"></div>
+                        <p>#000000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-2 columns">
+                    <div class="row">
+                      <div class="medium-6 columns pr-0">
+                        <div class="border pt-1 pb-1 b-tl-rad5 b-bl-rad5 bg-success"></div>
+                        <p>#000000</p>
+                      </div>
+                      <div class="medium-6 columns pl-0">
+                        <div class="border pt-1 pb-1 b-tr-rad5 b-br-rad5 bg-secondary"></div>
+                        <p>#000000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-2 columns">
+                    <div class="row">
+                      <div class="medium-6 columns pr-0">
+                        <div class="border pt-1 pb-1 b-tl-rad5 b-bl-rad5 bg-alert"></div>
+                        <p>#000000</p>
+                      </div>
+                      <div class="medium-6 columns pl-0">
+                        <div class="border pt-1 pb-1 b-tr-rad5 b-br-rad5 bg-secondary-dark20"></div>
+                        <p>#000000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-2 columns">
+                    <div class="row">
+                      <div class="medium-6 columns pr-0">
+                        <div class="border pt-1 pb-1 b-tl-rad5 b-bl-rad5 bg-primary-light20 "></div>
+                        <p>#000000</p>
+                      </div>
+                      <div class="medium-6 columns pl-0">
+                        <div class="border pt-1 pb-1 b-tr-rad5 b-br-rad5 bg-primary-dark20"></div>
+                        <p>#000000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-2 columns">
+                    <div class="row">
+                      <div class="medium-6 columns pr-0">
+                        <div class="border pt-1 pb-1 b-tl-rad5 b-bl-rad5 bg-primary-light30 "></div>
+                        <p>#000000</p>
+                      </div>
+                      <div class="medium-6 columns pl-0">
+                        <div class="border pt-1 pb-1 b-tr-rad5 b-br-rad5 bg-primary-dark30"></div>
+                        <p>#000000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="medium-2 columns">
+                    <div class="row">
+                      <div class="medium-6 columns pr-0">
+                        <div class="border pt-1 pb-1 b-tl-rad5 b-bl-rad5 bg-primary-light40 "></div>
+                        <p>#000000</p>
+                      </div>
+                      <div class="medium-6 columns pl-0">
+                        <div class="border pt-1 pb-1 b-tr-rad5 b-br-rad5 bg-primary-dark40"></div>
+                        <p>#000000</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                </div>
+              </div>
+              <div class="row component-code">
+                <div class="medium-6 column">
+                  <h6>HTML</h6>
+                  <div class="component-code-container" id="myHtml">
+                    &lt;html tags&gt;
+                  </div>
+                </div>
+                <div class="medium-6 column">
+                  <h6>CSS</h6>
+                  <div class="component-code-container " id="myCss">
+                    .class
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>   
         </div>
 
         <!-- Padding -->
@@ -49,7 +159,7 @@
 
             <div class="component-container">
               <div class="component-title">
-                <a name="anchor-color-palette"></a>Padding
+                <a name="anchor-padding"></a>Padding
               </div>
 
               <div class="component-main">
@@ -206,7 +316,7 @@
 
             <div class="component-container">
               <div class="component-title">
-                <a name="anchor-color-palette"></a>Margin
+                <a name="anchor-margin"></a>Margin
               </div>
 
               <div class="component-main">
@@ -402,7 +512,7 @@
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                COMPONENT NAME
+                <a name="anchor-border">COMPONENT NAME
               </div>
 
               <div class="component-main">
@@ -444,7 +554,7 @@
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                COMPONENT NAME
+                <a name="anchor-component">COMPONENT NAME
               </div>
 
               <div class="component-main">

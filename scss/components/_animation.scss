@@ -1,0 +1,49 @@
+// @keyframes   Specifies the animation code
+// animation    A shorthand property for setting all the animation properties   |   animation: example 5s linear 2s infinite alternate;
+// animation-delay  Specifies a delay for the start of an animation     |   animation-delay: 2s;
+// animation-direction  Specifies whether an animation should play in reverse direction or alternate cycles     |   animation-direction: alternate;
+// animation-duration   Specifies how many seconds or milliseconds an animation takes to complete one cycle     |   animation-duration: 5s;
+// animation-fill-mode  Specifies a style for the element when the animation is not playing (when it is finished, or when it has a delay)
+// animation-iteration-count    Specifies the number of times an animation should be played     |   animation-iteration-count: infinite;
+// animation-name   Specifies the name of the @keyframes animation      |   animation-name: example;
+// animation-play-state Specifies whether the animation is running or paused
+// animation-timing-function    Specifies the speed curve of the animation      |   animation-timing-function: linear;
+
+@keyframes example {
+    0% {
+    	transform: rotate(0deg);
+    	background-color: red;
+    }
+    25% {
+    	transform: rotate(180deg);
+    	background-color: yellow;
+    }
+    50% {
+    	transform: rotate(360deg);
+    	background-color: blue;
+    }
+    75% {
+    	transform: rotate(540deg);
+    	background-color: green;
+    }
+    100% {
+    	transform: rotate(720deg);
+    	background-color: red;
+    }
+}
+
+div.test {
+    width: 100px;
+    height: 100px;
+	background-color: red;
+	animation-play-state: paused;
+
+}
+
+div.test:hover {
+    animation-name: example;
+    animation-duration: 4s;
+	animation-play-state: running;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
