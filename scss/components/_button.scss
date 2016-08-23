@@ -52,7 +52,7 @@
 
 
  // Custom Style : Slice and Slice Reverse
-.slice {
+.slice, .slice-horizontal, .slice-vertical {
 	background-color: $primary !important;
 	color: #fff !important;
 	border-color: $primary !important;
@@ -60,13 +60,14 @@
 		background-color: #fff;
 		background-image: -webkit-linear-gradient(135deg, transparent 5%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 95%, transparent 50%);
 		color: $primary !important;
+		border-color: #fff !important;
 		animation-name: animate;
 		animation-duration: .35s;
 		transition: all .35s ease-in-out;
 	}
 }
 
-.slice, .slice-reverse {
+.slice, .slice-reverse, .slice-horizontal, .slice-horizontal-reverse, .slice-vertical, .slice-vertical-reverse{
 	transition: all .35s ease-in-out;
 	padding: auto 5rem;
 	@extend .b-2;
@@ -88,7 +89,7 @@
 	100% {background-image: -webkit-linear-gradient(135deg, transparent 5%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 95%, transparent 0%);}
 }
 
-.slice-reverse {
+.slice-reverse, .slice-horizontal-reverse, .slice-vertical-reverse {
 	background-color: #fff !important;
 	color: $primary !important;
 	border-color: $primary !important;
@@ -112,4 +113,82 @@
 	75% {background-image: -webkit-linear-gradient(135deg, transparent 15%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 85%, transparent 0%);}
 	85% {background-image: -webkit-linear-gradient(135deg, transparent 10%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 90%, transparent 0%);}
 	100% {background-image: -webkit-linear-gradient(135deg, transparent 5%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 95%, transparent 0%);}
+}
+
+// Slice Modifier - HORIZONTAL
+.slice-horizontal {
+	&:hover{
+		background-image: -webkit-linear-gradient(90deg, transparent 8%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 92%, transparent 50%) !important;
+		animation-name: animatehorizontal !important; 
+	}
+}
+
+@-webkit-Keyframes animatehorizontal {
+	10% {background-image: -webkit-linear-gradient(90deg, transparent 45%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 55%, transparent 0%);}
+	20% {background-image: -webkit-linear-gradient(90deg, transparent 40%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 60%, transparent 0%);}
+	30% {background-image: -webkit-linear-gradient(90deg, transparent 35%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 65%, transparent 0%);}
+	40% {background-image: -webkit-linear-gradient(90deg, transparent 30%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 70%, transparent 0%);}
+	55% {background-image: -webkit-linear-gradient(90deg, transparent 25%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 75%, transparent 0%);}
+	65% {background-image: -webkit-linear-gradient(90deg, transparent 20%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 80%, transparent 0%);}
+	75% {background-image: -webkit-linear-gradient(90deg, transparent 15%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 85%, transparent 0%);}
+	85% {background-image: -webkit-linear-gradient(90deg, transparent 10%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 90%, transparent 0%);}
+	100% {background-image: -webkit-linear-gradient(90deg, transparent 8%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 92%, transparent 0%);}
+}
+
+.slice-horizontal-reverse {
+	&:hover{
+		background-image: -webkit-linear-gradient(90deg, transparent 8%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 92%, transparent 50%) !important;
+		animation-name: animatehorizontalreverse !important; 
+	}
+}
+
+@-webkit-Keyframes animatehorizontalreverse {
+	10% {background-image: -webkit-linear-gradient(90deg, transparent 45%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 55%, transparent 0%);}
+	20% {background-image: -webkit-linear-gradient(90deg, transparent 40%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 60%, transparent 0%);}
+	30% {background-image: -webkit-linear-gradient(90deg, transparent 35%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 65%, transparent 0%);}
+	40% {background-image: -webkit-linear-gradient(90deg, transparent 30%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 70%, transparent 0%);}
+	55% {background-image: -webkit-linear-gradient(90deg, transparent 25%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 75%, transparent 0%);}
+	65% {background-image: -webkit-linear-gradient(90deg, transparent 20%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 80%, transparent 0%);}
+	75% {background-image: -webkit-linear-gradient(90deg, transparent 15%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 85%, transparent 0%);}
+	85% {background-image: -webkit-linear-gradient(90deg, transparent 10%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 90%, transparent 0%);}
+	100% {background-image: -webkit-linear-gradient(90deg, transparent 8%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 92%, transparent 0%);}
+}
+
+// Slice Modifier - VERTICAL
+.slice-vertical {
+	&:hover{
+		background-image: -webkit-linear-gradient(0deg, transparent 5%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 95%, transparent 50%) !important;
+		animation-name: animatevertical !important; 
+	}
+}
+
+@-webkit-Keyframes animatevertical {
+	10% {background-image: -webkit-linear-gradient(0deg, transparent 45%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 55%, transparent 0%);}
+	20% {background-image: -webkit-linear-gradient(0deg, transparent 40%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 60%, transparent 0%);}
+	30% {background-image: -webkit-linear-gradient(0deg, transparent 35%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 65%, transparent 0%);}
+	40% {background-image: -webkit-linear-gradient(0deg, transparent 30%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 70%, transparent 0%);}
+	55% {background-image: -webkit-linear-gradient(0deg, transparent 25%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 75%, transparent 0%);}
+	65% {background-image: -webkit-linear-gradient(0deg, transparent 20%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 80%, transparent 0%);}
+	75% {background-image: -webkit-linear-gradient(0deg, transparent 15%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 85%, transparent 0%);}
+	85% {background-image: -webkit-linear-gradient(0deg, transparent 10%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 90%, transparent 0%);}
+	100% {background-image: -webkit-linear-gradient(0deg, transparent 5%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 95%, transparent 0%);}
+}
+
+.slice-vertical-reverse {
+	&:hover{
+		background-image: -webkit-linear-gradient(0deg, transparent 5%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 95%, transparent 50%) !important;
+		animation-name: animateverticalreverse !important; 
+	}
+}
+
+@-webkit-Keyframes animateverticalreverse {
+	10% {background-image: -webkit-linear-gradient(0deg, transparent 45%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 55%, transparent 0%);}
+	20% {background-image: -webkit-linear-gradient(0deg, transparent 40%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 60%, transparent 0%);}
+	30% {background-image: -webkit-linear-gradient(0deg, transparent 35%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 65%, transparent 0%);}
+	40% {background-image: -webkit-linear-gradient(0deg, transparent 30%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 70%, transparent 0%);}
+	55% {background-image: -webkit-linear-gradient(0deg, transparent 25%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 75%, transparent 0%);}
+	65% {background-image: -webkit-linear-gradient(0deg, transparent 20%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 80%, transparent 0%);}
+	75% {background-image: -webkit-linear-gradient(0deg, transparent 15%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 85%, transparent 0%);}
+	85% {background-image: -webkit-linear-gradient(0deg, transparent 10%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 90%, transparent 0%);}
+	100% {background-image: -webkit-linear-gradient(0deg, transparent 5%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 95%, transparent 0%);}
 }
