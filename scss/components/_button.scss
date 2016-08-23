@@ -62,17 +62,17 @@
 		color: $primary !important;
 		border-color: #fff !important;
 		animation-name: animate;
-		animation-duration: .35s;
-		transition: all .35s ease-in-out;
+		animation-duration: .2s;
+		transition: all .2s ease-in-out;
 	}
 }
 
 .slice, .slice-reverse, .slice-horizontal, .slice-horizontal-reverse, .slice-vertical, .slice-vertical-reverse{
-	transition: all .35s ease-in-out;
+	transition: all .2s ease;
 	padding: auto 5rem;
 	@extend .b-2;
 	&:hover {
-		transition: all .35s ease-in-out;
+		transition: all .2s ease-in-out;
 	}
 }
 
@@ -98,8 +98,8 @@
 		background-image: -webkit-linear-gradient(135deg, transparent 5%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 95%, transparent 50%);;
 		color: #fff !important;
 		animation-name: animatereverse;
-		animation-duration: .35s;
-		transition: all .35s ease-in-out;
+		animation-duration: .2s;
+		transition: all .2s ease-in-out;
 	}
 }
 
@@ -156,6 +156,10 @@
 
 // Slice Modifier - VERTICAL
 .slice-vertical {
+	button:not(.slice-vertical):hover {
+	background-image: -webkit-linear-gradient(0deg, transparent 50%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 50%, transparent 50%) !important;
+	animation-name: animateverticalmouseout !important;
+}
 	&:hover{
 		background-image: -webkit-linear-gradient(0deg, transparent 5%, rgba(255, 255, 255, 50) 0%, rgba(255, 255, 255, 50) 95%, transparent 50%) !important;
 		animation-name: animatevertical !important; 
@@ -191,4 +195,18 @@
 	75% {background-image: -webkit-linear-gradient(0deg, transparent 15%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 85%, transparent 0%);}
 	85% {background-image: -webkit-linear-gradient(0deg, transparent 10%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 90%, transparent 0%);}
 	100% {background-image: -webkit-linear-gradient(0deg, transparent 5%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 95%, transparent 0%);}
+}
+
+
+@-webkit-Keyframes animateverticalmouseout {
+	10% {background-image: -webkit-linear-gradient(0deg, transparent 5%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 95%, transparent 0%);}
+	20% {background-image: -webkit-linear-gradient(0deg, transparent 10%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 90%, transparent 0%);}
+	30% {background-image: -webkit-linear-gradient(0deg, transparent 15%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 85%, transparent 0%);}
+	40% {background-image: -webkit-linear-gradient(0deg, transparent 20%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 80%, transparent 0%);}
+	55% {background-image: -webkit-linear-gradient(0deg, transparent 25%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 75%, transparent 0%);}
+	65% {background-image: -webkit-linear-gradient(0deg, transparent 30%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 70%, transparent 0%);}
+	75% {background-image: -webkit-linear-gradient(0deg, transparent 35%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 65%, transparent 0%);}
+	85% {background-image: -webkit-linear-gradient(0deg, transparent 40%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 60%, transparent 0%);}
+	95% {background-image: -webkit-linear-gradient(0deg, transparent 45%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 55%, transparent 0%);}
+	100% {background-image: -webkit-linear-gradient(0deg, transparent 50%, rgba(33, 153, 232, 50) 0%, rgba(33, 153, 232, 50) 50%, transparent 0%);}
 }
