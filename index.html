@@ -654,7 +654,6 @@
                   <div class="medium-3 columns"></div>
                 </div>
 
-<<<<<<< HEAD
                 <div class="row">
                   <div class="medium-3 columns">
                     <button type="button" class="banner-button liner-reverse">Banner Button Liner Reverse</button>
@@ -667,20 +666,8 @@
                   </div>
                   <div class="medium-3 columns"></div>
                 </div>
-=======
-                <button type="button" class="banner-button liner">Banner Button Liner</button>
-                <button type="button" class="banner-button-radius liner">Banner Button Liner Radius</button>
-                <button type="button" class="banner-button-round liner">Banner Button Liner Round</button> 
-
-                <div>
-                  <a href="" class="btn-1e btns btn-1">test</a>
-                  <input type="button" value="test" class="btn-1e btns btn-1">  
-                  <button class="btn-1e btns btn-1">button</button>
-                </div>
                 
 
-                <button type="button" class="banner-button-round liner">Banner Button Liner Round</button>  <br />
->>>>>>> 09a25fd4b8b366dede8e40aa83e81211bf528da6
 
                 <div class="row">
                   <div class="medium-3 columns">
@@ -1391,15 +1378,31 @@
           </div>   
         </div>
 
-        <!-- COMPONENT DESCRIPTION -->
+        <!-- Accordion -->
         <div class="row">
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                COMPONENT NAME
+                <a name="anchor-accordion"></a>Accordion
               </div>
               <div class="component-main">
-                <h6>COMPONENT GOES HERE</h6>
+                
+                <ul class="accordion" data-accordion data-allow-all-closed="true">
+                  <li class="accordion-item is-active" data-accordion-item>
+                    <a href="#" class="accordion-title">Accordion 1</a>
+                    <div class="accordion-content" data-tab-content>
+                      Duis mattis feugiat odio, vel dictum arcu varius quis. Vivamus posuere sem ut consequat efficitur. Curabitur bibendum tincidunt ligula, quis tincidunt ligula rhoncus ac. Phasellus venenatis turpis quis fermentum rutrum. Donec volutpat at justo vel.
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Accordion 2</a>
+                    <div class="accordion-content" data-tab-content>
+                      Nullam ornare vitae sapien non varius. Suspendisse vulputate augue enim. Duis imperdiet odio dictum, ullamcorper lacus eu, cursus eros. Nunc blandit nisl id imperdiet pharetra. Nulla eleifend sapien neque, ac interdum ipsum pharetra et. Mauris gravida leo.
+                    </div>
+                  </li>
+                  <!-- ... -->
+                </ul>
+
               </div>
 
               <div class="row component-code">
@@ -1420,15 +1423,23 @@
           </div>   
         </div>
 
-        <!-- COMPONENT DESCRIPTION -->
+        <!-- Modal -->
         <div class="row">
           <div class="medium-12">
             <div class="component-container">
               <div class="component-title">
-                COMPONENT NAME
+                <a name="anchor-modal"></a>Modal
               </div>
               <div class="component-main">
-                <h6>COMPONENT GOES HERE</h6>
+                <div class="reveal" id="exampleModal1" data-reveal>
+                  <h1>You shall not pass.</h1>
+                  <hr>
+                  <p>Phasellus non auctor mi. Fusce vitae ex sed ante pulvinar suscipit a a lorem. In tellus nibh, congue a ligula nec, pretium lobortis tellus. Mauris feugiat, risus id malesuada molestie, dui arcu ultricies lacus, in pellentesque dui tortor quis leo. Vivamus lacinia elit luctus magna semper, eu pretium nisl fermentum. Nullam ornare vitae sapien non varius. Suspendisse vulputate augue enim. Duis imperdiet odio dictum, ullamcorper lacus eu, cursus eros. Nunc blandit nisl id imperdiet pharetra. Nulla eleifend sapien neque, ac interdum ipsum pharetra et. Mauris gravida leo dui, eget feugiat mauris tristique et. Quisque a efficitur urna. Maecenas risus felis, feugiat a nisi ac, fermentum aliquet sapien. Aenean bibendum ultrices tortor, rhoncus commodo sapien porta sed. Aliquam erat volutpat.</p>
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <p><a data-open="exampleModal1" class="button">Click me for a modal</a></p>
               </div>
 
               <div class="row component-code">
