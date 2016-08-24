@@ -57,10 +57,23 @@ $borderList:
 	(b-8, 8px, solid, #777, -bottom),
 	(bl-nav-red, 5px, solid, #ff7272, -left),
 	(bl-nav-green, 5px, solid, #57d483, -left),
-	(bl-nav-blue, 5px, solid, #55b8ff, -left);
+	(bl-nav-blue, 5px, solid, #55b8ff, -left),
+	(btlr-3, 3px 3px 3px 0px, solid, #323232),
+	(btl-7, 7px 0px 0px 7px, solid, $success),
+	(b-4, 4px, solid, $success, -bottom);
 
 @mixin create-border-class($width, $style, $color,$side) { 
-	border#{$side}: $width $style $color; 
+	
+	@if $side == null{
+		border-width: #{$width};
+		border-color: #{$color};
+		border-style: #{$style};
+	}
+	@else{
+		border#{$side}: $width $style $color; 
+	}
+
+	
 }
 @each $class, $width, $style, $color, $side in $borderList{
   .#{$class} { @include create-border-class($width,$style,$color,$side) }
