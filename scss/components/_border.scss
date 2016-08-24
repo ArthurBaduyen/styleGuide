@@ -51,6 +51,7 @@ $class-border-right: br- !default;
 // $width - amount of border width.
 // $style - border style(e.g. solid).
 // $side -  w/c side of the element will appear. Use -top, -bottom, -left, -right or leave blank for both 4 sides
+// NOTE: - If creating a class with two or three border use the "n n n n" format for width and leave the $side blank
 // ---------------------------------------------------------------------------------
 $borderList:
 	(bt-80, 8px, solid, #323, -top),
