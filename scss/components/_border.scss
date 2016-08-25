@@ -57,10 +57,15 @@ $borderList:
 	(b-8, 8px, solid, #777, -bottom),
 	(bl-nav-red, 5px, solid, #ff7272, -left),
 	(bl-nav-green, 5px, solid, #57d483, -left),
-	(bl-nav-blue, 5px, solid, #55b8ff, -left);
+	(bl-nav-blue, 0px 0 0 5px, solid, #55b8ff, -left),
+	(btbr-3, 3rem 3px 3px 0rem, solid,  #55b8ff);
+
 
 @mixin create-border-class($width, $style, $color,$side) { 
-	border#{$side}: $width $style $color; 
+	border#{$side}: $width $style $color;
+	border-width: $width;
+	border-style: $style;
+	border-color: $color;
 }
 @each $class, $width, $style, $color, $side in $borderList{
   .#{$class} { @include create-border-class($width,$style,$color,$side) }
@@ -109,7 +114,9 @@ $custom-border-radius:
 
 
 
-
+.test2 {
+	color: black;
+}
 
 
 
