@@ -1,10 +1,10 @@
 // MARGINS
 // ---------------------------------------------------------------------------------
 // OUTPUT: 
-// .mt-1 { margin-top: 0 ; }
-// .ml-1 { margin-left: 0 ; }
-// .mr-1 { margin-right: 0 ; }
-// .mtb1 { margin-bottom: 0 ; }
+// .mt-1 { margin-top: 1 ; }
+// .ml-1 { margin-left: 1 ; }
+// .mr-1 { margin-right: 1 ; }
+// .mtb1 { margin-bottom: 1 ; }
 
 // class prefix
 $class-mar-top: mt- !default;
@@ -42,6 +42,7 @@ $custom-margin:
 	(ml-half,.5rem,-left),
 	(ml-1half,1.5rem,-left),
 	(ml-2half,2.5rem,-left);
+
 	
 @each $class, $val, $side in $custom-margin {
 	.#{$class} { margin#{$side}: $val; }

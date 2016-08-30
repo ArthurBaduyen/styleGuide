@@ -1,24 +1,20 @@
 // Getting the default button style
-.button-round, .button-radius, .banner-button {
+.banner-button {
 	@extend .button;
 }
 
 // Made your button round corner
-.button-round, .banner-button-round {
+.round{
 	@extend .b-radmax;
 }
 
 // Made your button radius tip
-.button-radius, .banner-button-radius {
+.radius {
 	@extend .b-rad5;
 }
 
 
 // Custom Banner Button
-.banner-button-round, .banner-button-radius {
-	@extend .banner-button;
-}
-
 .banner-button {
 	@extend .large;
 	@extend #typo-secondary;

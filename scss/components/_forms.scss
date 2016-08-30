@@ -136,3 +136,39 @@ input.alert{
 		@extend .ds-1;
 	}
 }
+
+
+
+
+
+// CUSTOM TEXT
+.yuko input, .yuko input:focus, .yuko label {
+	border: none !important;
+	box-shadow: none !important;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: all 0.2s ease-in-out;
+	color: #2199e8;
+}
+
+.yuko {
+	@extend .btb-4;
+	@extend .mt-1;
+	input {
+		margin: 0px !important;
+		index: 1 !important;
+		&:focus {
+			height: 45px !important;
+		}
+	}
+
+	label{
+		position: relative;
+		height: 0px;
+		top: -30px;
+		pointer-events: none;
+	}
+}
+
+.yuko input:focus + label {
+	top: -72px;
+}

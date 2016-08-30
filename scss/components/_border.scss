@@ -59,7 +59,10 @@ $borderList:
 	(bl-nav-red, 5px, solid, #ff7272, -left),
 	(bl-nav-green, 5px, solid, #57d483, -left),
 	(bl-nav-blue, 0px 0 0 5px, solid, #55b8ff, -left),
-	(btbr-3, 3rem 3px 3px 0rem, solid,  #55b8ff);
+	(btbr-3, 3rem 3px 3px 0rem, solid,  #55b8ff),
+
+	//YUKO
+	(btb-4, 4px 0px 4px 0px, solid, #2199e8);
 
 
 @mixin create-border-class($width, $style, $color,$side) { 
