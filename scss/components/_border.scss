@@ -62,7 +62,11 @@ $borderList:
 	(btbr-3, 3rem 3px 3px 0rem, solid,  #55b8ff),
 
 	//YUKO
-	(btb-4, 4px 0px 4px 0px, solid, #2199e8);
+	(btb-4, 4px 0px 4px 0px, solid, #2199e8),
+
+	//MUTO
+	(border-4, 4px 4px 4px 4px, solid, #2199e8),
+	(border-2, 2px 2px 2px 2px, solid, #2199e8);
 
 
 @mixin create-border-class($width, $style, $color,$side) { 

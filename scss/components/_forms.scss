@@ -138,37 +138,96 @@ input.alert{
 }
 
 
+// CUSTOM TEXT KAYE
 
-
-
-// CUSTOM TEXT
-.yuko input, .yuko input:focus, .yuko label {
-	border: none !important;
-	box-shadow: none !important;
-	-webkit-transition: -webkit-transform 0.2s;
-	transition: all 0.2s ease-in-out;
-	color: #2199e8;
-}
-
-.yuko {
-	@extend .btb-4;
+.kaye {
+	@extend .border-4;
 	@extend .mt-1;
+	background-color: #101010;
+	text-align: center;
 	input {
-		margin: 0px !important;
+		margin: 0 !important;
 		index: 1 !important;
-		&:focus {
-			height: 45px !important;
+		font-size: 20px;
+		color: darken($primary, 20%) !important;
+		text-align: center;
+
+		&:valid + label {
+			opacity: 0;
+		}
+
+		&:invalid + label {
+			top: -33px ;
+			opacity: 1;
+		}
+
+		&:focus + label {
+			opacity: 0;
 		}
 	}
 
 	label{
 		position: relative;
 		height: 0px;
-		top: -30px;
+		top: -33px;
 		pointer-events: none;
 	}
+
+	input, input:focus, label {
+		border: none !important;
+		box-shadow: none !important;
+		-webkit-transition: -webkit-transform 0.2s;
+		transition: all 0.2s ease-in-out;
+		color: lighten($primary, 20%);
+	}	
 }
 
-.yuko input:focus + label {
-	top: -72px;
+
+// CUSTOM TEXT YUKO
+.yuko {
+	@extend .btb-4;
+	@extend .mt-1;
+	input {
+		margin: 0px !important;
+		index: 1 !important;
+		font-size: 20px;
+		color: darken($primary, 20%) !important;
+		&:focus {
+			height: 45px !important;
+		}
+
+		&:valid {
+			height: 45px !important;
+		}
+
+		&:valid + label {
+			top: -73px ;	
+		}
+
+		&:invalid + label {
+			top: -33px ;
+		}
+
+		&:focus + label {
+			top: -73px !important;
+		}
+	}
+
+	label{
+		position: relative;
+		height: 0px;
+		top: -33px;
+		pointer-events: none;
+	}
+
+	input, input:focus, label {
+		border: none !important;
+		box-shadow: none !important;
+		-webkit-transition: -webkit-transform 0.2s;
+		transition: all 0.2s ease-in-out;
+		color: lighten($primary, 20%);
+	}	
 }
+
+
+

@@ -6,15 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GUI Style Guide</title>
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="scss/vendor/hint.css-master/hint.css">
     <link rel="shortcut icon" type="image/x-icon" href="./etc/logo2.png" />
-    
-    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/set1.css" />
-    <script src="js/modernizr.custom.js"></script>
   </head>
   <body class="txt-secondary">
 
@@ -1196,26 +1189,26 @@
                 </div>
               </div>
 
-              <!-- Custom Style Text Box -->
+              <!-- Custom Style Text Box KAYE -->
               <div class="component-main">
-                <h6>Custom Text Box</h6>
+                <h6>Custom Text Box "Kaye"</h6>
                 <div class="row">
                   <div class="medium-3 columns">
-                    <div class="yuko">
-                      <input type="text">
+                    <div class="kaye">
+                      <input type="text" class="extrabold" required="required">
                       <label id="typo-secondary">
-                          Click here Yuko
+                          CUSTOM TEXTBOX KAYE
                       </label>
                     </div>
                   </div>
                   <div class="medium-3 columns">
-                    <input type="text" class="success hoverme" placeholder="Success Text box" />
+                    
                   </div>
                   <div class="medium-3 columns">
-                    <input type="text" class="warning hoverme" placeholder="Warning Text box" />
+                    
                   </div>
                   <div class="medium-3 columns">
-                    <input type="text" class="alert hoverme" placeholder="Alert Text box" />                    
+                    
                   </div>
                 </div>             
               </div>
@@ -1224,48 +1217,163 @@
                 <div class="medium-6 column">
                   <h6>HTML</h6>
                   <div class="component-code-container">
-                    <p class="ml-1">&lt;input type="text" class="primary hoverme" placeholder="Primary Text box" /&gt;</p>
-                    <p class="ml-1">&lt;input type="text" class="success hoverme" placeholder="Success Text box" /&gt;</p>
-                    <p class="ml-1">&lt;input type="text" class="warning hoverme" placeholder="Warning Text box" /&gt;</p>
-                    <p class="ml-1">&lt;input type="text" class="alert hoverme" placeholder="Alert Text box" /&gt;</p>
+                    <p>&lt;div class="kaye"&gt;</p>
+                    <p class="ml-1">&lt;input type="text" class="extrabold" required="required" /&gt;</p>
+                    <p class="ml-1">&lt;label id="typo-secondary"&gt;</p>
+                    <p class="ml-2">CUSTOM TEXTBOX KAYE</p>
+                    <p class="ml-1">&lt;/label&gt;</p>
+                    <p>&lt;/div&gt;</p>
                   </div>
                 </div>
                 <div class="medium-6 column">
                   <h6>CSS</h6>
                   <div class="component-code-container">
                     <div class="row">
-                      <div class="medium-6 columns">
-                        <p><strong>Custom Input Style Class</strong></p>
+                      <div class="medium-4 columns">
+                        <p><strong>Structure</strong></p>
                         <ul class="styleguide-css-list">
                           <li>
-                            <span class="hint--bounce hint--right" aria-label="Custom class for Text box Primary">
-                              .primary
+                            <span class="hint--bounce hint--right" aria-label="Section / Division to start Yuko Template Style">
+                              &lt;div&gt;
                             </span>
                           </li>
                           <li>
-                            <span class="hint--bounce hint--right" aria-label="Custom class for Text box Success">
-                              .success
+                            <span class="hint--bounce hint--right" aria-label="Necessary Element for Entering Data">
+                              &lt;input&gt;
                             </span>
                           </li>
                           <li>
-                            <span class="hint--bounce hint--right" aria-label="Custom class for Text box Warning">
-                              .warning
-                            </span>
-                          </li>
-                          <li>
-                            <span class="hint--bounce hint--right" aria-label="Custom class for Text box Alert">
-                              .alert
+                            <span class="hint--bounce hint--right" aria-label="Used to replace a placeholder">
+                              &lt;Label&gt;
                             </span>
                           </li>
                         </ul>
                       </div>
 
-                      <div class="medium-6 columns">
+                      <div class="medium-4 columns">
                         <p><strong>Custom Class Added</strong></p>
                         <ul class="styleguide-css-list">
                           <li>
-                            <span class="hint--bounce hint--right" aria-label="Custom class for shadow hover">
-                              .hoverme
+                            <span class="hint--bounce hint--right" aria-label="Used to recognize as kaye template">
+                              .kaye
+                            </span>
+                          </li>
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="Used for a bolder font weight">
+                              .extrabold
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="medium-4 columns">
+                        <p><strong>Other Functions</strong></p>
+                        <ul class="styleguide-css-list">
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="In XHTML, Attribute minimization is forbidden">
+                              required="required"
+                            </span>
+                          </li>
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="Used for Primary Typography">
+                              #typo-primary
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Custom Style Text Box YUKO -->
+              <div class="component-main">
+                <h6>Custom Text Box "Yuko"</h6>
+                <div class="row">
+                  <div class="medium-3 columns">
+                    <div class="yuko">
+                      <input type="text" class="extrabold" required="required">
+                      <label id="typo-secondary">
+                          CUSTOM TEXTBOX YUKO
+                      </label>
+                    </div>
+                  </div>
+                  <div class="medium-3 columns">
+                    
+                  </div>
+                  <div class="medium-3 columns">
+                    
+                  </div>
+                  <div class="medium-3 columns">
+                    
+                  </div>
+                </div>             
+              </div>
+
+              <div class="row component-code">
+                <div class="medium-6 column">
+                  <h6>HTML</h6>
+                  <div class="component-code-container">
+                    <p>&lt;div class="yuko"&gt;</p>
+                    <p class="ml-1">&lt;input type="text" class="extrabold" required="required" /&gt;</p>
+                    <p class="ml-1">&lt;label id="typo-secondary"&gt;</p>
+                    <p class="ml-2">CUSTOM TEXTBOX YUKO</p>
+                    <p class="ml-1">&lt;/label&gt;</p>
+                    <p>&lt;/div&gt;</p>
+                  </div>
+                </div>
+                <div class="medium-6 column">
+                  <h6>CSS</h6>
+                  <div class="component-code-container">
+                    <div class="row">
+                      <div class="medium-4 columns">
+                        <p><strong>Structure</strong></p>
+                        <ul class="styleguide-css-list">
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="Section / Division to start Yuko Template Style">
+                              &lt;div&gt;
+                            </span>
+                          </li>
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="Necessary Element for Entering Data">
+                              &lt;input&gt;
+                            </span>
+                          </li>
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="Used to replace a placeholder">
+                              &lt;Label&gt;
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="medium-4 columns">
+                        <p><strong>Custom Class Added</strong></p>
+                        <ul class="styleguide-css-list">
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="Used to recognize as yuko template">
+                              .yuko
+                            </span>
+                          </li>
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="Used for a bolder font weight">
+                              .extrabold
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="medium-4 columns">
+                        <p><strong>Other Functions</strong></p>
+                        <ul class="styleguide-css-list">
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="In XHTML, Attribute minimization is forbidden">
+                              required="required"
+                            </span>
+                          </li>
+                          <li>
+                            <span class="hint--bounce hint--right" aria-label="Used for Primary Typography">
+                              #typo-primary
                             </span>
                           </li>
                         </ul>
